@@ -1,0 +1,80 @@
+/* ===== 서준이 놀이터 테마 (디자인 담당 designer 에이전트가 고치는 파일) =====
+   앱 본체(index.html)는 건드리지 않고, 여기서 글꼴·색·크기만 바꿉니다.
+   바꾼 뒤엔 반드시 python tools/shots.py 로 화면 확인.
+   이전 상태: player/theme.before.css
+*/
+
+/* 글꼴: 길쭉하고 가는 Dongle 대신 둥글고 통통한 Jua(OFL). 굵기 범위를 열어 가짜 굵게(번짐)를 막고, 글자 위아래 여유를 맞춰 잘림 방지 */
+@font-face{font-family:"KidJua";src:url(fonts/Jua-Regular.woff2) format("woff2");font-weight:100 900;font-display:swap;
+  size-adjust:106%;ascent-override:92%;descent-override:28%;line-gap-override:0%}
+
+/* 색: 바다 계열은 유지하고, 뿌뿌(연두 몸·주황 뿔·분홍 볼) 색을 강조색으로 더함 */
+:root{
+  --display:"KidJua","PPDongle","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --body:"KidJua","PPDongle","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --ink:#1d3450;
+  --pp-green:#8fcf5a;
+  --pp-horn:#ff9a3d;
+  --pp-cheek:#ffb4c2;
+  --press:0 3px 0 rgba(22,50,74,.22);
+  --lift:0 7px 0 rgba(22,50,74,.18),0 10px 18px rgba(22,50,74,.10);
+}
+
+/* Jua 는 한 굵기뿐이라 본체의 font-weight:700 이 가짜 굵게로 번지지 않게 함 */
+body,button{font-synthesis:none}
+
+/* 한글 낱말이 중간에서 끊기지 않게(예: "같\n이" 방지) */
+body{word-break:keep-all;overflow-wrap:anywhere}
+
+/* 제목: 하늘 배경 위에서도 또렷하게 흰 테두리 그림자 */
+.htitle{font-size:clamp(28px,6.4vw,46px);letter-spacing:.02em;text-shadow:0 2px 0 #fff,0 -1px 0 #fff,2px 0 0 #fff,-2px 0 0 #fff}
+
+/* 머리 버튼 일관성: 집·별·음악·소리 버튼을 모두 같은 흰 바탕·같은 둥글기·같은 그림자, 크기 64px */
+.hbtn,.hbtn.soft{width:64px;height:64px;border-radius:22px;background:#fff;box-shadow:var(--lift);font-size:30px;
+  transition:transform .12s ease-out,box-shadow .12s ease-out}
+/* 꺼진 소리·음악은 흐리게만(모양은 같게) */
+.hbtn.off{opacity:.5}
+/* 별 개수 칩은 글자 폭만큼 */
+.hbtn.starchip{min-width:64px}
+
+/* 누르면 쏙 들어갔다가 놓으면 통 튀어오름(모든 아이용 버튼 공통) */
+.hbtn:active,.tile:active,.card:active,.door:active,.lcard:active,.pill:active,.seg button:active{transform:translateY(4px) scale(.97);box-shadow:var(--press)}
+.tile,.card,.lcard,.pill,.seg button{transition:transform .18s cubic-bezier(.3,1.6,.5,1),box-shadow .18s}
+
+/* 카드·타일 일관성: 같은 둥글기, 흰 테두리 한 줄, 같은 그림자 */
+.tile,.card,.lcard{box-shadow:inset 0 0 0 3px rgba(255,255,255,.75),var(--lift)}
+.fit .tile{border-radius:min(30px,13cqmin)}
+
+/* 놀이 카드: 아이는 글을 못 읽으니 작은 설명 글은 숨기고 그림을 키움 */
+.fit .tile small{display:none}
+.fit .tile .ic{font-size:clamp(30px,48cqmin,170px)}
+.fit .tile .tl{font-size:clamp(17px,15cqmin,46px)}
+/* 색깔·한글 카드 이름도 작게 묻히지 않게 */
+.card .cn,.fit .cbtn .cn{font-size:clamp(14px,13cqmin,30px)}
+.fit .lcard .lw{font-size:clamp(13px,12cqmin,28px)}
+
+/* 첫 화면 문 4개: 그림 칸 높이를 똑같이 해서 글자 줄이 한 줄로 맞춰지게 */
+.door{box-shadow:inset 0 0 0 4px rgba(255,255,255,.7),0 8px 0 rgba(22,50,74,.2);border-radius:30px;justify-content:space-evenly}
+.door .dic{height:13cqh;display:flex;align-items:center;justify-content:center}
+.door .dl{font-size:clamp(16px,5.4cqh,36px)}
+@container (max-aspect-ratio:3/4){.door .dic{height:min(9cqh,12cqw)}.door .dl{font-size:clamp(12px,4.4cqw,26px)}}
+
+/* 뿌뿌 말풍선: 조금 더 둥글고 두툼하게, 그림자 일관 */
+.ppbubble{border-radius:26px;padding:.25em .85em;box-shadow:0 6px 0 rgba(22,50,74,.12)}
+
+/* 선물 상자 버튼도 문과 같은 흰 테두리 그림자 */
+.gift{background:rgba(255,255,255,.88);box-shadow:var(--lift)}
+
+/* 단계 고르기(쉬움·보통·어려움): 선택된 것은 뿌뿌 연두색으로 또렷하게 */
+/* 단계 버튼도 아이 손가락 크기(64px 가까이) */
+.seg button{min-height:58px;font-size:clamp(18px,4.2vw,24px);padding-inline:clamp(14px,3vw,24px);box-shadow:0 4px 0 rgba(22,50,74,.12)}
+.seg button[aria-pressed="true"]{background:var(--pp-green);color:var(--ink);box-shadow:0 5px 0 #5f9a35}
+
+/* 안내 말풍선(어떤 놀이할까?) 글자를 조금 키워 부모도 잘 보이게 */
+.gline .gtext{font-size:clamp(16px,4vw,22px)}
+
+/* 큰 강조 버튼은 뿌뿌 뿔 주황 */
+.pill.hot{background:var(--pp-horn);box-shadow:0 5px 0 #c96a1c}
+
+/* 첫 화면 공책 버튼: 작은 화면에서 44px 아래로 줄던 것을 손가락 크기로 고정('어른용' 글자 버튼은 일부러 작게 둠) */
+.corner .mini:not(.soft){min-width:60px;min-height:56px;box-shadow:var(--lift);background:rgba(255,255,255,.88)}
