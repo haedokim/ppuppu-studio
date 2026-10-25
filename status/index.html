@@ -154,7 +154,8 @@ ul.tasks li.old{opacity:.6}
   <p class="foot">공장 컴퓨터가 20분마다(단계가 바뀌거나 경고·요청 작업이 바뀌면 바로) 상황을 올리고, 이 화면은 5분마다 새로 읽어요. 컴퓨터가 꺼져 있으면 마지막 상태가 그대로 보여요.</p>
 </div>
 <script>
-const SRC="https://api.github.com/repos/haedokim/ppuppu-studio/contents/status.json?ref=status";
+// GitHub API 는 집 인터넷 주소당 시간당 60번 한도(태블릿 업데이트 확인과 같이 씀) → 한도 없는 raw 주소로 읽음(5분쯤 늦을 수 있음)
+const SRC="https://raw.githubusercontent.com/haedokim/ppuppu-studio/status/status.json";
 const $=id=>document.getElementById(id);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const ago=t=>{const s=Math.max(0,Math.round((Date.now()-t)/1000));return s<60?`${s}초 전`:s<3600?`${Math.floor(s/60)}분 전`:s<86400?`${Math.floor(s/3600)}시간 전`:`${Math.floor(s/86400)}일 전`};
@@ -189,11 +190,9 @@ function render(){if(!D)return;const at=new Date(D.at).getTime(),fresh=Date.now(
   $("recent").innerHTML=(D.recent||[]).map(r=>`<li><span class="ep-id">${esc(r.id)}</span><span class="chip">${esc(r.subject)}</span><span>${esc(r.title)}</span><span class="num">${esc((r.for||"").slice(5).replace("-","/"))}</span></li>`).join("")||`<li class="empty">아직 없어요</li>`;
 }
 async function load(){
-  try{const r=await fetch(SRC,{cache:"no-store",headers:{Accept:"application/vnd.github+json"}});
-    if(r.status===403||r.status===429)throw new Error("잠깐 너무 자주 읽었어요. 1분쯤 뒤에 저절로 다시 읽어요.");
+  try{const r=await fetch(SRC+"?t="+Math.floor(Date.now()/60000),{cache:"no-store"});
     if(!r.ok)throw new Error("현황을 아직 못 받았어요 ("+r.status+")");
-    const j=await r.json();const bytes=Uint8Array.from(atob(j.content.replace(/\n/g,"")),c=>c.charCodeAt(0));
-    D=JSON.parse(new TextDecoder().decode(bytes));$("err").style.display="none";render()}
+    D=JSON.parse(await r.text());$("err").style.display="none";render()}
   catch(e){$("err").style.display="block";$("err").textContent=e.message}}
 load();setInterval(load,5*60e3);setInterval(render,30000);
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)load()});
