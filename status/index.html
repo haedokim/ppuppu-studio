@@ -60,6 +60,12 @@ h1{font:28px/1.1 var(--display);margin:0;letter-spacing:.5px}
 .bar.ok i{background:var(--ok)}.bar.hot i{background:var(--bad)}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted)}
 #eps{display:grid;gap:14px}
+.review{border-radius:12px;padding:10px 14px;margin-bottom:14px;border-left:5px solid var(--wait);background:color-mix(in srgb,var(--wait) 9%,var(--panel))}
+.review.doing{border-left-color:var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--panel))}
+.review.done{border-left-color:var(--ok);background:color-mix(in srgb,var(--ok) 9%,var(--panel))}
+.review .rl{margin:0;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.04em}
+.review blockquote{margin:4px 0 8px;font-size:15px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+.review .rp{margin:4px 0 0;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
 .lanes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 @media (max-width:760px){.lanes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .lane{border:1.5px solid var(--line);border-radius:12px;padding:8px 10px;min-width:0}
@@ -69,6 +75,12 @@ h1{font:28px/1.1 var(--display);margin:0;letter-spacing:.5px}
 .lane.on{border-color:var(--accent);animation:blink 1.1s ease-in-out infinite}
 .grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 @media (max-width:760px){#eps{display:grid;gap:14px}
+.review{border-radius:12px;padding:10px 14px;margin-bottom:14px;border-left:5px solid var(--wait);background:color-mix(in srgb,var(--wait) 9%,var(--panel))}
+.review.doing{border-left-color:var(--accent);background:color-mix(in srgb,var(--accent) 9%,var(--panel))}
+.review.done{border-left-color:var(--ok);background:color-mix(in srgb,var(--ok) 9%,var(--panel))}
+.review .rl{margin:0;font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.04em}
+.review blockquote{margin:4px 0 8px;font-size:15px;line-height:1.55;white-space:pre-wrap;overflow-wrap:anywhere}
+.review .rp{margin:4px 0 0;font-size:14px;line-height:1.55;overflow-wrap:anywhere}
 .lanes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
 @media (max-width:760px){.lanes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .lane{border:1.5px solid var(--line);border-radius:12px;padding:8px 10px;min-width:0}
@@ -159,6 +171,8 @@ function render(){if(!D)return;const at=new Date(D.at).getTime(),fresh=Date.now(
   $("eps").innerHTML=EPS.length?EPS.map(e=>{const i=e.step_i;
     return `<section class="panel"><p class="label">만드는 편${e.director?" · 감독 일하는 중":""}${(e.jobs||[]).length?" · 일꾼 일 "+e.jobs.length+"개":""}</p>
       <div class="ep-head"><span class="chip">${esc(e.subject)}</span><h2 class="ep-title">${esc(e.title||"(제목 정하는 중)")}</h2><span class="ep-id">${esc(e.id)}</span></div>
+      ${e.review?`<div class="review ${esc(e.review.state)}"><p class="rl">해도 님 의견 · ${esc(e.review.about)} <span class="num">${esc((e.review.at||"").slice(11,16))}</span></p><blockquote>${esc(e.review.comment)}</blockquote>
+        ${e.review.plan?`<p class="rl">${e.review.state==="done"?"반영 끝":e.review.state==="asked"?"고친 것 다시 확인 기다림":"이렇게 고치는 중"}${e.review.who?` · ${esc(e.review.who)}`:""}</p><p class="rp">${esc(e.review.plan)}</p>`:""}</div>`:""}
       <div class="steps">${e.steps.map((s,j)=>`<div class="st ${j<i?"done":j===i?"now"+(e.waiting?" waiting":""):""}"><b>${esc(s.t)}</b><small>${esc(s.who||" ")}</small></div>`).join("")}</div>
       <div class="meters">${e.voice?meter("목소리",e.voice,e.voice[0]>=e.voice[1]?"ok":""):""}${e.images?meter("그림",e.images,e.images[0]>=e.images[1]?"ok":""):""}
         <div class="meter"><span>마지막 변화</span><span class="num" style="grid-column:2/4">${ago(e.last_change*1000)}${e.qa?` · 검수 ${esc(e.qa)}`:""}</span></div></div></section>`}).join("")
