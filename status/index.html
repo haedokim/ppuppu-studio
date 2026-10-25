@@ -69,6 +69,16 @@ ul.recent{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 ul.recent li{display:grid;grid-template-columns:4.2em 3.6em 1fr auto;gap:10px;align-items:baseline;padding:8px 0;border-top:1px solid var(--line)}
 ul.recent li:first-child{border-top:0}
 .foot{color:var(--muted);font-size:12px}
+ul.tasks{list-style:none;margin:0;padding:0;display:grid}
+ul.tasks li{display:grid;grid-template-columns:5.2em 1fr auto;gap:10px;align-items:baseline;padding:9px 0;border-top:1px solid var(--line);min-width:0}
+ul.tasks li:first-child{border-top:0}
+ul.tasks .tt{font-weight:600;min-width:0}ul.tasks .td{display:block;color:var(--muted);font-weight:400;font-size:13px}
+.state{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;text-align:center;white-space:nowrap}
+.state.doing{background:color-mix(in srgb,var(--accent) 20%,var(--panel))}
+.state.waiting{background:color-mix(in srgb,var(--wait) 22%,var(--panel))}
+.state.done{background:color-mix(in srgb,var(--ok) 18%,var(--panel))}
+.state.dropped{background:var(--line);color:var(--muted)}
+ul.tasks li.old{opacity:.6}
 #err{display:none}
 </style>
 </head>
@@ -83,6 +93,8 @@ ul.recent li:first-child{border-top:0}
   <div class="alerts" id="alerts"></div>
   <div class="panel alert" id="err"></div>
 
+  <section class="panel"><p class="label">요청한 작업</p><ul class="tasks" id="tasks"><li class="empty">불러오는 중</li></ul></section>
+
   <section class="panel" id="ep">
     <p class="label">이번 편</p>
     <div class="empty">지금 만드는 편이 없어요.</div>
@@ -96,7 +108,7 @@ ul.recent li:first-child{border-top:0}
 
   <section class="panel"><p class="label">최근 만든 이야기</p><ul class="recent" id="recent"></ul></section>
 
-  <p class="foot">공장 컴퓨터가 1분마다 상황을 올리고, 이 화면은 1분마다 새로 읽어요. 컴퓨터가 꺼져 있으면 마지막 상태가 그대로 보여요.</p>
+  <p class="foot">공장 컴퓨터가 20분마다(단계가 바뀌거나 경고·요청 작업이 바뀌면 바로) 상황을 올리고, 이 화면은 5분마다 새로 읽어요. 컴퓨터가 꺼져 있으면 마지막 상태가 그대로 보여요.</p>
 </div>
 <script>
 const SRC="https://api.github.com/repos/haedokim/ppuppu-studio/contents/status.json?ref=status";
@@ -107,7 +119,7 @@ const hm=iso=>{const d=new Date(iso);return `${d.getMonth()+1}월 ${d.getDate()}
 let D=null;
 function meter(name,[n,m],cls){const p=m?Math.min(100,n/m*100):0;
   return `<div class="meter"><span>${esc(name)}</span><span class="bar ${cls||(p>=90?"hot":"")}"><i style="width:${p}%"></i></span><span class="num">${n} / ${m}</span></div>`}
-function render(){if(!D)return;const at=new Date(D.at).getTime(),fresh=Date.now()-at<4*60e3;
+function render(){if(!D)return;const at=new Date(D.at).getTime(),fresh=Date.now()-at<25*60e3;
   const L=$("live");L.className="live "+(!fresh?"off":D.busy?"on":"idle");
   $("live-t").textContent=!fresh?"공장 컴퓨터 연락 없음":D.busy?"일하는 중":"쉬는 중";
   $("upd").textContent="마지막 소식 "+ago(at);
@@ -120,6 +132,8 @@ function render(){if(!D)return;const at=new Date(D.at).getTime(),fresh=Date.now(
       <div class="meters">${e.voice?meter("목소리",e.voice,e.voice[0]>=e.voice[1]?"ok":""):""}${e.images?meter("그림",e.images,e.images[0]>=e.images[1]?"ok":""):""}
         <div class="meter"><span>마지막 변화</span><span class="num" style="grid-column:2/4">${ago(e.last_change*1000)}${e.qa?` · 검수 ${esc(e.qa)}`:""}</span></div></div>`}
   else $("ep").innerHTML=`<p class="label">이번 편</p><div class="empty">지금 만드는 편이 없어요.</div>`;
+  const SN={doing:"진행 중",waiting:"기다리는 중",done:"끝",dropped:"취소"};
+  $("tasks").innerHTML=(D.tasks||[]).length?D.tasks.map(t=>`<li class="${t.state==="done"||t.state==="dropped"?"old":""}"><span class="state ${esc(t.state)}">${SN[t.state]||esc(t.state)}</span><span class="tt">${esc(t.title)}${t.detail?`<span class="td">${esc(t.detail)}</span>`:""}</span><span class="num">${esc((t.upd||"").slice(11,16))}</span></li>`).join(""):`<li class="empty">요청한 작업이 없어요</li>`;
   $("work").innerHTML=(D.running||[]).length?D.running.map(r=>`<span>${esc(r)}</span>`).join(""):`<span class="empty">돌고 있는 작업이 없어요</span>`;
   $("budget").innerHTML=meter("그림",D.budget.image)+meter("목소리",D.budget.tts);
   $("next").textContent=D.next_run?hm(D.next_run):"예약 없음";
@@ -133,7 +147,7 @@ async function load(){
     const j=await r.json();const bytes=Uint8Array.from(atob(j.content.replace(/\n/g,"")),c=>c.charCodeAt(0));
     D=JSON.parse(new TextDecoder().decode(bytes));$("err").style.display="none";render()}
   catch(e){$("err").style.display="block";$("err").textContent=e.message}}
-load();setInterval(load,70000);setInterval(render,15000);
+load();setInterval(load,5*60e3);setInterval(render,30000);
 document.addEventListener("visibilitychange",()=>{if(!document.hidden)load()});
 </script>
 </body>
