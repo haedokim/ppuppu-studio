@@ -78,3 +78,20 @@ body{word-break:keep-all;overflow-wrap:anywhere}
 
 /* 첫 화면 공책 버튼: 작은 화면에서 44px 아래로 줄던 것을 손가락 크기로 고정('어른용' 글자 버튼은 일부러 작게 둠) */
 .corner .mini:not(.soft){min-width:60px;min-height:56px;box-shadow:var(--lift);background:rgba(255,255,255,.88)}
+
+/* ===== 휴대폰 크기 대응 (태블릿 600px 이상·높이 520px 이상은 위 규칙 그대로) ===== */
+
+/* 세로 휴대폰: 머리 버튼 4개(64px)가 폭을 다 차지해 제목이 "서준이 …"로 잘림 → 버튼을 48px로 줄여 제목 자리 확보 */
+@media (max-width:600px) and (orientation:portrait){
+  header{gap:6px}
+  .hbtn,.hbtn.soft{width:48px;height:48px;border-radius:17px;font-size:23px;box-shadow:0 5px 0 rgba(22,50,74,.18),0 7px 12px rgba(22,50,74,.10)}
+  /* 별 칩도 같은 높이, 글자 폭만큼만 */
+  .hbtn.starchip{min-width:48px;padding:0 7px;font-size:17px!important}
+  /* 제목은 좁은 폭에 맞춰 작게(6글자 "서준이 놀이터"가 한 줄에 다 보이게) */
+  .htitle{font-size:clamp(18px,6vw,26px);letter-spacing:0}
+}
+
+/* 가로 휴대폰(높이 낮음): '세어보자' 아래 안내 글이 48px라 화면 아래로 잘림 → 높이에 맞춰 줄임 */
+@media (orientation:landscape) and (max-height:520px){
+  .result{font-size:clamp(20px,7vh,30px);min-height:1.2em}
+}
