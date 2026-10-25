@@ -1,0 +1,1025 @@
+{
+ "id": "mo001",
+ "subject": "mo",
+ "hero": "mon",
+ "title": "공룡 연 점프 점프",
+ "cover": "content/chars/mon/jump.webp",
+ "color": "#90e0a8",
+ "lesson": "차례차례 하면 다 같이 즐거워요",
+ "goals": [
+  "운동: 점프 세 번·박수 다섯 번 따라 하기",
+  "안전: 뛰기 전 주변 보기, 넓은 곳에서 뛰기",
+  "교훈: 차례 지키기"
+ ],
+ "dev": [
+  "대근육",
+  "인지",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 40,
+     "y": 28,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 3,
+     "y": 54,
+     "s": 28,
+     "anim": "peek"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 16,
+     "y": 46,
+     "s": 38,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 66,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 52,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 80,
+     "y": 52,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "pp",
+     "t": "안녕, 서준아! 뿌뿌야!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "뿌뿌 마을 친구들, 다 모여라!"
+    },
+    {
+     "who": "narr",
+     "t": "깡총깡총! 친구들이 달려와요.",
+     "sfx": "run"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 바람이 살랑살랑!"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 키키랑 놀자!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 8,
+     "y": 46,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "kite",
+     "e": "content/ep/mo001/img/dino_kite.webp",
+     "x": 38,
+     "y": 10,
+     "s": 34,
+     "anim": "peek"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 50,
+     "y": 52,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 74,
+     "y": 52,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "언덕에 바람이 솔솔 불어요."
+    },
+    {
+     "who": "peng",
+     "t": "내가 여행에서 배웠는데~"
+    },
+    {
+     "who": "peng",
+     "t": "연은 바람을 좋아해!"
+    },
+    {
+     "who": "narr",
+     "t": "가방에서 짠! 공룡 연이에요.",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "mon",
+     "t": "와, 공룡 연이다!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "예쁘다… 나도 날려 보고 싶어."
+    },
+    {
+     "who": "peng",
+     "t": "한 명씩 날려 보자!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/run.webp",
+     "x": 6,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "stuck",
+     "e": "content/ep/mo001/img/dino_kite_stuck.webp",
+     "x": 40,
+     "y": 50,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/sad.webp",
+     "x": 58,
+     "y": 54,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 76,
+     "y": 52,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "내가 먼저! 다다다!",
+     "sfx": "run"
+    },
+    {
+     "who": "narr",
+     "t": "키키가 줄을 잡고 깡총깡총!"
+    },
+    {
+     "who": "narr",
+     "t": "주변도 안 보고 뛰었어요."
+    },
+    {
+     "who": "narr",
+     "t": "앗! 연이 덤불에 폭 걸렸어요.",
+     "sfx": "plop"
+    },
+    {
+     "who": "mon",
+     "t": "앗, 연이…",
+     "mood": "sad"
+    },
+    {
+     "who": "ele",
+     "t": "내 차례… 기다렸는데.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 살살 꺼내면 돼."
+    },
+    {
+     "who": "pp",
+     "t": "뛰기 전엔 주변 보기!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 4,
+     "y": 8,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 84,
+     "y": 28,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "flower",
+     "e": "content/ep/mo001/img/flower_patch.webp",
+     "x": 4,
+     "y": 56,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "grass",
+     "e": "content/ep/mo001/img/wide_grass.webp",
+     "x": 32,
+     "y": 50,
+     "s": 42,
+     "anim": "none"
+    },
+    {
+     "id": "bush",
+     "e": "content/ep/mo001/img/low_bush.webp",
+     "x": 77.5,
+     "y": 65,
+     "s": 30,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 넓은 곳은 어디일까?"
+    },
+    {
+     "who": "mon",
+     "t": "점프는 넓은 곳에서 해야 해!"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "grass",
+    "prompt": "깡총 뛰어도 되는 곳을 눌러 봐!",
+    "wrong": [
+     [
+      "거긴 좁아. 넓은 곳은 어디야?",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아요! 넓은 풀밭이에요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 6,
+     "y": 30,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "ribbon",
+     "e": "content/ep/mo001/img/ribbon_line.webp",
+     "x": 40,
+     "y": 64,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/jump.webp",
+     "x": 60,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "여기선 신나게 뛰어도 돼!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "리본 줄을 넘어 보자!"
+    },
+    {
+     "who": "frog",
+     "t": "개굴! 두 발 모아 깡총!"
+    },
+    {
+     "who": "mon",
+     "t": "서준이도 주변 보기! 뒤로 한 걸음!"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "jump",
+    "prompt": "두 발로 깡총! 세 번 뛰어 봐!",
+    "sfx": "boing",
+    "say": [
+     [
+      "점프 세 번! 최고야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 40,
+     "y": 30,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 2,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/jump.webp",
+     "x": 20,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 64,
+     "y": 50,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 80,
+     "y": 56,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 한 명씩!"
+    },
+    {
+     "who": "frog",
+     "t": "차례차례 박수 치자!"
+    },
+    {
+     "who": "narr",
+     "t": "차차 짝! 비비 짝! 키키 짝!"
+    },
+    {
+     "who": "ele",
+     "t": "이제… 내 차례야. 짝!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "이번엔 서준이 차례!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 5,
+    "cam": "clap",
+    "prompt": "손뼉 짝짝! 다섯 번 쳐 봐!",
+    "say": [
+     [
+      "짝짝짝! 잘 기다렸어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "kite",
+     "e": "content/ep/mo001/img/dino_kite.webp",
+     "x": 38,
+     "y": 16,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 76,
+     "y": 54,
+     "s": 36,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "친구들이 연을 살살 꺼냈어요."
+    },
+    {
+     "who": "peng",
+     "t": "이번엔 다 같이 날리자!"
+    },
+    {
+     "who": "mon",
+     "t": "서준아, 바람을 보내 줘!"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "kite",
+    "n": 5,
+    "prompt": "연을 톡톡, 다섯 번 눌러 봐!",
+    "sfx": "swoosh",
+    "say": [
+     [
+      "훨훨! 공룡 연이 높이 날아요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "kite",
+     "e": "content/ep/mo001/img/dino_kite.webp",
+     "x": 44,
+     "y": 2,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 40,
+     "y": 30,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 62,
+     "y": 30,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 84,
+     "y": 6,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 2,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 32,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 78,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "날았다! 공룡 연이 훨훨!",
+     "mood": "happy",
+     "sfx": "yay"
+    },
+    {
+     "who": "pp",
+     "t": "다 같이 기념사진 찍자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "smile",
+    "e": "content/chars/mon/happy.webp",
+    "prompt": "활짝 웃어 봐! 찰칵!",
+    "say": [
+     [
+      "찰칵! 멋진 웃음이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "kite",
+     "e": "content/ep/mo001/img/dino_kite.webp",
+     "x": 44,
+     "y": 2,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 6,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 28,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 80,
+     "y": 54,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "jar",
+     "e": "content/ep/ko001/img/star_jar.webp",
+     "x": 56,
+     "y": 56,
+     "s": 28,
+     "anim": "none"
+    },
+    {
+     "id": "star",
+     "e": "content/ep/ko001/img/star.webp",
+     "x": 59,
+     "y": 36,
+     "s": 14,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "차례차례 하니까 좋다!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "차차야, 먼저 뛰어서 미안해."
+    },
+    {
+     "who": "peng",
+     "t": "괜찮아! 같이 날려서 좋아!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "차례차례 하면 다 같이 즐거워요."
+    },
+    {
+     "who": "narr",
+     "t": "반짝! 별이 또 하나 쏙!",
+     "sfx": "bell"
+    },
+    {
+     "who": "pp",
+     "t": "와, 이제 별이 두 개야!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "kite",
+     "e": "content/ep/mo001/img/dino_kite.webp",
+     "x": 70,
+     "y": 2,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 40,
+     "y": 30,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/wave.webp",
+     "x": 3,
+     "y": 56,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 16,
+     "y": 46,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 30,
+     "y": 8,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 80,
+     "y": 56,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "공룡 연이 하늘에 둥실둥실."
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 내일은 뭐 하고 놀까?"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "서준아, 또 같이 뛰자!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mo001/voice.mp3",
+  "clips": {
+   "ko|안녕, 서준아! 뿌뿌야!": [
+    0.3,
+    2.408
+   ],
+   "ko|뿌뿌 마을 친구들, 다 모여라!": [
+    3.008,
+    2.991
+   ],
+   "ko|깡총깡총! 친구들이 달려와요.": [
+    6.299,
+    4.323
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    10.922,
+    5.058
+   ],
+   "ko|붕붕~ 바람이 살랑살랑!": [
+    16.28,
+    3.411
+   ],
+   "ko|오늘은 키키랑 놀자!": [
+    19.991,
+    2.584
+   ],
+   "ko|언덕에 바람이 솔솔 불어요.": [
+    22.875,
+    5.136
+   ],
+   "ko|내가 여행에서 배웠는데~": [
+    28.311,
+    3.292
+   ],
+   "ko|연은 바람을 좋아해!": [
+    31.903,
+    2.815
+   ],
+   "ko|가방에서 짠! 공룡 연이에요.": [
+    35.019,
+    4.91
+   ],
+   "ko|와, 공룡 연이다!": [
+    40.228,
+    2.41
+   ],
+   "ko|예쁘다… 나도 날려 보고 싶어.": [
+    42.938,
+    4.18
+   ],
+   "ko|한 명씩 날려 보자!": [
+    47.418,
+    2.222
+   ],
+   "ko|내가 먼저! 다다다!": [
+    49.939,
+    2.453
+   ],
+   "ko|키키가 줄을 잡고 깡총깡총!": [
+    52.693,
+    3.345
+   ],
+   "ko|주변도 안 보고 뛰었어요.": [
+    56.338,
+    2.845
+   ],
+   "ko|앗! 연이 덤불에 폭 걸렸어요.": [
+    59.483,
+    3.348
+   ],
+   "ko|앗, 연이…": [
+    63.131,
+    1.351
+   ],
+   "ko|내 차례… 기다렸는데.": [
+    64.782,
+    1.866
+   ],
+   "ko|괜찮아! 살살 꺼내면 돼.": [
+    66.948,
+    2.403
+   ],
+   "ko|뛰기 전엔 주변 보기!": [
+    69.651,
+    2.338
+   ],
+   "ko|붕붕~ 넓은 곳은 어디일까?": [
+    72.289,
+    3.376
+   ],
+   "ko|점프는 넓은 곳에서 해야 해!": [
+    75.964,
+    2.638
+   ],
+   "ko|깡총 뛰어도 되는 곳을 눌러 봐!": [
+    78.902,
+    2.83
+   ],
+   "ko|맞아요! 넓은 풀밭이에요!": [
+    82.032,
+    2.995
+   ],
+   "ko|거긴 좁아. 넓은 곳은 어디야?": [
+    85.327,
+    2.97
+   ],
+   "ko|여기선 신나게 뛰어도 돼!": [
+    88.597,
+    2.621
+   ],
+   "ko|리본 줄을 넘어 보자!": [
+    91.518,
+    1.921
+   ],
+   "ko|개굴! 두 발 모아 깡총!": [
+    93.739,
+    3.604
+   ],
+   "ko|서준이도 주변 보기! 뒤로 한 걸음!": [
+    97.643,
+    3.978
+   ],
+   "ko|두 발로 깡총! 세 번 뛰어 봐!": [
+    101.921,
+    3.144
+   ],
+   "ko|점프 세 번! 최고야!": [
+    105.365,
+    2.902
+   ],
+   "ko|개굴개굴, 다 같이 한 명씩!": [
+    108.567,
+    5.237
+   ],
+   "ko|차례차례 박수 치자!": [
+    114.104,
+    2.804
+   ],
+   "ko|차차 짝! 비비 짝! 키키 짝!": [
+    117.208,
+    6.315
+   ],
+   "ko|이제… 내 차례야. 짝!": [
+    123.823,
+    2.727
+   ],
+   "ko|이번엔 서준이 차례!": [
+    126.851,
+    1.886
+   ],
+   "ko|손뼉 짝짝! 다섯 번 쳐 봐!": [
+    129.037,
+    3.248
+   ],
+   "ko|짝짝짝! 잘 기다렸어요!": [
+    132.585,
+    2.658
+   ],
+   "ko|친구들이 연을 살살 꺼냈어요.": [
+    135.543,
+    3.728
+   ],
+   "ko|이번엔 다 같이 날리자!": [
+    139.571,
+    2.161
+   ],
+   "ko|서준아, 바람을 보내 줘!": [
+    142.032,
+    2.202
+   ],
+   "ko|연을 톡톡, 다섯 번 눌러 봐!": [
+    144.533,
+    3.046
+   ],
+   "ko|훨훨! 공룡 연이 높이 날아요!": [
+    147.88,
+    3.32
+   ],
+   "ko|날았다! 공룡 연이 훨훨!": [
+    151.5,
+    3.599
+   ],
+   "ko|차례차례 하니까 좋다!": [
+    155.399,
+    2.505
+   ],
+   "ko|차차야, 먼저 뛰어서 미안해.": [
+    158.204,
+    2.494
+   ],
+   "ko|괜찮아! 같이 날려서 좋아!": [
+    160.998,
+    2.78
+   ],
+   "ko|차례차례 하면 다 같이 즐거워요.": [
+    164.078,
+    3.974
+   ],
+   "ko|반짝! 별이 또 하나 쏙!": [
+    168.352,
+    3.426
+   ],
+   "ko|와, 이제 별이 두 개야!": [
+    172.079,
+    2.079
+   ],
+   "ko|다 같이 기념사진 찍자!": [
+    174.458,
+    2.412
+   ],
+   "ko|활짝 웃어 봐! 찰칵!": [
+    177.17,
+    2.567
+   ],
+   "ko|찰칵! 멋진 웃음이야!": [
+    180.037,
+    2.678
+   ],
+   "ko|공룡 연이 하늘에 둥실둥실.": [
+    183.015,
+    4.416
+   ],
+   "ko|붕붕~ 내일은 뭐 하고 놀까?": [
+    187.731,
+    3.481
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    191.511,
+    2.565
+   ],
+   "ko|서준아, 또 같이 뛰자!": [
+    194.376,
+    2.065
+   ],
+   "en|Bye!": [
+    196.741,
+    1.087
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    198.128,
+    2.948
+   ]
+  }
+ }
+}
