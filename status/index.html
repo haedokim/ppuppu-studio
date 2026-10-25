@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>뿌뿌 공장 현황판</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=IBM+Plex+Sans+KR:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* 레이아웃: 위에 지금 상태 한 줄 → 이번 편 단계 띠 → (일하는 중 · 오늘 한도 · 다음 예약) → 최근 만든 이야기. 폰은 한 줄로 쌓임 */
+:root{
+  --bg:#eef6f9; --panel:#ffffff; --ink:#16324a; --muted:#5d7385; --line:#d6e5ec;
+  --accent:#ff8a5c; --sun:#ffd24a; --ok:#2f9e6b; --warn:#d9822b; --bad:#d64545; --wait:#6b6bd6;
+  --display:"Jua","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --body:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1c27; --panel:#172a39; --ink:#e6f0f5; --muted:#9db2c1; --line:#27404f;
+  --accent:#ff9d74; --sun:#ffd96b; --ok:#4cc38a; --warn:#f0a35a; --bad:#ff6b6b; --wait:#9a9af0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1c27; --panel:#172a39; --ink:#e6f0f5; --muted:#9db2c1; --line:#27404f;
+  --accent:#ff9d74; --sun:#ffd96b; --ok:#4cc38a; --warn:#f0a35a; --bad:#ff6b6b; --wait:#9a9af0; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 var(--body)}
+.wrap{max-width:980px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:14px}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+h1{font:28px/1.1 var(--display);margin:0;letter-spacing:.5px}
+.live{display:inline-flex;align-items:center;gap:8px;padding:5px 12px;border-radius:999px;background:var(--panel);border:1px solid var(--line);font-weight:600;font-size:14px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--muted)}
+.live.on .dot{background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 1.6s infinite}
+.live.idle .dot{background:var(--muted)}
+.live.off .dot{background:var(--bad)}
+@keyframes pulse{70%{box-shadow:0 0 0 8px transparent}}
+@media (prefers-reduced-motion:reduce){.live.on .dot{animation:none}}
+.upd{color:var(--muted);font-size:13px;margin-left:auto;font-variant-numeric:tabular-nums}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;min-width:0}
+.label{font-size:12px;letter-spacing:.08em;color:var(--muted);font-weight:600;margin:0 0 8px}
+.alerts{display:grid;gap:8px}
+.alert{border-radius:12px;padding:10px 14px;font-weight:600;border-left:5px solid var(--warn);background:color-mix(in srgb,var(--warn) 12%,var(--panel))}
+.alert.wait{border-left-color:var(--wait);background:color-mix(in srgb,var(--wait) 12%,var(--panel))}
+.ep-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.chip{display:inline-block;padding:2px 10px;border-radius:999px;background:color-mix(in srgb,var(--sun) 45%,var(--panel));font-size:13px;font-weight:600}
+.ep-title{font:24px/1.2 var(--display);margin:0;text-wrap:balance}
+.ep-id{font-family:var(--mono);color:var(--muted);font-size:13px}
+/* 단계 띠: 8칸, 지난 칸은 채움, 지금 칸은 테두리 강조 */
+.steps{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:6px}
+.st{border-radius:10px;padding:8px 6px;text-align:center;border:1.5px solid var(--line);font-size:13px;min-width:0}
+.st b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st small{display:block;color:var(--muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.st.done{background:color-mix(in srgb,var(--ok) 16%,var(--panel));border-color:transparent}
+.st.now{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 14%,var(--panel));box-shadow:0 0 0 2px color-mix(in srgb,var(--accent) 35%,transparent)}
+.st.now.waiting{border-color:var(--wait);background:color-mix(in srgb,var(--wait) 14%,var(--panel));box-shadow:0 0 0 2px color-mix(in srgb,var(--wait) 35%,transparent)}
+@media (max-width:640px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.meters{display:grid;gap:10px;margin-top:14px}
+.meter{display:grid;grid-template-columns:7.5em 1fr auto;gap:10px;align-items:center;font-size:14px}
+.bar{height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);border-radius:5px;transition:width .6s}
+.bar.ok i{background:var(--ok)}.bar.hot i{background:var(--bad)}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13px;color:var(--muted)}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.grid3{grid-template-columns:1fr}}
+.work{display:flex;flex-wrap:wrap;gap:8px}
+.work span{padding:6px 12px;border-radius:999px;background:color-mix(in srgb,var(--accent) 16%,var(--panel));font-weight:600;font-size:14px}
+.empty{color:var(--muted)}
+.big{font:22px/1.2 var(--display)}
+ul.recent{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+ul.recent li{display:grid;grid-template-columns:4.2em 3.6em 1fr auto;gap:10px;align-items:baseline;padding:8px 0;border-top:1px solid var(--line)}
+ul.recent li:first-child{border-top:0}
+.foot{color:var(--muted);font-size:12px}
+#err{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>뿌뿌 공장 현황판</h1>
+    <span class="live idle" id="live"><span class="dot"></span><span id="live-t">불러오는 중</span></span>
+    <span class="upd" id="upd"></span>
+  </header>
+
+  <div class="alerts" id="alerts"></div>
+  <div class="panel alert" id="err"></div>
+
+  <section class="panel" id="ep">
+    <p class="label">이번 편</p>
+    <div class="empty">지금 만드는 편이 없어요.</div>
+  </section>
+
+  <div class="grid3">
+    <section class="panel"><p class="label">지금 일하는 중</p><div class="work" id="work"><span class="empty">불러오는 중</span></div></section>
+    <section class="panel"><p class="label">오늘 한도</p><div class="meters" id="budget" style="margin:0"></div></section>
+    <section class="panel"><p class="label">다음 예약 실행</p><div class="big" id="next">-</div><div class="foot" id="app" style="margin-top:6px"></div></section>
+  </div>
+
+  <section class="panel"><p class="label">최근 만든 이야기</p><ul class="recent" id="recent"></ul></section>
+
+  <p class="foot">공장 컴퓨터가 1분마다 상황을 올리고, 이 화면은 1분마다 새로 읽어요. 컴퓨터가 꺼져 있으면 마지막 상태가 그대로 보여요.</p>
+</div>
+<script>
+const SRC="https://api.github.com/repos/haedokim/ppuppu-studio/contents/status.json?ref=status";
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const ago=t=>{const s=Math.max(0,Math.round((Date.now()-t)/1000));return s<60?`${s}초 전`:s<3600?`${Math.floor(s/60)}분 전`:s<86400?`${Math.floor(s/3600)}시간 전`:`${Math.floor(s/86400)}일 전`};
+const hm=iso=>{const d=new Date(iso);return `${d.getMonth()+1}월 ${d.getDate()}일 ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`};
+let D=null;
+function meter(name,[n,m],cls){const p=m?Math.min(100,n/m*100):0;
+  return `<div class="meter"><span>${esc(name)}</span><span class="bar ${cls||(p>=90?"hot":"")}"><i style="width:${p}%"></i></span><span class="num">${n} / ${m}</span></div>`}
+function render(){if(!D)return;const at=new Date(D.at).getTime(),fresh=Date.now()-at<4*60e3;
+  const L=$("live");L.className="live "+(!fresh?"off":D.busy?"on":"idle");
+  $("live-t").textContent=!fresh?"공장 컴퓨터 연락 없음":D.busy?"일하는 중":"쉬는 중";
+  $("upd").textContent="마지막 소식 "+ago(at);
+  $("alerts").innerHTML=(D.alerts||[]).map(a=>`<div class="alert${/답장/.test(a)?" wait":""}">${esc(a)}</div>`).join("");
+  const e=D.current;
+  if(e){const i=e.step_i;
+    $("ep").innerHTML=`<p class="label">이번 편</p>
+      <div class="ep-head"><span class="chip">${esc(e.subject)}</span><h2 class="ep-title">${esc(e.title||"(제목 정하는 중)")}</h2><span class="ep-id">${esc(e.id)}</span></div>
+      <div class="steps">${e.steps.map((s,j)=>`<div class="st ${j<i?"done":j===i?"now"+(e.waiting?" waiting":""):""}"><b>${esc(s.t)}</b><small>${esc(s.who||" ")}</small></div>`).join("")}</div>
+      <div class="meters">${e.voice?meter("목소리",e.voice,e.voice[0]>=e.voice[1]?"ok":""):""}${e.images?meter("그림",e.images,e.images[0]>=e.images[1]?"ok":""):""}
+        <div class="meter"><span>마지막 변화</span><span class="num" style="grid-column:2/4">${ago(e.last_change*1000)}${e.qa?` · 검수 ${esc(e.qa)}`:""}</span></div></div>`}
+  else $("ep").innerHTML=`<p class="label">이번 편</p><div class="empty">지금 만드는 편이 없어요.</div>`;
+  $("work").innerHTML=(D.running||[]).length?D.running.map(r=>`<span>${esc(r)}</span>`).join(""):`<span class="empty">돌고 있는 작업이 없어요</span>`;
+  $("budget").innerHTML=meter("그림",D.budget.image)+meter("목소리",D.budget.tts);
+  $("next").textContent=D.next_run?hm(D.next_run):"예약 없음";
+  $("app").textContent=D.app?`앱 최신 버전 ${D.app}`:"";
+  $("recent").innerHTML=(D.recent||[]).map(r=>`<li><span class="ep-id">${esc(r.id)}</span><span class="chip">${esc(r.subject)}</span><span>${esc(r.title)}</span><span class="num">${esc((r.for||"").slice(5).replace("-","/"))}</span></li>`).join("")||`<li class="empty">아직 없어요</li>`;
+}
+async function load(){
+  try{const r=await fetch(SRC,{cache:"no-store",headers:{Accept:"application/vnd.github+json"}});
+    if(r.status===403||r.status===429)throw new Error("잠깐 너무 자주 읽었어요. 1분쯤 뒤에 저절로 다시 읽어요.");
+    if(!r.ok)throw new Error("현황을 아직 못 받았어요 ("+r.status+")");
+    const j=await r.json();const bytes=Uint8Array.from(atob(j.content.replace(/\n/g,"")),c=>c.charCodeAt(0));
+    D=JSON.parse(new TextDecoder().decode(bytes));$("err").style.display="none";render()}
+  catch(e){$("err").style.display="block";$("err").textContent=e.message}}
+load();setInterval(load,70000);setInterval(render,15000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)load()});
+</script>
+</body>
+</html>
