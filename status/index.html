@@ -184,7 +184,7 @@ function render(){if(!D)return;const at=new Date(D.at).getTime(),fresh=Date.now(
     return `<div class="lane ${l.running.length?"on":""}"><b>${LN[k][0]}</b><small>${LN[k][1]}</small>${l.running.map(x=>`<span class="r">${esc(x)}</span>`).join("")||`<span class="q">비어 있음</span>`}${l.queued.length?`<span class="q">다음: ${l.queued.map(esc).join(", ")}</span>`:""}</div>`}).join("");
   const SN={doing:"진행 중",waiting:"기다리는 중",done:"끝",dropped:"취소"};
   $("tasks").innerHTML=(D.tasks||[]).length?D.tasks.map(t=>`<li class="${t.state==="done"||t.state==="dropped"?"old":""}"><span class="state ${esc(t.state)}">${SN[t.state]||esc(t.state)}</span><span class="tt">${esc(t.title)}${t.detail?`<span class="td">${esc(t.detail)}</span>`:""}</span><span class="num">${esc((t.upd||"").slice(11,16))}</span></li>`).join(""):`<li class="empty">요청한 작업이 없어요</li>`;
-  $("budget").innerHTML=meter("그림",D.budget.image)+meter("목소리",D.budget.tts);
+  $("budget").innerHTML=meter("그림",D.budget.image)+meter("목소리",D.budget.tts,D.budget.tts_note?"hot":"")+(D.budget.tts_note?`<p class="label" style="color:var(--hot,#c0392b);margin:4px 0 0">${esc(D.budget.tts_note)}</p>`:"");
   $("next").textContent=D.next_run?hm(D.next_run):"예약 없음";
   $("app").textContent=D.app?`앱 최신 버전 ${D.app}`:"";
   $("recent").innerHTML=(D.recent||[]).map(r=>`<li><span class="ep-id">${esc(r.id)}</span><span class="chip">${esc(r.subject)}</span><span>${esc(r.title)}</span><span class="num">${esc((r.for||"").slice(5).replace("-","/"))}</span></li>`).join("")||`<li class="empty">아직 없어요</li>`;
