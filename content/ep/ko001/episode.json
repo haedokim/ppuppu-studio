@@ -1,0 +1,920 @@
+{
+ "id": "ko001",
+ "subject": "ko",
+ "hero": "ele",
+ "title": "모래 위의 ㄱ",
+ "cover": "content/chars/ele/wave.webp",
+ "color": "#ffd166",
+ "lesson": "실수했을 땐 '미안해' 하면 돼요",
+ "goals": [
+  "한글: ㄱ 모양과 소리 (기역, 고래의 기역)",
+  "숫자 1~3 세기",
+  "교훈: 미안해·괜찮아 말하기"
+ ],
+ "dev": [
+  "인지",
+  "언어",
+  "소근육",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 40,
+     "y": 30,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 3,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 18,
+     "y": 48,
+     "s": 36,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 66,
+     "y": 14,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 66,
+     "y": 52,
+     "s": 32,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 82,
+     "y": 48,
+     "s": 34,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "pp",
+     "t": "안녕, 서준아! 뿌뿌야!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 노래해요!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "뿌뿌 마을 친구들, 다 모여라!"
+    },
+    {
+     "who": "narr",
+     "t": "빼꼼, 빼꼼! 친구들이 모였어요."
+    },
+    {
+     "who": "ele",
+     "t": "아, 안녕… 나는 코코야."
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 코코랑 놀자!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "x": 72,
+     "y": 28,
+     "s": 20,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 44,
+     "y": 12,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 6,
+     "y": 40,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "sand_g",
+     "e": "content/ep/ko001/img/sand_g.webp",
+     "x": 42,
+     "y": 58,
+     "s": 32,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "그때 바다 멀리서 푸우~!",
+     "sfx": "whale"
+    },
+    {
+     "who": "narr",
+     "t": "꼬마 고래가 물을 뿜었어요."
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 이건 왜 그럴까?"
+    },
+    {
+     "who": "ele",
+     "t": "고래는 숨 쉴 때 물을 뿜어."
+    },
+    {
+     "who": "ele",
+     "t": "고래야, 안녕! 글자로 인사할래."
+    },
+    {
+     "who": "narr",
+     "t": "코코가 코로 모래에 쓱쓱!",
+     "sfx": "brush"
+    },
+    {
+     "who": "ele",
+     "t": "이건 기역! 고래의 기역!"
+    },
+    {
+     "who": "ele",
+     "t": "코로 쓱쓱, 글자 완성!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/run.webp",
+     "x": 58,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/run.webp",
+     "x": 42,
+     "y": 48,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/sad.webp",
+     "x": 4,
+     "y": 42,
+     "s": 44,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 82,
+     "y": 46,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "차차랑 키키가 술래잡기해요.",
+     "sfx": "run"
+    },
+    {
+     "who": "mon",
+     "t": "잡아라~ 다다다!"
+    },
+    {
+     "who": "peng",
+     "t": "나 잡아 봐라~ 다다다!"
+    },
+    {
+     "who": "narr",
+     "t": "앗! 차차가 기역을 밟았어요."
+    },
+    {
+     "who": "narr",
+     "t": "모래 글자가 지워졌어요."
+    },
+    {
+     "who": "ele",
+     "t": "내 기역이… 없어졌어.",
+     "mood": "sad"
+    },
+    {
+     "who": "peng",
+     "t": "어? 어떡하지…",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 같이 다시 쓰자!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 2,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 76,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "pp",
+     "t": "먼저 기역을 찾아볼까?"
+    },
+    {
+     "who": "ele",
+     "t": "기역은 꺾인 모양이야."
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "기역은 어디 있을까? 눌러 봐!",
+    "options": [
+     {
+      "e": "ㄴ"
+     },
+     {
+      "e": "ㄱ"
+     },
+     {
+      "e": "ㅇ"
+     }
+    ],
+    "answer": 1,
+    "wrong": [
+     [
+      "꺾인 모양을 찾아봐!",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아요! 이게 기역이에요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 38,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/jump.webp",
+     "x": 28,
+     "y": 8,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "sh1",
+     "e": "content/ep/ko001/img/shell_g.webp",
+     "x": 38,
+     "y": 64,
+     "s": 20,
+     "anim": "none",
+     "hidden": true
+    },
+    {
+     "id": "sh2",
+     "e": "content/ep/ko001/img/shell_g.webp",
+     "x": 60,
+     "y": 62,
+     "s": 20,
+     "anim": "none",
+     "hidden": true
+    },
+    {
+     "id": "sh3",
+     "e": "content/ep/ko001/img/shell_g.webp",
+     "x": 80,
+     "y": 70,
+     "s": 20,
+     "anim": "none",
+     "hidden": true
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "모래 속에 조개가 숨어 있어요."
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 기역 모양 조개다!"
+    },
+    {
+     "who": "ele",
+     "t": "서준아, 같이 찾아 줄래?"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "sh1",
+     "sh2",
+     "sh3"
+    ],
+    "count": true,
+    "prompt": "기역 조개를 톡톡 찾아 봐!",
+    "say": [
+     [
+      "하나, 둘, 셋! 조개 세 개!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 84,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "wcard",
+     "e": "content/ep/ko001/img/card_whale.webp",
+     "x": 30,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "gcard",
+     "e": "content/ep/ko001/img/card_blank.webp",
+     "x": 58,
+     "y": 20,
+     "s": 40,
+     "anim": "none"
+    },
+    {
+     "id": "gtext",
+     "e": "ㄱ",
+     "x": 61,
+     "y": 28,
+     "s": 22,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "고래는 기역으로 시작해."
+    },
+    {
+     "who": "ele",
+     "t": "고래 카드를 기역 옆에 놓자!"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "wcard"
+    ],
+    "target": "gcard",
+    "prompt": "고래 카드를 쓱 끌어다 놔!",
+    "sfx": "swoosh",
+    "say": [
+     [
+      "고래의 기역! 잘했어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 78,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "bigg",
+     "e": "content/ep/ko001/img/sand_g.webp",
+     "x": 36,
+     "y": 44,
+     "s": 44,
+     "anim": "none",
+     "hidden": true
+    },
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "x": 58,
+     "y": 28,
+     "s": 18,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "이번엔 아주 크게 써 볼래."
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!"
+    },
+    {
+     "who": "ele",
+     "t": "서준아, 모래를 톡톡 쳐 줘!"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "bigg",
+    "n": 3,
+    "prompt": "모래를 톡톡톡 세 번 눌러 봐!",
+    "sfx": "brush",
+    "say": [
+     [
+      "우아! 커다란 기역이 생겼어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/sad.webp",
+     "x": 30,
+     "y": 50,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "x": 42,
+     "y": 28,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 80,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "jar",
+     "e": "content/ep/ko001/img/star_jar.webp",
+     "x": 56,
+     "y": 54,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "star",
+     "e": "content/ep/ko001/img/star.webp",
+     "x": 58,
+     "y": 46,
+     "s": 14,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "코로 쓱쓱, 글자 완성!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "푸우~! 꼬마 고래가 인사해요.",
+     "sfx": "whale"
+    },
+    {
+     "who": "ele",
+     "t": "고래야, 안녕!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "코코야, 아까 밟아서 미안해.",
+     "mood": "sad"
+    },
+    {
+     "who": "ele",
+     "t": "괜찮아! 같이 써서 좋았어.",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "실수했을 땐 '미안해' 하면 돼요."
+    },
+    {
+     "who": "narr",
+     "t": "반짝 별 하나가 별 병에 쏙!",
+     "sfx": "bell"
+    },
+    {
+     "who": "pp",
+     "t": "우리 첫 번째 별이야!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "sunset",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 40,
+     "y": 28,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 3,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 16,
+     "y": 44,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 68,
+     "y": 12,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 66,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 82,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "해님이 바다로 퐁당 들어가요."
+    },
+    {
+     "who": "frog",
+     "t": "다 같이 손 흔들자!"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "서준아, 고마워. 또 만나."
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/ko001/voice.mp3",
+  "clips": {
+   "ko|안녕, 서준아! 뿌뿌야!": [
+    0.3,
+    2.408
+   ],
+   "ko|개굴개굴, 다 같이 노래해요!": [
+    3.008,
+    3.057
+   ],
+   "ko|뿌뿌 마을 친구들, 다 모여라!": [
+    6.365,
+    2.783
+   ],
+   "ko|빼꼼, 빼꼼! 친구들이 모였어요.": [
+    9.448,
+    5.039
+   ],
+   "ko|아, 안녕… 나는 코코야.": [
+    14.787,
+    3.791
+   ],
+   "ko|오늘은 코코랑 놀자!": [
+    18.878,
+    2.334
+   ],
+   "ko|그때 바다 멀리서 푸우~!": [
+    21.512,
+    5.726
+   ],
+   "ko|꼬마 고래가 물을 뿜었어요.": [
+    27.538,
+    3.668
+   ],
+   "ko|붕붕~ 이건 왜 그럴까?": [
+    31.506,
+    3.236
+   ],
+   "ko|고래는 숨 쉴 때 물을 뿜어.": [
+    35.042,
+    4.237
+   ],
+   "ko|고래야, 안녕! 글자로 인사할래.": [
+    39.579,
+    3.644
+   ],
+   "ko|코코가 코로 모래에 쓱쓱!": [
+    43.523,
+    4.37
+   ],
+   "ko|이건 기역! 고래의 기역!": [
+    48.193,
+    3.162
+   ],
+   "ko|코로 쓱쓱, 글자 완성!": [
+    51.655,
+    4.057
+   ],
+   "ko|차차랑 키키가 술래잡기해요.": [
+    56.012,
+    3.448
+   ],
+   "ko|잡아라~ 다다다!": [
+    59.76,
+    2.357
+   ],
+   "ko|나 잡아 봐라~ 다다다!": [
+    62.417,
+    3.505
+   ],
+   "ko|앗! 차차가 기역을 밟았어요.": [
+    66.222,
+    5.229
+   ],
+   "ko|모래 글자가 지워졌어요.": [
+    71.751,
+    3.008
+   ],
+   "ko|내 기역이… 없어졌어.": [
+    75.059,
+    4.001
+   ],
+   "ko|어? 어떡하지…": [
+    79.36,
+    2.194
+   ],
+   "ko|괜찮아! 같이 다시 쓰자!": [
+    81.854,
+    3.141
+   ],
+   "ko|먼저 기역을 찾아볼까?": [
+    85.295,
+    2.45
+   ],
+   "ko|기역은 꺾인 모양이야.": [
+    88.045,
+    3.118
+   ],
+   "ko|기역은 어디 있을까? 눌러 봐!": [
+    91.463,
+    3.618
+   ],
+   "ko|맞아요! 이게 기역이에요!": [
+    95.381,
+    3.208
+   ],
+   "ko|꺾인 모양을 찾아봐!": [
+    98.888,
+    2.296
+   ],
+   "ko|모래 속에 조개가 숨어 있어요.": [
+    101.485,
+    3.805
+   ],
+   "ko|붕붕~ 기역 모양 조개다!": [
+    105.59,
+    3.713
+   ],
+   "ko|서준아, 같이 찾아 줄래?": [
+    109.603,
+    2.71
+   ],
+   "ko|기역 조개를 톡톡 찾아 봐!": [
+    112.612,
+    3.483
+   ],
+   "ko|하나, 둘, 셋! 조개 세 개!": [
+    116.396,
+    5.418
+   ],
+   "ko|고래는 기역으로 시작해.": [
+    122.114,
+    3.165
+   ],
+   "ko|고래 카드를 기역 옆에 놓자!": [
+    125.58,
+    3.811
+   ],
+   "ko|고래 카드를 쓱 끌어다 놔!": [
+    129.691,
+    3.154
+   ],
+   "ko|고래의 기역! 잘했어요!": [
+    133.144,
+    4.155
+   ],
+   "ko|이번엔 아주 크게 써 볼래.": [
+    137.599,
+    2.89
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    140.79,
+    4.581
+   ],
+   "ko|서준아, 모래를 톡톡 쳐 줘!": [
+    145.671,
+    4.189
+   ],
+   "ko|모래를 톡톡톡 세 번 눌러 봐!": [
+    150.16,
+    4.285
+   ],
+   "ko|우아! 커다란 기역이 생겼어요!": [
+    154.744,
+    4.154
+   ],
+   "ko|푸우~! 꼬마 고래가 인사해요.": [
+    159.198,
+    3.503
+   ],
+   "ko|고래야, 안녕!": [
+    163.001,
+    1.37
+   ],
+   "ko|코코야, 아까 밟아서 미안해.": [
+    164.671,
+    1.906
+   ],
+   "ko|괜찮아! 같이 써서 좋았어.": [
+    166.877,
+    3.153
+   ],
+   "ko|실수했을 땐 '미안해' 하면 돼요.": [
+    170.329,
+    3.578
+   ],
+   "ko|반짝 별 하나가 별 병에 쏙!": [
+    174.208,
+    5.721
+   ],
+   "ko|우리 첫 번째 별이야!": [
+    180.228,
+    2.021
+   ],
+   "ko|해님이 바다로 퐁당 들어가요.": [
+    182.55,
+    4.779
+   ],
+   "ko|다 같이 손 흔들자!": [
+    187.629,
+    2.596
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    190.525,
+    2.875
+   ],
+   "ko|서준아, 고마워. 또 만나.": [
+    193.7,
+    2.928
+   ],
+   "en|Bye!": [
+    196.928,
+    1.054
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    198.282,
+    3.597
+   ]
+  }
+ }
+}
