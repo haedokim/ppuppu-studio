@@ -1,0 +1,991 @@
+{
+ "id": "mo002",
+ "subject": "mo",
+ "hero": "mon",
+ "title": "나무처럼 쭉쭉",
+ "cover": "content/chars/mon/happy.webp",
+ "color": "#8fd694",
+ "lesson": "힘든 친구가 있으면 도와주면 돼요",
+ "goals": [
+  "운동: 두 팔 쭉 만세 네 번·팔 벌려 흔들기 세 번",
+  "안전: 뛰고 나면 물 마시고 잠깐 쉬기",
+  "맛보기: 숨 크게 들이쉬고 후~ (볼 빵빵)",
+  "숫자 1~4 세기",
+  "교훈: 친구 돕기"
+ ],
+ "dev": [
+  "대근육",
+  "소근육",
+  "인지",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 40,
+     "y": 30,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 3,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 18,
+     "y": 46,
+     "s": 36,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 66,
+     "y": 12,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 66,
+     "y": 52,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 82,
+     "y": 44,
+     "s": 36,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "pp",
+     "t": "안녕, 서준아! 뿌뿌야!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "뿌뿌 마을 친구들, 다 모여라!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "빼꼼, 빼꼼! 친구들이 모였어요."
+    },
+    {
+     "who": "mon",
+     "t": "오늘은 숲속 체조 날이야!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 키키랑 몸을 움직이자!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "tree",
+     "e": "content/ep/mo002/img/tall_tree.webp",
+     "x": 34,
+     "y": 4,
+     "s": 72,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 76,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 44,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 20,
+     "y": 56,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "짠! 하늘까지 쭉 뻗은 나무예요.",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "mon",
+     "t": "우와, 키다리 나무다!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "우리도 나무처럼 쭉쭉 해 보자!"
+    },
+    {
+     "who": "ele",
+     "t": "나는 물병을 챙겨 왔어."
+    },
+    {
+     "who": "narr",
+     "t": "코코 가방에 공룡 물병이 쏙!"
+    },
+    {
+     "who": "pp",
+     "t": "서준이도 준비됐지?"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "stump",
+     "e": "content/ep/mo002/img/tree_stump.webp",
+     "x": 40,
+     "y": 62,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/run.webp",
+     "x": 40,
+     "y": 36,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 80,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 44,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 72,
+     "y": 10,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "내가 제일 빨라! 다다다!",
+     "sfx": "run"
+    },
+    {
+     "who": "narr",
+     "t": "차차가 물도 안 마시고 뛰어요."
+    },
+    {
+     "who": "peng",
+     "t": "헥헥… 좀 쉬고 싶어.",
+     "mood": "sad"
+    },
+    {
+     "who": "narr",
+     "t": "차차가 그루터기에 풀썩 앉았어요."
+    },
+    {
+     "who": "mon",
+     "t": "어? 차차가 지쳤나 봐.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 잠깐 쉬자."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "stump",
+     "e": "content/ep/mo002/img/tree_stump.webp",
+     "x": 62,
+     "y": 64,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/sad.webp",
+     "x": 62,
+     "y": 38,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 42,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "bottle",
+     "e": "content/ep/mo002/img/dino_bottle.webp",
+     "x": 30,
+     "y": 58,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 84,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "차차야, 물 마셔."
+    },
+    {
+     "who": "ele",
+     "t": "내 공룡 물병 줄게."
+    },
+    {
+     "who": "mon",
+     "t": "서준아, 차차한테 갖다 줄래?"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "bottle"
+    ],
+    "target": "peng",
+    "prompt": "물병을 쓱 끌어다 차차한테 줘!",
+    "sfx": "water",
+    "say": [
+     [
+      "꿀꺽꿀꺽~ 물을 마셨어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "basket",
+     "e": "content/ep/mo002/img/snack_basket.webp",
+     "x": 36,
+     "y": 56,
+     "s": 28,
+     "anim": "none"
+    },
+    {
+     "id": "f1",
+     "e": "content/ep/mo002/img/fly.webp",
+     "x": 30,
+     "y": 40,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "f2",
+     "e": "content/ep/mo002/img/fly.webp",
+     "x": 50,
+     "y": 34,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "f3",
+     "e": "content/ep/mo002/img/fly.webp",
+     "x": 62,
+     "y": 50,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 74,
+     "y": 8,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 2,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "아, 시원해! 기운이 나!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "그때 윙윙~ 날파리가 왔어요."
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 날파리가 왜 왔을까?"
+    },
+    {
+     "who": "bee",
+     "t": "사과 냄새가 좋아서 왔나 봐!"
+    },
+    {
+     "who": "bee",
+     "t": "서준아, 훠이~ 보내 줄래?"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "f1",
+     "f2",
+     "f3"
+    ],
+    "count": true,
+    "names": {
+     "f1": "훠이~",
+     "f2": "훠이~",
+     "f3": "훠이~"
+    },
+    "prompt": "날파리를 톡 눌러서 훠이~ 해 봐!",
+    "sfx": "swoosh",
+    "say": [
+     [
+      "하나, 둘, 셋! 다른 데 가서 놀아~",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "tree",
+     "e": "content/ep/mo002/img/tall_tree.webp",
+     "x": 36,
+     "y": 4,
+     "s": 70,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 6,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/jump.webp",
+     "x": 70,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 84,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "이제 다 같이 체조하자!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "나도 할래! 이제 괜찮아!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "키다리 나무처럼 두 팔 쭉!"
+    },
+    {
+     "who": "mon",
+     "t": "서준이도 뒤로 한 걸음!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 4,
+    "cam": "arms",
+    "prompt": "두 팔 쭉! 나무처럼 만세!",
+    "say": [
+     [
+      "와! 쭉쭉 키다리 나무 같아!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "tree",
+     "e": "content/ep/mo002/img/tall_tree.webp",
+     "x": 36,
+     "y": 4,
+     "s": 70,
+     "anim": "none"
+    },
+    {
+     "id": "leaf1",
+     "e": "content/ep/ko002/img/leaf.webp",
+     "x": 24,
+     "y": 16,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "leaf2",
+     "e": "content/ep/ko002/img/leaf.webp",
+     "x": 70,
+     "y": 22,
+     "s": 10,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 6,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "휘잉~ 바람이 불어요.",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "narr",
+     "t": "나뭇잎이 팔랑팔랑 춤을 춰요."
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴~ 리듬 맞춰 흔들흔들!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "두 팔 벌리고 나무처럼!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "prompt": "두 팔 벌려 흔들흔들~ 따라 해!",
+    "say": [
+     [
+      "흔들흔들~ 바람 부는 나무 같아!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 2,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 18,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "jar",
+     "e": "content/ep/ko001/img/star_jar.webp",
+     "x": 44,
+     "y": 54,
+     "s": 28,
+     "anim": "none"
+    },
+    {
+     "id": "star",
+     "e": "content/ep/ko001/img/star.webp",
+     "x": 48,
+     "y": 42,
+     "s": 12,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 82,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 66,
+     "y": 10,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "도와줘서 고마워, 코코!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "천만에!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "힘든 친구는 도와주면 돼!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "반짝 별 하나가 별 병에 쏙!",
+     "sfx": "bell"
+    },
+    {
+     "who": "pp",
+     "t": "이제 숨 크게 쉬어 볼까?"
+    },
+    {
+     "who": "mon",
+     "t": "숨 크게 들이쉬고, 볼 빵빵!"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "puff",
+    "e": "content/ep/mo002/img/puff_kiki.webp",
+    "prompt": "숨 크게 쉬고 볼 빵빵 해 봐!",
+    "say": [
+     [
+      "찰칵! 볼이 빵빵해!",
+      "ko"
+     ],
+     [
+      "이제 후~ 숨을 내쉬어요.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 40,
+     "y": 28,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 3,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 16,
+     "y": 44,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 68,
+     "y": 12,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 66,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 82,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "후~ 몸도 마음도 개운해요."
+    },
+    {
+     "who": "pp",
+     "t": "힘든 친구가 있으면 도와주자!"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 또 같이 하자!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mo002/voice.mp3",
+  "clips": {
+   "ko|안녕, 서준아! 뿌뿌야!": [
+    0.3,
+    2.502
+   ],
+   "ko|뿌뿌 마을 친구들, 다 모여라!": [
+    3.102,
+    3.389
+   ],
+   "ko|빼꼼, 빼꼼! 친구들이 모였어요.": [
+    6.79,
+    6.073
+   ],
+   "ko|오늘은 숲속 체조 날이야!": [
+    13.163,
+    2.581
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    16.044,
+    4.069
+   ],
+   "ko|오늘은 키키랑 몸을 움직이자!": [
+    20.414,
+    2.68
+   ],
+   "ko|짠! 하늘까지 쭉 뻗은 나무예요.": [
+    23.394,
+    5.219
+   ],
+   "ko|우와, 키다리 나무다!": [
+    28.913,
+    2.319
+   ],
+   "ko|우리도 나무처럼 쭉쭉 해 보자!": [
+    31.532,
+    4.0
+   ],
+   "ko|나는 물병을 챙겨 왔어.": [
+    35.832,
+    2.088
+   ],
+   "ko|코코 가방에 공룡 물병이 쏙!": [
+    38.219,
+    4.839
+   ],
+   "ko|서준이도 준비됐지?": [
+    43.358,
+    2.045
+   ],
+   "ko|내가 제일 빨라! 다다다!": [
+    45.703,
+    2.99
+   ],
+   "ko|차차가 물도 안 마시고 뛰어요.": [
+    48.993,
+    4.188
+   ],
+   "ko|헥헥… 좀 쉬고 싶어.": [
+    53.481,
+    2.907
+   ],
+   "ko|차차가 그루터기에 풀썩 앉았어요.": [
+    56.688,
+    4.812
+   ],
+   "ko|어? 차차가 지쳤나 봐.": [
+    61.801,
+    3.157
+   ],
+   "ko|괜찮아! 잠깐 쉬자.": [
+    65.258,
+    2.761
+   ],
+   "ko|차차야, 물 마셔.": [
+    68.319,
+    2.596
+   ],
+   "ko|내 공룡 물병 줄게.": [
+    71.215,
+    2.884
+   ],
+   "ko|서준아, 차차한테 갖다 줄래?": [
+    74.399,
+    3.406
+   ],
+   "ko|물병을 쓱 끌어다 차차한테 줘!": [
+    78.105,
+    4.189
+   ],
+   "ko|꿀꺽꿀꺽~ 물을 마셨어요!": [
+    82.594,
+    3.162
+   ],
+   "ko|아, 시원해! 기운이 나!": [
+    86.055,
+    2.897
+   ],
+   "ko|그때 윙윙~ 날파리가 왔어요.": [
+    89.252,
+    6.087
+   ],
+   "ko|붕붕~ 날파리가 왜 왔을까?": [
+    95.639,
+    4.97
+   ],
+   "ko|사과 냄새가 좋아서 왔나 봐!": [
+    100.909,
+    3.317
+   ],
+   "ko|서준아, 훠이~ 보내 줄래?": [
+    104.525,
+    3.954
+   ],
+   "ko|날파리를 톡 눌러서 훠이~ 해 봐!": [
+    108.779,
+    4.111
+   ],
+   "ko|하나, 둘, 셋! 다른 데 가서 놀아~": [
+    113.189,
+    5.74
+   ],
+   "ko|훠이~!": [
+    119.23,
+    0.982
+   ],
+   "ko|이제 다 같이 체조하자!": [
+    120.512,
+    3.093
+   ],
+   "ko|나도 할래! 이제 괜찮아!": [
+    123.904,
+    3.153
+   ],
+   "ko|키다리 나무처럼 두 팔 쭉!": [
+    127.357,
+    3.58
+   ],
+   "ko|서준이도 뒤로 한 걸음!": [
+    131.237,
+    3.233
+   ],
+   "ko|두 팔 쭉! 나무처럼 만세!": [
+    134.77,
+    4.983
+   ],
+   "ko|와! 쭉쭉 키다리 나무 같아!": [
+    140.053,
+    3.957
+   ],
+   "ko|휘잉~ 바람이 불어요.": [
+    144.31,
+    3.382
+   ],
+   "ko|나뭇잎이 팔랑팔랑 춤을 춰요.": [
+    147.992,
+    4.859
+   ],
+   "ko|개굴개굴~ 리듬 맞춰 흔들흔들!": [
+    153.15,
+    3.604
+   ],
+   "ko|두 팔 벌리고 나무처럼!": [
+    157.054,
+    2.524
+   ],
+   "ko|두 팔 벌려 흔들흔들~ 따라 해!": [
+    159.878,
+    4.358
+   ],
+   "ko|흔들흔들~ 바람 부는 나무 같아!": [
+    164.536,
+    4.097
+   ],
+   "ko|도와줘서 고마워, 코코!": [
+    168.933,
+    2.567
+   ],
+   "ko|천만에!": [
+    171.801,
+    1.282
+   ],
+   "ko|힘든 친구는 도와주면 돼!": [
+    173.383,
+    2.667
+   ],
+   "ko|반짝 별 하나가 별 병에 쏙!": [
+    176.35,
+    4.644
+   ],
+   "ko|이제 숨 크게 쉬어 볼까?": [
+    181.294,
+    3.336
+   ],
+   "ko|숨 크게 들이쉬고, 볼 빵빵!": [
+    184.93,
+    4.908
+   ],
+   "ko|숨 크게 쉬고 볼 빵빵 해 봐!": [
+    190.138,
+    3.842
+   ],
+   "ko|찰칵! 볼이 빵빵해!": [
+    194.28,
+    3.508
+   ],
+   "ko|이제 후~ 숨을 내쉬어요.": [
+    198.088,
+    3.514
+   ],
+   "ko|후~ 몸도 마음도 개운해요.": [
+    201.902,
+    4.98
+   ],
+   "ko|힘든 친구가 있으면 도와주자!": [
+    207.183,
+    2.92
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    210.402,
+    4.02
+   ],
+   "ko|하나, 둘, 셋! 또 같이 하자!": [
+    214.722,
+    4.326
+   ],
+   "en|Bye!": [
+    219.349,
+    1.492
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    221.141,
+    3.541
+   ]
+  }
+ }
+}
