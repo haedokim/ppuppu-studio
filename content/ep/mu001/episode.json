@@ -1,0 +1,1008 @@
+{
+ "id": "mu001",
+ "subject": "mu",
+ "hero": "frog",
+ "title": "포포의 둥둥 음악회",
+ "cover": "content/chars/frog/sing.webp",
+ "color": "#a8e6a1",
+ "lesson": "실수해도 괜찮아, 다시 하면 돼요",
+ "goals": [
+  "노래: 연잎 북 둥둥 박자 네 번·박수 네 번",
+  "노래: 「둥둥 동물 노래」 따라 부르기(꽥꽥·메에·삐약·둥둥)",
+  "노래: 소리만 듣고 누구인지 고르기",
+  "숫자 하나~넷 세기",
+  "교훈: 실수해도 괜찮아, 다시 하기"
+ ],
+ "dev": [
+  "대근육",
+  "사회성",
+  "언어",
+  "인지",
+  "소근육"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 40,
+     "y": 28,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 3,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 18,
+     "y": 46,
+     "s": 36,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 66,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 52,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 80,
+     "y": 48,
+     "s": 36,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "둥! 둥! 어디서 소리가 나지?",
+     "sfx": "pok"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 노래해요!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "서준아, 포포한테 가 보자!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 34,
+     "y": 52,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "duck",
+     "e": "content/ep/mu001/img/duck.webp",
+     "x": 62,
+     "y": 62,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "sheep",
+     "e": "content/ep/mu001/img/sheep.webp",
+     "x": 74,
+     "y": 56,
+     "s": 20,
+     "anim": "peek"
+    },
+    {
+     "id": "chick",
+     "e": "content/ep/mu001/img/chick.webp",
+     "x": 88,
+     "y": 68,
+     "s": 12,
+     "anim": "peek"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 76,
+     "y": 18,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "kite",
+     "e": "content/ep/mo001/img/dino_kite.webp",
+     "x": 40,
+     "y": 2,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "짠! 커다란 연잎 북이에요.",
+     "sfx": "pok"
+    },
+    {
+     "who": "frog",
+     "t": "개굴! 동물 친구들이 왔어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Hello!",
+     "lang": "en",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "duck",
+     "sheep",
+     "chick"
+    ],
+    "names": {
+     "duck": "오리는 꽥꽥",
+     "sheep": "양은 메에",
+     "chick": "병아리는 삐약"
+    },
+    "prompt": "포포랑 같이! 친구들을 눌러 봐!",
+    "sfx": "pok",
+    "say": [
+     [
+      "다 같이 둥둥~",
+      "ko"
+     ],
+     [
+      "와, 노래 잘한다!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 4,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 32,
+     "y": 58,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/sad.webp",
+     "x": 56,
+     "y": 50,
+     "s": 34,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 50,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 76,
+     "y": 6,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "다 같이 둥, 둥, 둥, 둥!",
+     "sfx": "pok"
+    },
+    {
+     "who": "narr",
+     "t": "그런데 코코 북이 둥… 늦었어요."
+    },
+    {
+     "who": "narr",
+     "t": "박자가 뒤죽박죽 엉켰어요."
+    },
+    {
+     "who": "ele",
+     "t": "어, 틀렸어…",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 천천히 다시 해 보자."
+    },
+    {
+     "who": "mon",
+     "t": "코코야, 같이 하자!"
+    },
+    {
+     "who": "frog",
+     "t": "개굴, 내가 박자 알려 줄게!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 36,
+     "y": 44,
+     "s": 38,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 74,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴! 따라 해 봐!"
+    },
+    {
+     "who": "frog",
+     "t": "북을 둥, 둥, 둥, 둥 네 번!"
+    },
+    {
+     "who": "ele",
+     "t": "나도… 살살 따라 할게."
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "drum",
+    "n": 4,
+    "prompt": "연잎 북을 둥둥, 네 번 쳐 봐!",
+    "sfx": "pok",
+    "say": [
+     [
+      "둥둥둥둥! 박자가 딱 맞아요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 40,
+     "y": 6,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 78,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 이 소리는 누굴까?"
+    },
+    {
+     "who": "narr",
+     "t": "꽥꽥! 꽥꽥!",
+     "sfx": "duck"
+    },
+    {
+     "who": "frog",
+     "t": "누구 노래일까? 골라 봐!"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "꽥꽥 소리는 누구일까?",
+    "options": [
+     {
+      "label": "오리",
+      "e": "content/ep/mu001/img/duck.webp"
+     },
+     {
+      "label": "양",
+      "e": "content/ep/mu001/img/sheep.webp"
+     },
+     {
+      "label": "병아리",
+      "e": "content/ep/mu001/img/chick.webp"
+     }
+    ],
+    "answer": 0,
+    "sfx": "duck",
+    "say": [
+     [
+      "맞아요! 오리야!",
+      "ko"
+     ],
+     [
+      "오리는 꽥꽥~",
+      "ko"
+     ],
+     [
+      "꽥꽥!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "다시 들어 봐! 꽥꽥~",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 40,
+     "y": 66,
+     "s": 22,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "양은 메에~",
+     "sfx": "sheep",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "병아리는 삐약~",
+     "sfx": "chick",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "다 같이 둥둥~",
+     "sfx": "pok"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 4,
+     "y": 36,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 36,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 62,
+     "y": 40,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "duck",
+     "e": "content/ep/mu001/img/duck.webp",
+     "x": 64,
+     "y": 74,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "sheep",
+     "e": "content/ep/mu001/img/sheep.webp",
+     "x": 76,
+     "y": 70,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "chick",
+     "e": "content/ep/mu001/img/chick.webp",
+     "x": 90,
+     "y": 78,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "butterfly",
+     "e": "content/ep/ko002/img/butterfly.webp",
+     "x": 84,
+     "y": 8,
+     "s": 14,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "이번엔 박수 놀이야!"
+    },
+    {
+     "who": "ele",
+     "t": "이번엔 나도 잘할 거야!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴! 짝, 짝, 짝, 짝 네 번!"
+    },
+    {
+     "who": "mon",
+     "t": "서준이도 뒤로 한 걸음!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 4,
+    "cam": "clap",
+    "prompt": "짝짝! 박수 네 번!",
+    "say": [
+     [
+      "짝짝짝짝! 코코도 박자 딱!",
+      "ko"
+     ],
+     [
+      "동물 친구들도 들썩들썩!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 36,
+     "y": 30,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 40,
+     "y": 70,
+     "s": 20,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 4,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/sing.webp",
+     "x": 70,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/sing.webp",
+     "x": 74,
+     "y": 6,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/sing.webp",
+     "x": 20,
+     "y": 64,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/sing.webp",
+     "x": 86,
+     "y": 56,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "처음부터 다 같이 불러 볼까?",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "오리는 꽥꽥~",
+     "sfx": "pok",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "꽥꽥!"
+    },
+    {
+     "who": "frog",
+     "t": "양은 메에~",
+     "sfx": "pok",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "메에!"
+    },
+    {
+     "who": "frog",
+     "t": "병아리는 삐약~",
+     "sfx": "pok",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "삐약!"
+    },
+    {
+     "who": "frog",
+     "t": "다 같이 둥둥~",
+     "sfx": "pok",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "둥둥! 둥둥!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "마지막은 다 같이 아~!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "aah",
+    "e": "content/ep/mu001/img/aah_popo.webp",
+    "prompt": "포포처럼 입 크게 아~ 해 봐!",
+    "say": [
+     [
+      "찰칵! 멋진 노래 입이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 38,
+     "y": 26,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 3,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 16,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 70,
+     "y": 6,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 80,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "jar",
+     "e": "content/ep/ko001/img/star_jar.webp",
+     "x": 44,
+     "y": 66,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "실수해도 괜찮아! 다시 하면 돼!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "응원해 줘서 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "반짝! 별 병에 별이 쏙!",
+     "sfx": "bell"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mu001/voice.mp3",
+  "clips": {
+   "ko|둥! 둥! 어디서 소리가 나지?": [
+    0.3,
+    4.224
+   ],
+   "ko|개굴개굴, 다 같이 노래해요!": [
+    4.824,
+    3.681
+   ],
+   "ko|서준아, 포포한테 가 보자!": [
+    8.805,
+    2.034
+   ],
+   "ko|짠! 커다란 연잎 북이에요.": [
+    11.139,
+    4.053
+   ],
+   "ko|개굴! 동물 친구들이 왔어!": [
+    15.492,
+    2.878
+   ],
+   "en|Hello!": [
+    18.67,
+    2.091
+   ],
+   "ko|포포랑 같이! 친구들을 눌러 봐!": [
+    21.061,
+    2.812
+   ],
+   "ko|다 같이 둥둥~": [
+    24.173,
+    2.08
+   ],
+   "ko|와, 노래 잘한다!": [
+    26.552,
+    2.018
+   ],
+   "ko|오리는 꽥꽥!": [
+    28.871,
+    1.951
+   ],
+   "ko|양은 메에!": [
+    31.122,
+    3.764
+   ],
+   "ko|병아리는 삐약!": [
+    35.186,
+    1.73
+   ],
+   "ko|다 같이 둥, 둥, 둥, 둥!": [
+    37.217,
+    5.251
+   ],
+   "ko|그런데 코코 북이 둥… 늦었어요.": [
+    42.767,
+    3.988
+   ],
+   "ko|박자가 뒤죽박죽 엉켰어요.": [
+    47.055,
+    3.292
+   ],
+   "ko|어, 틀렸어…": [
+    50.647,
+    1.773
+   ],
+   "ko|괜찮아! 천천히 다시 해 보자.": [
+    52.72,
+    2.814
+   ],
+   "ko|코코야, 같이 하자!": [
+    55.834,
+    1.839
+   ],
+   "ko|개굴, 내가 박자 알려 줄게!": [
+    57.972,
+    2.657
+   ],
+   "ko|개굴! 따라 해 봐!": [
+    60.929,
+    2.43
+   ],
+   "ko|북을 둥, 둥, 둥, 둥 네 번!": [
+    63.659,
+    4.966
+   ],
+   "ko|나도… 살살 따라 할게.": [
+    68.925,
+    2.514
+   ],
+   "ko|연잎 북을 둥둥, 네 번 쳐 봐!": [
+    71.739,
+    4.049
+   ],
+   "ko|둥둥둥둥! 박자가 딱 맞아요!": [
+    76.088,
+    3.192
+   ],
+   "ko|붕붕~ 이 소리는 누굴까?": [
+    79.58,
+    3.365
+   ],
+   "ko|꽥꽥! 꽥꽥!": [
+    83.245,
+    3.887
+   ],
+   "ko|누구 노래일까? 골라 봐!": [
+    87.432,
+    2.5
+   ],
+   "ko|꽥꽥 소리는 누구일까?": [
+    90.231,
+    2.57
+   ],
+   "ko|맞아요! 오리야!": [
+    93.101,
+    2.159
+   ],
+   "ko|오리는 꽥꽥~": [
+    95.56,
+    1.945
+   ],
+   "ko|꽥꽥!": [
+    97.806,
+    0.955
+   ],
+   "ko|다시 들어 봐! 꽥꽥~": [
+    99.061,
+    2.578
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    101.939,
+    3.561
+   ],
+   "ko|양은 메에~": [
+    105.8,
+    1.844
+   ],
+   "ko|병아리는 삐약~": [
+    107.945,
+    2.571
+   ],
+   "ko|이번엔 박수 놀이야!": [
+    110.816,
+    1.99
+   ],
+   "ko|이번엔 나도 잘할 거야!": [
+    113.106,
+    2.313
+   ],
+   "ko|개굴! 짝, 짝, 짝, 짝 네 번!": [
+    115.719,
+    3.357
+   ],
+   "ko|서준이도 뒤로 한 걸음!": [
+    119.376,
+    3.054
+   ],
+   "ko|짝짝! 박수 네 번!": [
+    122.73,
+    2.615
+   ],
+   "ko|짝짝짝짝! 코코도 박자 딱!": [
+    125.646,
+    3.443
+   ],
+   "ko|동물 친구들도 들썩들썩!": [
+    129.389,
+    2.949
+   ],
+   "ko|처음부터 다 같이 불러 볼까?": [
+    132.638,
+    3.635
+   ],
+   "ko|메에!": [
+    136.573,
+    1.381
+   ],
+   "ko|삐약!": [
+    138.254,
+    0.916
+   ],
+   "ko|둥둥! 둥둥!": [
+    139.47,
+    2.466
+   ],
+   "ko|마지막은 다 같이 아~!": [
+    142.236,
+    3.676
+   ],
+   "ko|포포처럼 입 크게 아~ 해 봐!": [
+    146.212,
+    3.189
+   ],
+   "ko|찰칵! 멋진 노래 입이야!": [
+    149.701,
+    3.183
+   ],
+   "ko|실수해도 괜찮아! 다시 하면 돼!": [
+    153.184,
+    4.174
+   ],
+   "ko|응원해 줘서 고마워!": [
+    157.657,
+    1.653
+   ],
+   "ko|반짝! 별 병에 별이 쏙!": [
+    159.61,
+    5.327
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    165.236,
+    2.955
+   ],
+   "en|Bye!": [
+    168.492,
+    1.496
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    170.288,
+    3.058
+   ]
+  }
+ }
+}
