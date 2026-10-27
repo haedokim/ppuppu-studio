@@ -1,6 +1,13 @@
 {
  "episodes": [
   {
+   "id": "ko003",
+   "file": "ep/ko003/episode.json",
+   "subject": "ko",
+   "date": "2026-10-28",
+   "open": "2026-10-28T12:00"
+  },
+  {
    "id": "na001",
    "file": "ep/na001/episode.json",
    "subject": "na",
@@ -50,5 +57,5 @@
    "date": "2026-10-25"
   }
  ],
- "updated": "2026-10-28T00:05:59"
+ "updated": "2026-10-28T00:22:12"
 }

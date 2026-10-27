@@ -1,0 +1,801 @@
+{
+ "id": "ko003",
+ "subject": "ko",
+ "hero": "ele",
+ "title": "달팽이 다리 ㄷ",
+ "cover": "content/chars/ele/happy.webp",
+ "color": "#b5e48c",
+ "lesson": "차례를 기다리면 다 같이 할 수 있어요",
+ "goals": [
+  "한글: ㄷ 모양과 소리 (디귿, 달팽이의 디귿·다리의 디귿)",
+  "한글: ㄱ·ㄴ 다시 보기 — ㄴ 과 ㄷ 구별 (니은 위에 뚜껑 하나 더)",
+  "숫자 하나~셋 세기",
+  "교훈: 기다리기"
+ ],
+ "dev": [
+  "인지",
+  "언어",
+  "소근육",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail_hide.webp",
+     "x": 50,
+     "y": 56,
+     "s": 24,
+     "anim": "peek",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 6,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "달그락달그락! 동그란 집이 들썩들썩!",
+     "sfx": "tick"
+    },
+    {
+     "who": "snail",
+     "t": "영차… 누가 좀 도와줘요~"
+    },
+    {
+     "who": "ele",
+     "t": "서준아, 쉿! 톡 눌러 봐 줄래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "snail",
+    "prompt": "뭐가 숨었을까? 톡 눌러 봐!",
+    "sfx": "pop",
+    "reveal": "content/ep/ko003/img/snail.webp",
+    "say": [
+     [
+      "짠! 달팽이가 빼꼼 나왔어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail.webp",
+     "x": 44,
+     "y": 54,
+     "s": 26,
+     "anim": "peek",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 6,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 70,
+     "y": 12,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "snail",
+     "t": "안녕… 나는 느림보 달팽이야.",
+     "mood": "happy"
+    },
+    {
+     "who": "snail",
+     "t": "저 건너 친구한테 가고 싶어~"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 달팽이는 왜 느릴까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "ele",
+     "t": "천천히 가도 괜찮아."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "puddle",
+     "e": "content/ep/ko003/img/puddle.webp",
+     "x": 40,
+     "y": 58,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "s1",
+     "e": "content/ep/ko003/img/stick.webp",
+     "x": 36,
+     "y": 78,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "s2",
+     "e": "content/ep/ko003/img/stick.webp",
+     "x": 58,
+     "y": 82,
+     "s": 12,
+     "anim": "none",
+     "flip": true
+    },
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail.webp",
+     "x": 18,
+     "y": 62,
+     "s": 20,
+     "anim": "none",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/sad.webp",
+     "x": 74,
+     "y": 48,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 2,
+     "y": 30,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "앗, 길 앞에 커다란 물웅덩이!"
+    },
+    {
+     "who": "peng",
+     "t": "내가 다리 놔 줄게! 내가 먼저!"
+    },
+    {
+     "who": "narr",
+     "t": "휙휙 한꺼번에 놓다가… 와르르!",
+     "sfx": "pok"
+    },
+    {
+     "who": "peng",
+     "t": "어, 무너졌어…",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 차례차례 다시 해 보자."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 4,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "dground",
+     "e": "content/ep/ko003/img/ground_d.webp",
+     "x": 40,
+     "y": 70,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail.webp",
+     "x": 76,
+     "y": 60,
+     "s": 20,
+     "anim": "bob",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "코코가 코로 땅에 쓱쓱!",
+     "sfx": "brush"
+    },
+    {
+     "who": "ele",
+     "t": "달팽이, 다리… 둘 다 '다' 소리야."
+    },
+    {
+     "who": "ele",
+     "t": "디귿! 달팽이의 디귿, 다리의 디귿!"
+    },
+    {
+     "who": "ele",
+     "t": "니은 위에 뚜껑이 하나 더!"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "디귿은 어디 있을까? 눌러 봐!",
+    "options": [
+     {
+      "e": "ㄴ"
+     },
+     {
+      "e": "ㄷ"
+     },
+     {
+      "e": "ㄱ"
+     }
+    ],
+    "answer": 1,
+    "wrong": [
+     [
+      "음~ 그건 디귿이 아니야.",
+      "ko"
+     ],
+     [
+      "니은 위에 뚜껑이 하나 더!",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아요! 이게 디귿이에요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "puddle",
+     "e": "content/ep/ko003/img/puddle.webp",
+     "x": 50,
+     "y": 56,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "st1",
+     "e": "content/ep/ko003/img/stick.webp",
+     "x": 6,
+     "y": 80,
+     "s": 13,
+     "anim": "bob"
+    },
+    {
+     "id": "st2",
+     "e": "content/ep/ko003/img/stick.webp",
+     "x": 20,
+     "y": 82,
+     "s": 13,
+     "anim": "bob"
+    },
+    {
+     "id": "st3",
+     "e": "content/ep/ko003/img/stick.webp",
+     "x": 34,
+     "y": 80,
+     "s": 13,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 26,
+     "y": 36,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 82,
+     "y": 46,
+     "s": 30,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "차례차례~ 개굴!"
+    },
+    {
+     "who": "mon",
+     "t": "나뭇가지 가져왔어! 하나, 둘, 셋!"
+    },
+    {
+     "who": "peng",
+     "t": "이번엔… 기다릴게!"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 하나씩 놓아 줄래?"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "st1",
+     "st2",
+     "st3"
+    ],
+    "target": "puddle",
+    "count": true,
+    "prompt": "나뭇가지를 하나씩 웅덩이에 놔!",
+    "sfx": "plop",
+    "say": [
+     [
+      "나뭇가지 다리 완성!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "puddle",
+     "e": "content/ep/ko003/img/puddle.webp",
+     "x": 40,
+     "y": 58,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "bridge",
+     "e": "content/ep/ko003/img/stick_bridge.webp",
+     "x": 40,
+     "y": 60,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail.webp",
+     "x": 74,
+     "y": 58,
+     "s": 22,
+     "anim": "bob",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 30,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 84,
+     "y": 30,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "달팽이가 느릿느릿 건너가요."
+    },
+    {
+     "who": "peng",
+     "t": "천천히~ 기다려 줄게!"
+    },
+    {
+     "who": "snail",
+     "t": "도착! 고마워~",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "우리도 뽀뽀 입으로 인사하자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "kiss",
+    "e": "content/ep/ko003/img/kiss_coco.webp",
+    "prompt": "입을 쪽~ 내밀어 봐!",
+    "say": [
+     [
+      "찰칵! 멋진 뽀뽀 인사야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 70,
+     "y": 56,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 84,
+     "y": 40,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "다리의 디귿, 같이 써 볼까?"
+    },
+    {
+     "who": "frog",
+     "t": "천천히 써도 괜찮아~"
+    }
+   ],
+   "act": {
+    "type": "trace",
+    "letter": "ㄷ",
+    "n": 3,
+    "prompt": "손가락으로 디귿을 세 번 따라 써 봐!",
+    "say": [
+     [
+      "우아! 멋진 디귿이에요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 38,
+     "y": 26,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 2,
+     "y": 42,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail.webp",
+     "x": 24,
+     "y": 66,
+     "s": 18,
+     "anim": "bob",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 64,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 62,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/wave.webp",
+     "x": 46,
+     "y": 66,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 80,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "코로 쓱쓱, 글자 완성!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "차례를 기다리면 다 같이 할 수 있어."
+    },
+    {
+     "who": "peng",
+     "t": "기다려 줘서 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "snail",
+     "t": "나도 기다려 줘서 고마워~",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/ko003/voice.mp3",
+  "clips": {
+   "ko|달그락달그락! 동그란 집이 들썩들썩!": [
+    0.3,
+    6.801
+   ],
+   "ko|영차… 누가 좀 도와줘요~": [
+    7.401,
+    4.896
+   ],
+   "ko|서준아, 쉿! 톡 눌러 봐 줄래?": [
+    12.597,
+    4.964
+   ],
+   "ko|뭐가 숨었을까? 톡 눌러 봐!": [
+    17.86,
+    3.206
+   ],
+   "ko|짠! 달팽이가 빼꼼 나왔어요!": [
+    21.366,
+    4.192
+   ],
+   "ko|안녕… 나는 느림보 달팽이야.": [
+    25.858,
+    7.284
+   ],
+   "ko|저 건너 친구한테 가고 싶어~": [
+    33.442,
+    5.099
+   ],
+   "ko|붕붕~ 달팽이는 왜 느릴까?": [
+    38.841,
+    4.382
+   ],
+   "ko|천천히 가도 괜찮아.": [
+    43.523,
+    3.414
+   ],
+   "ko|앗, 길 앞에 커다란 물웅덩이!": [
+    47.238,
+    5.396
+   ],
+   "ko|내가 다리 놔 줄게! 내가 먼저!": [
+    52.933,
+    4.002
+   ],
+   "ko|휙휙 한꺼번에 놓다가… 와르르!": [
+    57.236,
+    4.783
+   ],
+   "ko|어, 무너졌어…": [
+    62.319,
+    2.447
+   ],
+   "ko|괜찮아! 차례차례 다시 해 보자.": [
+    65.066,
+    3.44
+   ],
+   "ko|코코가 코로 땅에 쓱쓱!": [
+    68.806,
+    4.725
+   ],
+   "ko|달팽이, 다리… 둘 다 '다' 소리야.": [
+    73.831,
+    5.62
+   ],
+   "ko|디귿! 달팽이의 디귿, 다리의 디귿!": [
+    79.751,
+    5.179
+   ],
+   "ko|니은 위에 뚜껑이 하나 더!": [
+    85.23,
+    2.689
+   ],
+   "ko|디귿은 어디 있을까? 눌러 봐!": [
+    88.218,
+    4.006
+   ],
+   "ko|맞아요! 이게 디귿이에요!": [
+    92.525,
+    3.338
+   ],
+   "ko|음~ 그건 디귿이 아니야.": [
+    96.163,
+    3.04
+   ],
+   "ko|차례차례~ 개굴!": [
+    99.502,
+    2.227
+   ],
+   "ko|나뭇가지 가져왔어! 하나, 둘, 셋!": [
+    102.03,
+    5.875
+   ],
+   "ko|이번엔… 기다릴게!": [
+    108.205,
+    2.611
+   ],
+   "ko|서준아, 하나씩 놓아 줄래?": [
+    111.116,
+    3.261
+   ],
+   "ko|나뭇가지를 하나씩 웅덩이에 놔!": [
+    114.677,
+    3.27
+   ],
+   "ko|나뭇가지 다리 완성!": [
+    118.247,
+    2.932
+   ],
+   "ko|달팽이가 느릿느릿 건너가요.": [
+    121.479,
+    5.136
+   ],
+   "ko|천천히~ 기다려 줄게!": [
+    126.915,
+    3.329
+   ],
+   "ko|도착! 고마워~": [
+    130.544,
+    3.317
+   ],
+   "ko|우리도 뽀뽀 입으로 인사하자!": [
+    134.161,
+    2.851
+   ],
+   "ko|입을 쪽~ 내밀어 봐!": [
+    137.312,
+    2.232
+   ],
+   "ko|찰칵! 멋진 뽀뽀 인사야!": [
+    139.843,
+    2.888
+   ],
+   "ko|다리의 디귿, 같이 써 볼까?": [
+    143.032,
+    2.76
+   ],
+   "ko|천천히 써도 괜찮아~": [
+    146.092,
+    3.681
+   ],
+   "ko|손가락으로 디귿을 세 번 따라 써 봐!": [
+    150.073,
+    2.899
+   ],
+   "ko|우아! 멋진 디귿이에요!": [
+    153.272,
+    2.291
+   ],
+   "ko|코로 쓱쓱, 글자 완성!": [
+    155.863,
+    5.293
+   ],
+   "ko|차례를 기다리면 다 같이 할 수 있어.": [
+    161.456,
+    3.672
+   ],
+   "ko|기다려 줘서 고마워!": [
+    165.428,
+    2.236
+   ],
+   "ko|나도 기다려 줘서 고마워~": [
+    167.964,
+    4.621
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    172.885,
+    3.456
+   ],
+   "en|Bye!": [
+    176.642,
+    1.128
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    178.069,
+    3.436
+   ]
+  }
+ }
+}
