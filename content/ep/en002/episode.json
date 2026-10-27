@@ -1,0 +1,976 @@
+{
+ "id": "en002",
+ "subject": "en",
+ "hero": "peng",
+ "title": "부끄럼쟁이 아기 곰",
+ "cover": "content/chars/peng/wave.webp",
+ "color": "#9bd17a",
+ "lesson": "도와준 친구에게 '고마워' 말해요",
+ "goals": [
+  "영어: 동물 Bear·Rabbit·Bird (곰·토끼·새)",
+  "영어: 숫자 One·Two·Three",
+  "영어: 알파벳 B — B, bear!",
+  "맛보기: Hello! · Thank you!",
+  "교훈: 고마워 말하기"
+ ],
+ "dev": [
+  "언어",
+  "인지",
+  "소근육",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bush",
+     "e": "content/ep/en002/img/bush.webp",
+     "x": 50,
+     "y": 46,
+     "s": 36,
+     "anim": "peek"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 8,
+     "y": 34,
+     "s": 44,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "그네가 혼자 흔들흔들!",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "narr",
+     "t": "덤불 뒤로 동그란 귀가 쏙!",
+     "sfx": "boing"
+    },
+    {
+     "who": "pp",
+     "t": "어? 누가 숨었지?"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bush",
+     "e": "content/ep/en002/img/bush.webp",
+     "x": 50,
+     "y": 50,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 56,
+     "y": 38,
+     "s": 28,
+     "anim": "peek",
+     "hidden": true
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 6,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 82,
+     "y": 30,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "뒤뚱뒤뚱! 내가 가 볼게!",
+     "sfx": "penguin"
+    },
+    {
+     "who": "peng",
+     "t": "내가 여행에서 배웠는데~"
+    },
+    {
+     "who": "peng",
+     "t": "Hello!",
+     "lang": "en",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "bear",
+    "prompt": "덤불 속 친구를 톡 눌러 봐!",
+    "sfx": "boing",
+    "say": [
+     [
+      "Bear!",
+      "en"
+     ],
+     [
+      "아기 곰이야!",
+      "ko"
+     ],
+     [
+      "B, bear!",
+      "en"
+     ]
+    ],
+    "wrong": [
+     [
+      "동그란 덤불을 톡 해 봐!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bush",
+     "e": "content/ep/en002/img/bush.webp",
+     "x": 46,
+     "y": 50,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 52,
+     "y": 38,
+     "s": 26,
+     "anim": "peek"
+    },
+    {
+     "id": "rabbit",
+     "e": "content/ep/en002/img/rabbit.webp",
+     "x": 80,
+     "y": 62,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 22,
+     "y": 42,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 72,
+     "y": 8,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bear",
+     "t": "Hello…",
+     "lang": "en"
+    },
+    {
+     "who": "narr",
+     "t": "아기 곰은 부끄러워 쏙 숨었어요."
+    },
+    {
+     "who": "frog",
+     "t": "개굴! 토끼야, 안녕!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "Bird!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "토끼가 귀를 쫑긋, 갸우뚱?"
+    },
+    {
+     "who": "frog",
+     "t": "어, 틀렸나 봐…",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 차차한테 물어보자."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 6,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 80,
+     "y": 48,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "rabbit",
+     "e": "content/ep/en002/img/rabbit.webp",
+     "x": 56,
+     "y": 60,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "내가 알려 줄게!"
+    },
+    {
+     "who": "peng",
+     "t": "Rabbit!",
+     "lang": "en"
+    },
+    {
+     "who": "peng",
+     "t": "토끼라는 뜻이야!"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "누가 토끼일까? 골라 봐!",
+    "options": [
+     {
+      "label": "Rabbit 토끼",
+      "e": "content/ep/en002/img/rabbit.webp"
+     },
+     {
+      "label": "Bird 새",
+      "e": "content/ep/en002/img/bird.webp"
+     },
+     {
+      "label": "Bear 곰",
+      "e": "content/ep/en002/img/bear.webp"
+     }
+    ],
+    "answer": 0,
+    "say": [
+     [
+      "Rabbit!",
+      "en"
+     ],
+     [
+      "맞아! 토끼야!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "귀가 쫑긋 긴 친구!",
+      "ko"
+     ],
+     [
+      "Rabbit!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 40,
+     "y": 4,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 56,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 16,
+     "y": 44,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 82,
+     "y": 40,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "b1",
+     "e": "content/ep/en002/img/bird.webp",
+     "x": 14,
+     "y": 14,
+     "s": 12,
+     "anim": "bob",
+     "hidden": true
+    },
+    {
+     "id": "b2",
+     "e": "content/ep/en002/img/bird.webp",
+     "x": 68,
+     "y": 16,
+     "s": 12,
+     "anim": "bob",
+     "hidden": true
+    },
+    {
+     "id": "b3",
+     "e": "content/ep/en002/img/bird.webp",
+     "x": 50,
+     "y": 72,
+     "s": 12,
+     "anim": "bob",
+     "hidden": true
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "아하, 토끼구나! 고마워, 차차!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 그럼 새는 어디 있을까?"
+    },
+    {
+     "who": "peng",
+     "t": "Bird!",
+     "lang": "en"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "count": true,
+    "names": {
+     "b1": "Bird",
+     "b2": "Bird",
+     "b3": "Bird"
+    },
+    "prompt": "숨은 새를 톡톡 찾아 봐!",
+    "sfx": "chick",
+    "say": [
+     [
+      "One, two, three!",
+      "en"
+     ],
+     [
+      "새 세 마리 다 찾았다!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 4,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 26,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bush",
+     "e": "content/ep/en002/img/bush.webp",
+     "x": 56,
+     "y": 50,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 62,
+     "y": 38,
+     "s": 26,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "나도 처음엔 부끄러웠어."
+    },
+    {
+     "who": "ele",
+     "t": "활짝 웃으면 마음이 놓여."
+    },
+    {
+     "who": "peng",
+     "t": "서준아, 웃으면서 인사하자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "smile",
+    "e": "content/chars/peng/happy.webp",
+    "prompt": "차차처럼 활짝 웃어 봐!",
+    "say": [
+     [
+      "찰칵! 반가운 웃음이야!",
+      "ko"
+     ],
+     [
+      "Hello!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear_happy.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 58,
+     "y": 30,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 2,
+     "y": 30,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 34,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "basket",
+     "e": "content/ep/mo002/img/snack_basket.webp",
+     "x": 36,
+     "y": 58,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "a1",
+     "e": "content/ep/en001/img/apple.webp",
+     "x": 8,
+     "y": 80,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "a2",
+     "e": "content/ep/en001/img/apple.webp",
+     "x": 64,
+     "y": 82,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "a3",
+     "e": "content/ep/en001/img/apple.webp",
+     "x": 84,
+     "y": 80,
+     "s": 12,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bear",
+     "t": "Hello!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "사과 가져왔어! 앗, 와르르!",
+     "sfx": "plop"
+    },
+    {
+     "who": "narr",
+     "t": "아기 곰도 같이 주워요."
+    },
+    {
+     "who": "peng",
+     "t": "바구니에 쏙쏙 담자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "a1",
+     "a2",
+     "a3"
+    ],
+    "target": "basket",
+    "count": true,
+    "prompt": "사과를 바구니에 쏙쏙 넣어 봐!",
+    "sfx": "plop",
+    "say": [
+     [
+      "One, two, three!",
+      "en"
+     ],
+     [
+      "사과 세 개 다 담았어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear_happy.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 58,
+     "y": 34,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 40,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 82,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "jar",
+     "e": "content/ep/ko001/img/star_jar.webp",
+     "x": 34,
+     "y": 22,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "star",
+     "e": "content/ep/ko001/img/star.webp",
+     "x": 38,
+     "y": 6,
+     "s": 12,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bear",
+     "t": "같이 놀아 줘서…"
+    },
+    {
+     "who": "bear",
+     "t": "Thank you!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "고마워라는 뜻이야!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "차차, 알려 줘서 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "반짝 별 하나가 별 병에 쏙!",
+     "sfx": "bell"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 38,
+     "y": 30,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear_happy.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 64,
+     "y": 20,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 58,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 14,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 20,
+     "y": 4,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 62,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 82,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "아기 곰이 그네를 살랑살랑."
+    },
+    {
+     "who": "pp",
+     "t": "도와준 친구에겐 고마워!"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye, Bear!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/en002/voice.mp3",
+  "clips": {
+   "ko|그네가 혼자 흔들흔들!": [
+    0.3,
+    5.034
+   ],
+   "ko|덤불 뒤로 동그란 귀가 쏙!": [
+    5.634,
+    3.346
+   ],
+   "ko|어? 누가 숨었지?": [
+    9.28,
+    1.946
+   ],
+   "ko|뒤뚱뒤뚱! 내가 가 볼게!": [
+    11.526,
+    2.759
+   ],
+   "ko|내가 여행에서 배웠는데~": [
+    14.585,
+    1.845
+   ],
+   "en|Hello!": [
+    16.729,
+    0.949
+   ],
+   "ko|덤불 속 친구를 톡 눌러 봐!": [
+    17.979,
+    3.739
+   ],
+   "en|Bear!": [
+    22.018,
+    0.96
+   ],
+   "ko|아기 곰이야!": [
+    23.278,
+    1.45
+   ],
+   "en|B, bear!": [
+    25.028,
+    2.482
+   ],
+   "ko|동그란 덤불을 톡 해 봐!": [
+    27.81,
+    4.084
+   ],
+   "en|Hello…": [
+    32.194,
+    1.083
+   ],
+   "ko|아기 곰은 부끄러워 쏙 숨었어요.": [
+    33.578,
+    5.012
+   ],
+   "ko|개굴! 토끼야, 안녕!": [
+    38.889,
+    2.685
+   ],
+   "en|Bird!": [
+    41.874,
+    1.394
+   ],
+   "ko|토끼가 귀를 쫑긋, 갸우뚱?": [
+    43.568,
+    4.232
+   ],
+   "ko|어, 틀렸나 봐…": [
+    48.1,
+    1.661
+   ],
+   "ko|괜찮아! 차차한테 물어보자.": [
+    50.061,
+    3.011
+   ],
+   "ko|내가 알려 줄게!": [
+    53.372,
+    1.034
+   ],
+   "en|Rabbit!": [
+    54.706,
+    2.477
+   ],
+   "ko|토끼라는 뜻이야!": [
+    57.483,
+    2.024
+   ],
+   "ko|누가 토끼일까? 골라 봐!": [
+    59.807,
+    3.505
+   ],
+   "ko|맞아! 토끼야!": [
+    63.612,
+    1.951
+   ],
+   "ko|귀가 쫑긋 긴 친구!": [
+    65.863,
+    2.859
+   ],
+   "ko|아하, 토끼구나! 고마워, 차차!": [
+    69.022,
+    3.808
+   ],
+   "ko|붕붕~ 그럼 새는 어디 있을까?": [
+    73.13,
+    4.148
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    77.579,
+    4.691
+   ],
+   "ko|숨은 새를 톡톡 찾아 봐!": [
+    82.57,
+    3.248
+   ],
+   "en|One, two, three!": [
+    86.118,
+    4.971
+   ],
+   "ko|새 세 마리 다 찾았다!": [
+    91.389,
+    4.592
+   ],
+   "ko|Bird!": [
+    96.281,
+    0.904
+   ],
+   "ko|나도 처음엔 부끄러웠어.": [
+    97.485,
+    2.906
+   ],
+   "ko|활짝 웃으면 마음이 놓여.": [
+    100.691,
+    2.453
+   ],
+   "ko|서준아, 웃으면서 인사하자!": [
+    103.444,
+    2.469
+   ],
+   "ko|차차처럼 활짝 웃어 봐!": [
+    106.213,
+    2.844
+   ],
+   "ko|찰칵! 반가운 웃음이야!": [
+    109.357,
+    2.99
+   ],
+   "ko|사과 가져왔어! 앗, 와르르!": [
+    112.647,
+    3.872
+   ],
+   "ko|아기 곰도 같이 주워요.": [
+    116.819,
+    3.794
+   ],
+   "ko|바구니에 쏙쏙 담자!": [
+    120.914,
+    3.393
+   ],
+   "ko|사과를 바구니에 쏙쏙 넣어 봐!": [
+    124.607,
+    3.664
+   ],
+   "ko|사과 세 개 다 담았어!": [
+    128.571,
+    2.857
+   ],
+   "ko|같이 놀아 줘서…": [
+    131.728,
+    2.264
+   ],
+   "en|Thank you!": [
+    134.292,
+    1.444
+   ],
+   "ko|고마워라는 뜻이야!": [
+    136.036,
+    1.474
+   ],
+   "ko|차차, 알려 줘서 고마워!": [
+    137.81,
+    2.848
+   ],
+   "ko|반짝 별 하나가 별 병에 쏙!": [
+    140.957,
+    4.831
+   ],
+   "ko|아기 곰이 그네를 살랑살랑.": [
+    146.088,
+    4.167
+   ],
+   "ko|도와준 친구에겐 고마워!": [
+    150.555,
+    2.824
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    153.679,
+    2.935
+   ],
+   "en|Bye, Bear!": [
+    156.915,
+    1.456
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    158.67,
+    2.949
+   ]
+  }
+ }
+}
