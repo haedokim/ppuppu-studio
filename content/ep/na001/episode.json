@@ -1,0 +1,816 @@
+{
+ "id": "na001",
+ "subject": "na",
+ "hero": "bee",
+ "title": "데굴데굴 도토리",
+ "cover": "content/chars/bee/wave.webp",
+ "color": "#f4a261",
+ "lesson": "친구가 속상해 보이면 '괜찮아?' 물어봐요",
+ "goals": [
+  "자연: 가을이 되면 나뭇잎 색이 바뀌어요 (빨간 잎·노란 잎·갈색 잎)",
+  "자연: 나무 열매 이름 도토리·솔방울, 다람쥐는 겨울에 먹으려고 도토리를 모아요",
+  "숫자 하나~셋 세기",
+  "맛보기: Bye!",
+  "교훈: 속상한 친구에게 '괜찮아?' 묻기"
+ ],
+ "dev": [
+  "인지",
+  "소근육",
+  "언어",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "leaf_pile",
+     "e": "content/ep/ko002/img/leaf_pile.webp",
+     "x": 40,
+     "y": 50,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 47,
+     "y": 36,
+     "s": 28,
+     "anim": "peek",
+     "hidden": true
+    },
+    {
+     "id": "acorn",
+     "e": "content/ep/na001/img/acorn.webp",
+     "x": 24,
+     "y": 74,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 8,
+     "y": 14,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "데구루루~ 도토리가 톡!",
+     "sfx": "bounce"
+    },
+    {
+     "who": "narr",
+     "t": "낙엽 더미가 바스락바스락!",
+     "sfx": "rustle"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 낙엽 속에 누가 있을까?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "squirrel",
+    "prompt": "낙엽 더미를 톡 눌러 볼래?",
+    "sfx": "boing",
+    "say": [
+     [
+      "짠! 아기 다람쥐였구나!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "바스락바스락 낙엽을 톡!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "leaf_pile",
+     "e": "content/ep/ko002/img/leaf_pile.webp",
+     "x": 40,
+     "y": 52,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 46,
+     "y": 34,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/jump.webp",
+     "x": 8,
+     "y": 14,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "다람쥐도 비비도 눈이 동그래!",
+     "sfx": "boing"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 깜짝 놀랐지?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "bee",
+     "t": "서준이도 깜짝! 해 볼래?",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "surprise",
+    "e": "content/ep/na001/img/surprise_bibi.webp",
+    "prompt": "비비처럼 눈을 동그랗게, 오!",
+    "say": [
+     [
+      "찰칵! 깜짝 놀란 얼굴이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 42,
+     "y": 40,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 20,
+     "y": 10,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 72,
+     "y": 38,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 2,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "squirrel",
+     "t": "내 도토리가 다 없어졌어…",
+     "mood": "sad"
+    },
+    {
+     "who": "bee",
+     "t": "다람쥐야, 괜찮아?"
+    },
+    {
+     "who": "squirrel",
+     "t": "앗! 낙엽 밑에 숨겼는데… 어디였지?"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 같이 찾아보자."
+    }
+   ]
+  },
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 36,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "leaf_pile",
+     "e": "content/ep/ko002/img/leaf_pile.webp",
+     "x": 28,
+     "y": 54,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "a1",
+     "e": "content/ep/na001/img/acorn.webp",
+     "x": 26,
+     "y": 80,
+     "s": 10,
+     "anim": "peek"
+    },
+    {
+     "id": "a2",
+     "e": "content/ep/na001/img/acorn.webp",
+     "x": 40,
+     "y": 84,
+     "s": 10,
+     "anim": "peek"
+    },
+    {
+     "id": "a3",
+     "e": "content/ep/na001/img/acorn.webp",
+     "x": 52,
+     "y": 78,
+     "s": 10,
+     "anim": "peek"
+    },
+    {
+     "id": "basket",
+     "e": "content/ep/na001/img/acorn_basket.webp",
+     "x": 66,
+     "y": 60,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 82,
+     "y": 36,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "코로 살살~ 낙엽을 들춰 볼게.",
+     "sfx": "brush"
+    },
+    {
+     "who": "ele",
+     "t": "여기 뭐가 보여!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "도토리가 빼꼼, 세 개!"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "a1",
+     "a2",
+     "a3"
+    ],
+    "target": "basket",
+    "count": true,
+    "prompt": "도토리를 바구니에 쏙쏙 넣어 줘!",
+    "sfx": "plop",
+    "say": [
+     [
+      "도토리 세 개 다 담았어!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "도토리를 꾹 눌러 바구니로!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 6,
+     "y": 10,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 40,
+     "y": 38,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "basket",
+     "e": "content/ep/na001/img/acorn_basket.webp",
+     "x": 30,
+     "y": 66,
+     "s": 20,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 74,
+     "y": 36,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 도토리는 왜 모을까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "bee",
+     "t": "아하! 겨울에 먹으려고 모아 둬!"
+    },
+    {
+     "who": "squirrel",
+     "t": "솔방울도 하나 있었는데…",
+     "mood": "sad"
+    },
+    {
+     "who": "mon",
+     "t": "내가 봤어! 이 중에 있어!"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "솔방울은 어느 거? 골라 봐!",
+    "options": [
+     {
+      "label": "도토리",
+      "e": "content/ep/na001/img/acorn.webp"
+     },
+     {
+      "label": "솔방울",
+      "e": "content/ep/na001/img/pinecone.webp"
+     },
+     {
+      "label": "사과",
+      "e": "content/ep/en001/img/apple.webp"
+     }
+    ],
+    "answer": 1,
+    "say": [
+     [
+      "맞아! 솔방울이야!",
+      "ko"
+     ],
+     [
+      "비늘이 콕콕 있지?",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "비늘이 콕콕, 길쭉한 거야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 8,
+     "y": 8,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 2,
+     "y": 54,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel_happy.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 74,
+     "y": 40,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "바람이 휘잉~ 낙엽이 팔랑팔랑!",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "frog",
+     "t": "팔랑팔랑~ 개굴개굴!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "빨간 잎, 노란 잎, 갈색 잎!"
+    },
+    {
+     "who": "bee",
+     "t": "가을엔 나뭇잎 색이 바뀌어!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "pop",
+    "items": [
+     "content/ep/na001/img/leaf_red.webp",
+     "content/ep/ko002/img/leaf.webp",
+     "content/ep/na001/img/leaf_brown.webp"
+    ],
+    "n": 3,
+    "prompt": "알록달록 낙엽을 톡톡 잡아 봐!",
+    "sfx": "pop",
+    "say": [
+     [
+      "빨간 잎! 노란 잎! 갈색 잎!",
+      "ko"
+     ],
+     [
+      "가을 잎은 알록달록해!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 72,
+     "y": 38,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel_happy.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 44,
+     "y": 40,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 18,
+     "y": 8,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 2,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "다 찾아서 다행이야!",
+     "mood": "happy"
+    },
+    {
+     "who": "squirrel",
+     "t": "같이 찾아 줘서 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "친구가 속상해 보이면",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "'괜찮아?' 물어봐요.",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/ep/na001/img/bg_autumn_forest.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 36,
+     "y": 30,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear_happy.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 84,
+     "y": 12,
+     "s": 16,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel_happy.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 62,
+     "y": 54,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 20,
+     "y": 4,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 2,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/wave.webp",
+     "x": 18,
+     "y": 62,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 78,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "멀리서 아기 곰도 손을 흔들어요."
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/na001/voice.mp3",
+  "clips": {
+   "ko|데구루루~ 도토리가 톡!": [
+    0.3,
+    4.448
+   ],
+   "ko|낙엽 더미가 바스락바스락!": [
+    5.048,
+    3.89
+   ],
+   "ko|붕붕~ 낙엽 속에 누가 있을까?": [
+    9.238,
+    4.493
+   ],
+   "ko|낙엽 더미를 톡 눌러 볼래?": [
+    14.03,
+    3.414
+   ],
+   "ko|짠! 아기 다람쥐였구나!": [
+    17.744,
+    3.247
+   ],
+   "ko|바스락바스락 낙엽을 톡!": [
+    21.291,
+    3.437
+   ],
+   "ko|다람쥐도 비비도 눈이 동그래!": [
+    25.028,
+    4.829
+   ],
+   "ko|붕붕~ 깜짝 놀랐지?": [
+    30.157,
+    2.733
+   ],
+   "ko|서준이도 깜짝! 해 볼래?": [
+    33.19,
+    2.93
+   ],
+   "ko|비비처럼 눈을 동그랗게, 오!": [
+    36.42,
+    4.039
+   ],
+   "ko|찰칵! 깜짝 놀란 얼굴이야!": [
+    40.759,
+    3.715
+   ],
+   "ko|내 도토리가 다 없어졌어…": [
+    44.774,
+    3.231
+   ],
+   "ko|다람쥐야, 괜찮아?": [
+    48.305,
+    2.587
+   ],
+   "ko|앗! 낙엽 밑에 숨겼는데… 어디였지?": [
+    51.193,
+    3.433
+   ],
+   "ko|괜찮아! 같이 찾아보자.": [
+    54.925,
+    2.916
+   ],
+   "ko|코로 살살~ 낙엽을 들춰 볼게.": [
+    58.142,
+    4.746
+   ],
+   "ko|여기 뭐가 보여!": [
+    63.187,
+    1.606
+   ],
+   "ko|도토리가 빼꼼, 세 개!": [
+    65.093,
+    4.447
+   ],
+   "ko|도토리를 바구니에 쏙쏙 넣어 줘!": [
+    69.841,
+    3.796
+   ],
+   "ko|도토리 세 개 다 담았어!": [
+    73.937,
+    3.167
+   ],
+   "ko|도토리를 꾹 눌러 바구니로!": [
+    77.404,
+    3.471
+   ],
+   "ko|붕붕~ 도토리는 왜 모을까?": [
+    81.176,
+    4.287
+   ],
+   "ko|아하! 겨울에 먹으려고 모아 둬!": [
+    85.763,
+    3.633
+   ],
+   "ko|솔방울도 하나 있었는데…": [
+    89.695,
+    2.761
+   ],
+   "ko|내가 봤어! 이 중에 있어!": [
+    92.757,
+    2.837
+   ],
+   "ko|솔방울은 어느 거? 골라 봐!": [
+    95.894,
+    3.425
+   ],
+   "ko|맞아! 솔방울이야!": [
+    99.619,
+    2.691
+   ],
+   "ko|비늘이 콕콕 있지?": [
+    102.61,
+    2.468
+   ],
+   "ko|비늘이 콕콕, 길쭉한 거야!": [
+    105.377,
+    3.56
+   ],
+   "ko|바람이 휘잉~ 낙엽이 팔랑팔랑!": [
+    109.237,
+    7.374
+   ],
+   "ko|팔랑팔랑~ 개굴개굴!": [
+    116.912,
+    2.712
+   ],
+   "ko|빨간 잎, 노란 잎, 갈색 잎!": [
+    119.924,
+    5.096
+   ],
+   "ko|가을엔 나뭇잎 색이 바뀌어!": [
+    125.32,
+    3.697
+   ],
+   "ko|알록달록 낙엽을 톡톡 잡아 봐!": [
+    129.317,
+    3.224
+   ],
+   "ko|빨간 잎! 노란 잎! 갈색 잎!": [
+    132.842,
+    3.585
+   ],
+   "ko|가을 잎은 알록달록해!": [
+    136.726,
+    2.514
+   ],
+   "ko|다 찾아서 다행이야!": [
+    139.54,
+    1.991
+   ],
+   "ko|같이 찾아 줘서 고마워!": [
+    141.83,
+    3.518
+   ],
+   "ko|친구가 속상해 보이면": [
+    145.648,
+    2.561
+   ],
+   "ko|'괜찮아?' 물어봐요.": [
+    148.509,
+    2.557
+   ],
+   "ko|멀리서 아기 곰도 손을 흔들어요.": [
+    151.366,
+    4.295
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    155.961,
+    2.87
+   ],
+   "en|Bye!": [
+    159.131,
+    1.214
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    160.645,
+    3.376
+   ]
+  }
+ }
+}
