@@ -1,0 +1,875 @@
+{
+ "id": "en003",
+ "subject": "en",
+ "hero": "peng",
+ "title": "아기 곰의 무지개",
+ "cover": "content/chars/peng/happy.webp",
+ "color": "#c9b3f2",
+ "lesson": "놀고 나면 손을 뽀득뽀득 씻어요",
+ "goals": [
+  "영어: 색깔 Green·Orange·Purple (초록·주황·보라)",
+  "영어: Red·Yellow·Blue 다시 보기 + 두 색을 섞으면 새 색",
+  "영어: 알파벳 C — C, color!",
+  "맛보기: Hello! · Thank you! · Bye!",
+  "교훈: 놀고 나면 손 씻기"
+ ],
+ "dev": [
+  "언어",
+  "인지",
+  "소근육",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 12,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "plane",
+     "e": "content/ep/en003/img/paper_plane.webp",
+     "x": 56,
+     "y": 30,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "휘잉~ 종이비행기가 톡!",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "peng",
+     "t": "어? 곰 발바닥이 찍혀 있어!"
+    },
+    {
+     "who": "peng",
+     "t": "서준아, 톡톡 펼쳐 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "plane",
+    "n": 3,
+    "prompt": "종이비행기를 톡톡톡 눌러 봐!",
+    "sfx": "pok",
+    "say": [
+     [
+      "활짝! 그림이 나왔어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "rainbow",
+     "e": "content/ep/en003/img/rainbow_half.webp",
+     "x": 30,
+     "y": 12,
+     "s": 46,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 76,
+     "y": 36,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bear",
+     "t": "Hello!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "아기 곰이야! 안녕!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Red! Yellow! Blue!",
+     "lang": "en"
+    },
+    {
+     "who": "bear",
+     "t": "근데… 초록이 없어.",
+     "mood": "sad"
+    },
+    {
+     "who": "bear",
+     "t": "물감이 세 개뿐이야.",
+     "mood": "sad"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 44,
+     "y": 14,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 6,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "g_belly",
+     "e": "content/ep/en003/img/drop_green.webp",
+     "x": 14,
+     "y": 64,
+     "s": 9,
+     "anim": "none"
+    },
+    {
+     "id": "d_yellow",
+     "e": "content/ep/en003/img/drop_yellow.webp",
+     "x": 48,
+     "y": 70,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "d_blue",
+     "e": "content/ep/en003/img/drop_blue.webp",
+     "x": 60,
+     "y": 72,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 76,
+     "y": 34,
+     "s": 36,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 이건 왜 그럴까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "narr",
+     "t": "날개가 툭! 물감이 철퍽!",
+     "sfx": "splash"
+    },
+    {
+     "who": "bee",
+     "t": "미안해, 차차!",
+     "mood": "sad"
+    },
+    {
+     "who": "peng",
+     "t": "괜찮아! 어? 여기 초록이 됐어!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "와, 섞으니까 새 색이야!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 38,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 78,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "bowl",
+     "e": "content/ep/en003/img/mix_bowl.webp",
+     "x": 44,
+     "y": 56,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "d_yellow",
+     "e": "content/ep/en003/img/drop_yellow.webp",
+     "x": 40,
+     "y": 22,
+     "s": 13,
+     "anim": "bob"
+    },
+    {
+     "id": "d_blue",
+     "e": "content/ep/en003/img/drop_blue.webp",
+     "x": 64,
+     "y": 26,
+     "s": 13,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "내가 여행에서 배웠는데~"
+    },
+    {
+     "who": "peng",
+     "t": "섞으면 새 색이 돼!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "서준아, 같이 섞어 줄래?"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "d_yellow",
+     "d_blue"
+    ],
+    "target": "bowl",
+    "prompt": "노랑이랑 파랑을 그릇에 쏙쏙!",
+    "sfx": "plop",
+    "say": [
+     [
+      "짠! 초록이 됐어!",
+      "ko"
+     ],
+     [
+      "영어로 초록은~",
+      "ko"
+     ],
+     [
+      "Green!",
+      "en"
+     ],
+     [
+      "C, color!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 38,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 38,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 74,
+     "y": 36,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bowl",
+     "e": "content/ep/en003/img/mix_bowl.webp",
+     "x": 40,
+     "y": 10,
+     "s": 18,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "코로 살살~ 주황이 됐어!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "휘휘! 나는 보라가 됐어!",
+     "sfx": "swoosh",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Orange! Purple!",
+     "lang": "en"
+    },
+    {
+     "who": "peng",
+     "t": "보라를 찾아 줄래?"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "보라를 톡 골라 봐!",
+    "options": [
+     {
+      "label": "Orange 주황",
+      "color": "#ffcf99"
+     },
+     {
+      "label": "Purple 보라",
+      "color": "#dcc4f5"
+     },
+     {
+      "label": "Green 초록",
+      "color": "#c4ec9c"
+     }
+    ],
+    "answer": 1,
+    "say": [
+     [
+      "Purple!",
+      "en"
+     ],
+     [
+      "맞아! 보라야!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "보라는 포도 색이야!",
+      "ko"
+     ],
+     [
+      "Purple!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 0,
+     "y": 50,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 84,
+     "y": 52,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "큰 무지개를 같이 칠하자!"
+    },
+    {
+     "who": "peng",
+     "t": "붓으로 쓱쓱 문질러 줘!"
+    }
+   ],
+   "act": {
+    "type": "paint",
+    "prompt": "쓱쓱 문질러서 색을 가득 채워 봐!",
+    "sfx": "brush",
+    "colors": [
+     {
+      "c": "#ff5a4e",
+      "say": [
+       [
+        "Red!",
+        "en"
+       ]
+      ]
+     },
+     {
+      "c": "#ff9f43",
+      "say": [
+       [
+        "Orange!",
+        "en"
+       ]
+      ]
+     },
+     {
+      "c": "#ffd23f",
+      "say": [
+       [
+        "Yellow!",
+        "en"
+       ]
+      ]
+     },
+     {
+      "c": "#5ccf6b",
+      "say": [
+       [
+        "Green!",
+        "en"
+       ]
+      ]
+     },
+     {
+      "c": "#4aa8ff",
+      "say": [
+       [
+        "Blue!",
+        "en"
+       ]
+      ]
+     },
+     {
+      "c": "#a56cf0",
+      "say": [
+       [
+        "Purple!",
+        "en"
+       ]
+      ]
+     }
+    ],
+    "say": [
+     [
+      "짠! 무지개를 다 칠했어!",
+      "ko"
+     ],
+     [
+      "Orange! Green! Purple!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "rainbow",
+     "e": "content/ep/en003/img/rainbow_done.webp",
+     "x": 30,
+     "y": 4,
+     "s": 40,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear_happy.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 40,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 4,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 74,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bear",
+     "t": "Rainbow!",
+     "lang": "en",
+     "mood": "happy",
+     "sfx": "yay"
+    },
+    {
+     "who": "mon",
+     "t": "앗, 내 손이 무지개야!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "다 같이 손 씻자!"
+    },
+    {
+     "who": "frog",
+     "t": "뽀득뽀득~ 개굴!",
+     "sfx": "water",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 4,
+    "prompt": "두 손을 싹싹 비벼 봐요!",
+    "say": [
+     [
+      "뽀득뽀득! 손이 깨끗해!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 38,
+     "y": 34,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "rainbow",
+     "e": "content/ep/en003/img/rainbow_done.webp",
+     "x": 34,
+     "y": 2,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/en002/img/bear_happy.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 64,
+     "y": 30,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 16,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 0,
+     "y": 38,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 6,
+     "y": 4,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 82,
+     "y": 54,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "놀고 나면 손을 뽀득뽀득 씻어요."
+    },
+    {
+     "who": "bear",
+     "t": "Thank you!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye, Bear!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/en003/voice.mp3",
+  "clips": {
+   "ko|휘잉~ 종이비행기가 톡!": [
+    0.3,
+    3.349
+   ],
+   "ko|어? 곰 발바닥이 찍혀 있어!": [
+    3.949,
+    3.063
+   ],
+   "ko|서준아, 톡톡 펼쳐 볼래?": [
+    7.312,
+    2.228
+   ],
+   "ko|종이비행기를 톡톡톡 눌러 봐!": [
+    9.84,
+    4.219
+   ],
+   "ko|활짝! 그림이 나왔어!": [
+    14.36,
+    2.82
+   ],
+   "en|Hello!": [
+    17.48,
+    1.278
+   ],
+   "ko|아기 곰이야! 안녕!": [
+    19.058,
+    2.752
+   ],
+   "en|Red! Yellow! Blue!": [
+    22.11,
+    4.399
+   ],
+   "ko|근데… 초록이 없어.": [
+    26.809,
+    2.811
+   ],
+   "ko|물감이 세 개뿐이야.": [
+    29.92,
+    2.633
+   ],
+   "ko|붕붕~ 이건 왜 그럴까?": [
+    32.852,
+    3.038
+   ],
+   "ko|날개가 툭! 물감이 철퍽!": [
+    36.19,
+    4.971
+   ],
+   "ko|미안해, 차차!": [
+    41.462,
+    1.577
+   ],
+   "ko|괜찮아! 어? 여기 초록이 됐어!": [
+    43.338,
+    2.75
+   ],
+   "ko|와, 섞으니까 새 색이야!": [
+    46.388,
+    2.635
+   ],
+   "ko|내가 여행에서 배웠는데~": [
+    49.323,
+    2.765
+   ],
+   "ko|섞으면 새 색이 돼!": [
+    52.388,
+    3.281
+   ],
+   "ko|서준아, 같이 섞어 줄래?": [
+    55.969,
+    2.333
+   ],
+   "ko|노랑이랑 파랑을 그릇에 쏙쏙!": [
+    58.602,
+    3.474
+   ],
+   "ko|짠! 초록이 됐어!": [
+    62.376,
+    1.938
+   ],
+   "ko|영어로 초록은~": [
+    64.614,
+    1.723
+   ],
+   "en|Green!": [
+    66.637,
+    1.682
+   ],
+   "en|C, color!": [
+    68.618,
+    2.578
+   ],
+   "ko|코로 살살~ 주황이 됐어!": [
+    71.497,
+    2.923
+   ],
+   "ko|휘휘! 나는 보라가 됐어!": [
+    74.72,
+    2.838
+   ],
+   "en|Orange! Purple!": [
+    77.858,
+    3.723
+   ],
+   "ko|보라를 찾아 줄래?": [
+    81.88,
+    2.09
+   ],
+   "ko|보라를 톡 골라 봐!": [
+    84.27,
+    2.498
+   ],
+   "en|Purple!": [
+    87.069,
+    1.541
+   ],
+   "ko|맞아! 보라야!": [
+    88.91,
+    1.603
+   ],
+   "ko|보라는 포도 색이야!": [
+    90.813,
+    2.1
+   ],
+   "ko|큰 무지개를 같이 칠하자!": [
+    93.214,
+    3.505
+   ],
+   "ko|붓으로 쓱쓱 문질러 줘!": [
+    97.019,
+    4.156
+   ],
+   "ko|쓱쓱 문질러서 색을 가득 채워 봐!": [
+    101.475,
+    4.219
+   ],
+   "ko|짠! 무지개를 다 칠했어!": [
+    105.995,
+    3.117
+   ],
+   "en|Orange! Green! Purple!": [
+    109.411,
+    5.41
+   ],
+   "en|Red!": [
+    115.121,
+    1.154
+   ],
+   "en|Orange!": [
+    116.575,
+    1.127
+   ],
+   "en|Yellow!": [
+    118.002,
+    1.232
+   ],
+   "en|Blue!": [
+    119.535,
+    1.086
+   ],
+   "en|Rainbow!": [
+    120.921,
+    1.603
+   ],
+   "ko|앗, 내 손이 무지개야!": [
+    122.824,
+    2.594
+   ],
+   "ko|다 같이 손 씻자!": [
+    125.718,
+    2.145
+   ],
+   "ko|뽀득뽀득~ 개굴!": [
+    128.163,
+    2.812
+   ],
+   "ko|두 손을 싹싹 비벼 봐요!": [
+    131.275,
+    2.891
+   ],
+   "ko|뽀득뽀득! 손이 깨끗해!": [
+    134.466,
+    2.693
+   ],
+   "ko|놀고 나면 손을 뽀득뽀득 씻어요.": [
+    137.459,
+    3.575
+   ],
+   "en|Thank you!": [
+    141.334,
+    1.445
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    143.078,
+    2.991
+   ],
+   "en|Bye, Bear!": [
+    146.37,
+    1.786
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    148.456,
+    2.809
+   ]
+  }
+ }
+}
