@@ -1,0 +1,865 @@
+{
+ "id": "mo003",
+ "subject": "mo",
+ "hero": "mon",
+ "title": "공룡 걸음 쿵쿵",
+ "cover": "content/chars/mon/jump.webp",
+ "color": "#ffd166",
+ "lesson": "골고루 먹으면 힘이 쑥쑥 나요",
+ "goals": [
+  "운동: 공룡처럼 발 구르기 쿵쿵 다섯 번",
+  "운동: 공룡 꼬리처럼 엉덩이 흔들흔들 네 번",
+  "생활: 바나나·브로콜리·고구마 골고루 먹기, 꼭꼭 씹어 냠냠",
+  "안전: 주변 보고 제자리에서",
+  "숫자 하나~다섯 세기",
+  "맛보기: Bye!",
+  "교훈: 골고루 먹기"
+ ],
+ "dev": [
+  "대근육",
+  "소근육",
+  "인지",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "bush",
+     "e": "content/ep/en002/img/bush.webp",
+     "x": 30,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "feet",
+     "e": "content/ep/mo003/img/dino_feet.webp",
+     "x": 46,
+     "y": 52,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 78,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "뒤뚱뒤뚱! 덤불 밑에 공룡 발?",
+     "sfx": "kick"
+    },
+    {
+     "who": "mon",
+     "t": "어? 공룡 발이 거꾸로 걸어!"
+    },
+    {
+     "who": "mon",
+     "t": "서준아, 톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "feet",
+    "prompt": "공룡 발을 톡 눌러 봐!",
+    "sfx": "boing",
+    "reveal": "content/ep/mo003/img/popo_feet_back.webp",
+    "say": [
+     [
+      "짠! 포포였구나!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "뒤뚱뒤뚱 공룡 발을 톡!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/ep/mo003/img/popo_feet_back.webp",
+     "x": 40,
+     "y": 44,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 48,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 78,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴? 신발이 거꾸로네! 헤헤.",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "하하! 뒤뚱뒤뚱 재밌다!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "바로 신으면 돼! 영차!"
+    },
+    {
+     "who": "narr",
+     "t": "포포가 신발을 바로 신었어요."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "print",
+     "e": "content/ep/mo003/img/dino_print.webp",
+     "x": 40,
+     "y": 76,
+     "s": 16,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 4,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 24,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 50,
+     "y": 48,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/ep/mo003/img/popo_feet.webp",
+     "x": 74,
+     "y": 46,
+     "s": 34,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "공룡처럼 쿵쿵 걸어 보자!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "쿵! 쿵! 모래에 공룡 발자국!",
+     "sfx": "rex"
+    },
+    {
+     "who": "frog",
+     "t": "콩… 콩…",
+     "sfx": "pok"
+    },
+    {
+     "who": "narr",
+     "t": "어? 포포만 소리가 작아요."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sad.webp",
+     "x": 40,
+     "y": 52,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 70,
+     "y": 10,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 76,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 4,
+     "y": 34,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "꼬르륵… 힘이 없어.",
+     "mood": "sad",
+     "sfx": "bubble"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 포포는 왜 콩콩일까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "frog",
+     "t": "아침에 젤리만 먹었어.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 맛있는 거 골고루 먹자."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "basket",
+     "e": "content/ep/mo002/img/snack_basket.webp",
+     "x": 22,
+     "y": 60,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "plate",
+     "e": "content/ep/mo003/img/plate.webp",
+     "x": 62,
+     "y": 70,
+     "s": 18,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 0,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sad.webp",
+     "x": 78,
+     "y": 50,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "banana",
+     "e": "content/ep/mo003/img/banana.webp",
+     "x": 34,
+     "y": 38,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "broccoli",
+     "e": "content/ep/mo003/img/broccoli.webp",
+     "x": 46,
+     "y": 50,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "sweet_potato",
+     "e": "content/ep/mo003/img/sweet_potato.webp",
+     "x": 58,
+     "y": 40,
+     "s": 14,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "코코가 코로 바구니를 쓱 열어요.",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "ele",
+     "t": "바나나, 브로콜리, 고구마!"
+    },
+    {
+     "who": "ele",
+     "t": "서준아, 포포 접시에 담아 줄래?"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "banana",
+     "broccoli",
+     "sweet_potato"
+    ],
+    "target": "plate",
+    "count": true,
+    "prompt": "하나씩 쓱 끌어서 접시에 담아!",
+    "sfx": "plop",
+    "say": [
+     [
+      "하나, 둘, 셋! 골고루 담았어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "plate",
+     "e": "content/ep/mo003/img/plate.webp",
+     "x": 42,
+     "y": 70,
+     "s": 18,
+     "anim": "none"
+    },
+    {
+     "id": "banana",
+     "e": "content/ep/mo003/img/banana.webp",
+     "x": 42,
+     "y": 64,
+     "s": 10,
+     "anim": "none"
+    },
+    {
+     "id": "broccoli",
+     "e": "content/ep/mo003/img/broccoli.webp",
+     "x": 48,
+     "y": 62,
+     "s": 10,
+     "anim": "none"
+    },
+    {
+     "id": "sweet_potato",
+     "e": "content/ep/mo003/img/sweet_potato.webp",
+     "x": 54,
+     "y": 64,
+     "s": 10,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 74,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "골고루 먹으면 힘이 나."
+    },
+    {
+     "who": "frog",
+     "t": "고마워, 코코! 잘 먹을게!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "아~ 하고 꼭꼭 씹어 먹자!"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "aah",
+    "e": "content/ep/mu001/img/aah_popo.webp",
+    "prompt": "서준이도 입 크게 아~ 해 봐!",
+    "say": [
+     [
+      "찰칵! 아~ 냠냠, 맛있겠다!",
+      "ko"
+     ],
+     [
+      "꼭꼭 씹어서 냠냠!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "print",
+     "e": "content/ep/mo003/img/dino_print.webp",
+     "x": 44,
+     "y": 78,
+     "s": 16,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/ep/mo003/img/popo_feet.webp",
+     "x": 40,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 4,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 78,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "냠냠! 힘이 쑥쑥 나!",
+     "mood": "happy",
+     "sfx": "chomp"
+    },
+    {
+     "who": "mon",
+     "t": "이번엔 다 같이 쿵쿵!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "주변 보고, 제자리에서!"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 5,
+    "prompt": "공룡처럼 발을 쿵! 다섯 번!",
+    "sfx": "rex",
+    "say": [
+     [
+      "쿵쿵! 포포도 진짜 공룡 같아!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "print",
+     "e": "content/ep/mo003/img/dino_print.webp",
+     "x": 40,
+     "y": 74,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 48,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 30,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 78,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 60,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "쿵! 모래에 커다란 발자국이 쿵!",
+     "sfx": "rex"
+    },
+    {
+     "who": "peng",
+     "t": "공룡은 꼬리도 흔들어!"
+    },
+    {
+     "who": "frog",
+     "t": "나는 꼬리가 없는데?"
+    },
+    {
+     "who": "mon",
+     "t": "엉덩이로 하면 돼!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 4,
+    "prompt": "엉덩이 흔들흔들! 네 번!",
+    "say": [
+     [
+      "흔들흔들~ 다 같이 하니까 신나!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 40,
+     "y": 26,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 3,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 16,
+     "y": 44,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 68,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "골고루 먹으면 힘이 쑥쑥 나!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "챙겨 줘서 고마워, 친구들!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 또 같이 하자!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mo003/voice.mp3",
+  "clips": {
+   "ko|뒤뚱뒤뚱! 덤불 밑에 공룡 발?": [
+    0.3,
+    6.204
+   ],
+   "ko|어? 공룡 발이 거꾸로 걸어!": [
+    6.804,
+    3.7
+   ],
+   "ko|서준아, 톡 눌러 볼래?": [
+    10.804,
+    2.33
+   ],
+   "ko|공룡 발을 톡 눌러 봐!": [
+    13.434,
+    2.532
+   ],
+   "ko|짠! 포포였구나!": [
+    16.266,
+    3.114
+   ],
+   "ko|뒤뚱뒤뚱 공룡 발을 톡!": [
+    19.681,
+    3.669
+   ],
+   "ko|개굴? 신발이 거꾸로네! 헤헤.": [
+    23.65,
+    3.777
+   ],
+   "ko|하하! 뒤뚱뒤뚱 재밌다!": [
+    27.726,
+    3.174
+   ],
+   "ko|바로 신으면 돼! 영차!": [
+    31.201,
+    2.953
+   ],
+   "ko|포포가 신발을 바로 신었어요.": [
+    34.454,
+    3.077
+   ],
+   "ko|공룡처럼 쿵쿵 걸어 보자!": [
+    37.831,
+    2.521
+   ],
+   "ko|쿵! 쿵! 모래에 공룡 발자국!": [
+    40.652,
+    4.732
+   ],
+   "ko|콩… 콩…": [
+    45.684,
+    2.249
+   ],
+   "ko|어? 포포만 소리가 작아요.": [
+    48.234,
+    3.177
+   ],
+   "ko|꼬르륵… 힘이 없어.": [
+    51.711,
+    3.879
+   ],
+   "ko|붕붕~ 포포는 왜 콩콩일까?": [
+    55.89,
+    3.747
+   ],
+   "ko|아침에 젤리만 먹었어.": [
+    59.937,
+    2.989
+   ],
+   "ko|괜찮아! 맛있는 거 골고루 먹자.": [
+    63.226,
+    3.374
+   ],
+   "ko|코코가 코로 바구니를 쓱 열어요.": [
+    66.899,
+    3.453
+   ],
+   "ko|바나나, 브로콜리, 고구마!": [
+    70.652,
+    3.571
+   ],
+   "ko|서준아, 포포 접시에 담아 줄래?": [
+    74.523,
+    2.84
+   ],
+   "ko|하나씩 쓱 끌어서 접시에 담아!": [
+    77.663,
+    4.648
+   ],
+   "ko|하나, 둘, 셋! 골고루 담았어!": [
+    82.611,
+    4.415
+   ],
+   "ko|골고루 먹으면 힘이 나.": [
+    87.326,
+    2.656
+   ],
+   "ko|고마워, 코코! 잘 먹을게!": [
+    90.282,
+    2.918
+   ],
+   "ko|아~ 하고 꼭꼭 씹어 먹자!": [
+    93.501,
+    3.419
+   ],
+   "ko|서준이도 입 크게 아~ 해 봐!": [
+    97.22,
+    2.613
+   ],
+   "ko|찰칵! 아~ 냠냠, 맛있겠다!": [
+    100.133,
+    3.849
+   ],
+   "ko|꼭꼭 씹어서 냠냠!": [
+    104.281,
+    2.566
+   ],
+   "ko|냠냠! 힘이 쑥쑥 나!": [
+    107.147,
+    2.555
+   ],
+   "ko|이번엔 다 같이 쿵쿵!": [
+    110.002,
+    2.675
+   ],
+   "ko|주변 보고, 제자리에서!": [
+    112.976,
+    2.902
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    116.178,
+    3.413
+   ],
+   "ko|공룡처럼 발을 쿵! 다섯 번!": [
+    119.891,
+    3.254
+   ],
+   "ko|쿵쿵! 포포도 진짜 공룡 같아!": [
+    123.446,
+    4.11
+   ],
+   "ko|쿵! 모래에 커다란 발자국이 쿵!": [
+    127.855,
+    5.113
+   ],
+   "ko|공룡은 꼬리도 흔들어!": [
+    133.268,
+    2.091
+   ],
+   "ko|나는 꼬리가 없는데?": [
+    135.659,
+    2.599
+   ],
+   "ko|엉덩이로 하면 돼!": [
+    138.559,
+    1.819
+   ],
+   "ko|엉덩이 흔들흔들! 네 번!": [
+    140.678,
+    3.213
+   ],
+   "ko|흔들흔들~ 다 같이 하니까 신나!": [
+    144.191,
+    4.338
+   ],
+   "ko|골고루 먹으면 힘이 쑥쑥 나!": [
+    148.829,
+    2.737
+   ],
+   "ko|챙겨 줘서 고마워, 친구들!": [
+    151.866,
+    2.252
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    154.418,
+    2.526
+   ],
+   "ko|하나, 둘, 셋! 또 같이 하자!": [
+    157.243,
+    4.638
+   ],
+   "en|Bye!": [
+    162.182,
+    1.46
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    163.942,
+    3.179
+   ]
+  }
+ }
+}
