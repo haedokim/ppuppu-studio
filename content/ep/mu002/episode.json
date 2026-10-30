@@ -1,0 +1,862 @@
+{
+ "id": "mu002",
+ "subject": "mu",
+ "hero": "frog",
+ "title": "거북이랑 숲 행진",
+ "cover": "content/chars/frog/sing.webp",
+ "color": "#a8e6a1",
+ "lesson": "느린 친구가 있으면 맞춰서 같이 가요",
+ "goals": [
+  "노래: 빠르게/느리게 듣고 구별하기 (콩콩콩콩 토끼 걸음 · 둥… 둥… 거북 걸음)",
+  "노래: 거북 걸음에 맞춰 연잎 북 천천히 네 번 · 제자리 느린 행진 네 걸음",
+  "노래: 「느릿느릿 행진 노래」 느리게·빠르게 따라 부르기",
+  "숫자 하나~넷 세기",
+  "맛보기: Fast! · Slow!",
+  "교훈: 친구 돕기 — 느린 친구에게 맞춰 같이 가기"
+ ],
+ "dev": [
+  "대근육",
+  "인지",
+  "언어",
+  "소근육",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "turtle",
+     "e": "content/ep/mu002/img/turtle_hide.webp",
+     "name": "아기 거북",
+     "voice_style": "작고 또박또박, 조금 느릿한 아기 목소리",
+     "x": 52,
+     "y": 58,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 6,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "꼼지락꼼지락! 돌이 움직여요?",
+     "sfx": "tick"
+    },
+    {
+     "who": "frog",
+     "t": "어? 저 돌이 움직였어!"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "turtle",
+    "prompt": "동그란 돌을 톡 눌러 봐!",
+    "sfx": "boing",
+    "reveal": "content/ep/mu002/img/turtle.webp",
+    "say": [
+     [
+      "쏙! 아기 거북이었어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "turtle",
+     "e": "content/ep/mu002/img/turtle.webp",
+     "name": "아기 거북",
+     "voice_style": "작고 또박또박, 조금 느릿한 아기 목소리",
+     "x": 58,
+     "y": 56,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 6,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 32,
+     "y": 64,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "note1",
+     "e": "content/ep/mu001/img/note_pink.webp",
+     "x": 40,
+     "y": 14,
+     "s": 12,
+     "anim": "bob"
+    },
+    {
+     "id": "note2",
+     "e": "content/ep/mu001/img/note_blue.webp",
+     "x": 76,
+     "y": 20,
+     "s": 12,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "turtle",
+     "t": "안녕… 나는 아기 거북이야."
+    },
+    {
+     "who": "frog",
+     "t": "숲 행진 하는데, 같이 갈래?"
+    },
+    {
+     "who": "turtle",
+     "t": "응! 나도 갈래!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 노래해요!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "느릿느릿 거북 걸음, 둥… 둥…",
+     "sfx": "pok",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "깡총깡총 토끼 걸음, 콩콩콩콩!",
+     "sfx": "pok",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "천천히 천천히, 둥… 둥…",
+     "sfx": "pok",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "다 같이 가요, 개굴!",
+     "sfx": "frog",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/run.webp",
+     "x": 72,
+     "y": 40,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 70,
+     "y": 72,
+     "s": 16,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/sad.webp",
+     "x": 40,
+     "y": 42,
+     "s": 34,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "turtle",
+     "e": "content/ep/mu002/img/turtle_sad.webp",
+     "name": "아기 거북",
+     "voice_style": "작고 또박또박, 조금 느릿한 아기 목소리",
+     "x": 6,
+     "y": 62,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 16,
+     "y": 10,
+     "s": 32,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 출발!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "다다다닥! 키키가 너무 빨라요!",
+     "sfx": "pok"
+    },
+    {
+     "who": "narr",
+     "t": "친구들이 휙휙 달려가요.",
+     "sfx": "run"
+    },
+    {
+     "who": "turtle",
+     "t": "같이 가고 싶은데…",
+     "mood": "sad"
+    },
+    {
+     "who": "ele",
+     "t": "거북아! 나도 빨리 못 뛰어…",
+     "mood": "sad"
+    },
+    {
+     "who": "mon",
+     "t": "앗, 너무 빨랐어! 미안해.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 천천히 다시 가 보자."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 44,
+     "y": 6,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 40,
+     "y": 62,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 74,
+     "y": 42,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 빠른 소리는 누구 걸음일까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "narr",
+     "t": "콩콩콩콩! 콩콩콩콩!",
+     "sfx": "pok"
+    },
+    {
+     "who": "frog",
+     "t": "토끼일까? 거북일까?"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "콩콩콩콩! 누구 걸음일까?",
+    "sfx": "pok",
+    "options": [
+     {
+      "label": "토끼",
+      "e": "content/ep/en002/img/rabbit.webp"
+     },
+     {
+      "label": "거북",
+      "e": "content/ep/mu002/img/turtle.webp"
+     }
+    ],
+    "answer": 0,
+    "say": [
+     [
+      "맞아! 토끼 걸음이야!",
+      "ko"
+     ],
+     [
+      "깡총깡총, 빠르게!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "다시 들어 봐! 콩콩콩콩~",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 76,
+     "y": 6,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 36,
+     "y": 46,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 74,
+     "y": 48,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "turtle",
+     "e": "content/ep/mu002/img/turtle.webp",
+     "name": "아기 거북",
+     "voice_style": "작고 또박또박, 조금 느릿한 아기 목소리",
+     "x": 60,
+     "y": 72,
+     "s": 18,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "Fast!",
+     "lang": "en"
+    },
+    {
+     "who": "peng",
+     "t": "Slow!",
+     "lang": "en"
+    },
+    {
+     "who": "peng",
+     "t": "거북이는 느리게!"
+    },
+    {
+     "who": "frog",
+     "t": "이번엔 거북이 걸음처럼 천천히!"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "drum",
+    "n": 4,
+    "prompt": "연잎 북을 둥… 둥… 천천히 네 번!",
+    "sfx": "pok",
+    "say": [
+     [
+      "둥… 둥… 둥… 둥…",
+      "ko"
+     ],
+     [
+      "키키도 살살 따라 했어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 78,
+     "y": 40,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 30,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "turtle",
+     "e": "content/ep/mu002/img/turtle.webp",
+     "name": "아기 거북",
+     "voice_style": "작고 또박또박, 조금 느릿한 아기 목소리",
+     "x": 56,
+     "y": 62,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 56,
+     "y": 6,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "거북아, 같이 천천히 가자!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "다 같이 천천히 행진!"
+    },
+    {
+     "who": "mon",
+     "t": "같이 한 걸음!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 4,
+    "cam": "stomp",
+    "prompt": "제자리에서 느릿느릿 네 걸음!",
+    "say": [
+     [
+      "느릿느릿 거북 걸음, 둥… 둥…",
+      "ko"
+     ],
+     [
+      "천천히 천천히, 다 같이 가요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "arch",
+     "e": "content/ep/mu002/img/flower_arch.webp",
+     "x": 30,
+     "y": 4,
+     "s": 56,
+     "anim": "none"
+    },
+    {
+     "id": "turtle",
+     "e": "content/ep/mu002/img/turtle_happy.webp",
+     "name": "아기 거북",
+     "voice_style": "작고 또박또박, 조금 느릿한 아기 목소리",
+     "x": 44,
+     "y": 62,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 76,
+     "y": 38,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "turtle",
+     "t": "와! 다 같이 왔어!",
+     "sfx": "yay",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "이번엔 신나게 빠르게!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "이번엔 빨라도 좋아!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "pop",
+    "items": [
+     "content/ep/mu001/img/note_pink.webp",
+     "content/ep/mu001/img/note_blue.webp"
+    ],
+    "n": 5,
+    "prompt": "음표를 톡톡! 빠르게 터뜨려 봐!",
+    "sfx": "pok",
+    "say": [
+     [
+      "깡총깡총 토끼 걸음, 콩콩콩콩!",
+      "ko"
+     ],
+     [
+      "다 같이 가요, 개굴!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 44,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "turtle",
+     "e": "content/ep/mu002/img/turtle_happy.webp",
+     "name": "아기 거북",
+     "voice_style": "작고 또박또박, 조금 느릿한 아기 목소리",
+     "x": 28,
+     "y": 66,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 38,
+     "y": 24,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 66,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 84,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 72,
+     "y": 4,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 18,
+     "y": 6,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "친구와 발걸음을 맞춰서 같이 가요."
+    },
+    {
+     "who": "turtle",
+     "t": "같이 가 줘서 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 또 같이 행진하자!",
+     "sfx": "buzz",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mu002/voice.mp3",
+  "clips": {
+   "ko|꼼지락꼼지락! 돌이 움직여요?": [
+    0.3,
+    4.058
+   ],
+   "ko|어? 저 돌이 움직였어!": [
+    4.658,
+    2.867
+   ],
+   "ko|서준아, 톡 눌러 볼래?": [
+    7.824,
+    2.872
+   ],
+   "ko|동그란 돌을 톡 눌러 봐!": [
+    10.996,
+    2.995
+   ],
+   "ko|쏙! 아기 거북이었어요!": [
+    14.291,
+    3.026
+   ],
+   "ko|안녕… 나는 아기 거북이야.": [
+    17.618,
+    3.795
+   ],
+   "ko|숲 행진 하는데, 같이 갈래?": [
+    21.713,
+    3.598
+   ],
+   "ko|응! 나도 갈래!": [
+    25.611,
+    2.456
+   ],
+   "ko|개굴개굴, 다 같이 노래해요!": [
+    28.367,
+    2.913
+   ],
+   "ko|느릿느릿 거북 걸음, 둥… 둥…": [
+    31.58,
+    5.555
+   ],
+   "ko|깡총깡총 토끼 걸음, 콩콩콩콩!": [
+    37.435,
+    5.783
+   ],
+   "ko|천천히 천천히, 둥… 둥…": [
+    43.518,
+    4.376
+   ],
+   "ko|다 같이 가요, 개굴!": [
+    48.194,
+    2.914
+   ],
+   "ko|하나, 둘, 셋! 출발!": [
+    51.408,
+    3.734
+   ],
+   "ko|다다다닥! 키키가 너무 빨라요!": [
+    55.442,
+    5.923
+   ],
+   "ko|친구들이 휙휙 달려가요.": [
+    61.665,
+    3.991
+   ],
+   "ko|같이 가고 싶은데…": [
+    65.956,
+    2.713
+   ],
+   "ko|거북아! 나도 빨리 못 뛰어…": [
+    68.968,
+    4.238
+   ],
+   "ko|앗, 너무 빨랐어! 미안해.": [
+    73.507,
+    3.659
+   ],
+   "ko|괜찮아! 천천히 다시 가 보자.": [
+    77.466,
+    3.822
+   ],
+   "ko|붕붕~ 빠른 소리는 누구 걸음일까?": [
+    81.588,
+    4.715
+   ],
+   "ko|콩콩콩콩! 콩콩콩콩!": [
+    86.603,
+    4.528
+   ],
+   "ko|토끼일까? 거북일까?": [
+    91.431,
+    3.471
+   ],
+   "ko|콩콩콩콩! 누구 걸음일까?": [
+    95.202,
+    4.23
+   ],
+   "ko|맞아! 토끼 걸음이야!": [
+    99.732,
+    2.611
+   ],
+   "ko|깡총깡총, 빠르게!": [
+    102.643,
+    2.73
+   ],
+   "ko|다시 들어 봐! 콩콩콩콩~": [
+    105.673,
+    3.609
+   ],
+   "en|Fast!": [
+    109.582,
+    1.108
+   ],
+   "en|Slow!": [
+    110.99,
+    1.5
+   ],
+   "ko|거북이는 느리게!": [
+    112.79,
+    2.688
+   ],
+   "ko|이번엔 거북이 걸음처럼 천천히!": [
+    115.778,
+    8.692
+   ],
+   "ko|연잎 북을 둥… 둥… 천천히 네 번!": [
+    124.771,
+    6.109
+   ],
+   "ko|둥… 둥… 둥… 둥…": [
+    131.179,
+    3.089
+   ],
+   "ko|키키도 살살 따라 했어!": [
+    134.568,
+    2.832
+   ],
+   "ko|거북아, 같이 천천히 가자!": [
+    137.699,
+    4.066
+   ],
+   "ko|다 같이 천천히 행진!": [
+    142.066,
+    3.777
+   ],
+   "ko|같이 한 걸음!": [
+    146.143,
+    2.187
+   ],
+   "ko|제자리에서 느릿느릿 네 걸음!": [
+    148.631,
+    4.033
+   ],
+   "ko|천천히 천천히, 다 같이 가요!": [
+    152.963,
+    5.15
+   ],
+   "ko|와! 다 같이 왔어!": [
+    158.413,
+    2.945
+   ],
+   "ko|이번엔 신나게 빠르게!": [
+    161.658,
+    2.391
+   ],
+   "ko|이번엔 빨라도 좋아!": [
+    164.349,
+    2.128
+   ],
+   "ko|음표를 톡톡! 빠르게 터뜨려 봐!": [
+    166.777,
+    3.692
+   ],
+   "ko|친구와 발걸음을 맞춰서 같이 가요.": [
+    170.769,
+    4.579
+   ],
+   "ko|같이 가 줘서 고마워!": [
+    175.648,
+    2.706
+   ],
+   "ko|붕붕~ 또 같이 행진하자!": [
+    178.654,
+    2.778
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    181.732,
+    3.06
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    185.093,
+    3.707
+   ]
+  }
+ }
+}
