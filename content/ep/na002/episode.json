@@ -1,0 +1,899 @@
+{
+ "id": "na002",
+ "subject": "na",
+ "hero": "bee",
+ "title": "고래는 어디 살까?",
+ "cover": "content/chars/bee/wave.webp",
+ "color": "#7ec8e3",
+ "lesson": "모르는 건 물어보면 돼요",
+ "goals": [
+  "자연: 동물이 사는 곳 — 바다(고래·물고기·꽃게·꼬마 상어), 숲(다람쥐), 하늘(새)",
+  "자연: 고래는 바다에 살고, 물 위로 올라와 푸우~ 숨을 쉬어요",
+  "숫자 하나~셋 세기",
+  "맛보기 영어: Whale! · Bye!",
+  "교훈: 모르는 건 물어보기"
+ ],
+ "dev": [
+  "인지",
+  "소근육",
+  "언어",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 42,
+     "y": 30,
+     "s": 30,
+     "anim": "peek",
+     "hidden": true
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 8,
+     "y": 14,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "푸우우~! 바다에서 이상한 소리가 났어요.",
+     "sfx": "whale"
+    },
+    {
+     "who": "narr",
+     "t": "파도 사이로 거품이 뽀글뽀글!",
+     "sfx": "bubble"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 서준아, 거품 밑에 누가 있을까?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "pop",
+    "items": [
+     "content/ep/na002/img/bubble.webp"
+    ],
+    "n": 3,
+    "prompt": "거품을 톡톡 터뜨려 볼래?",
+    "say": [
+     [
+      "짠! 꼬마 고래였구나!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 40,
+     "y": 26,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/jump.webp",
+     "x": 8,
+     "y": 12,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "첨벙! 꼬마 고래가 쑥 나왔어요.",
+     "sfx": "splash"
+    },
+    {
+     "who": "whale",
+     "t": "안녕! 나는 꼬마 고래야.",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 고래는 어디 살까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "peng",
+     "t": "내가 여행에서 배웠는데~ 고래는 숲에도 살아!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/na002/img/whale_sad.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 40,
+     "y": 26,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 2,
+     "y": 50,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 18,
+     "y": 10,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 74,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "whale",
+     "t": "숲…? 숲이 뭐야?",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 고래한테 물어보자."
+    },
+    {
+     "who": "bee",
+     "t": "고래야, 너는 어디 살아?"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/na002/img/whale_spout.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 40,
+     "y": 18,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 10,
+     "y": 10,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "whale",
+     "t": "나는 바다에 살아! 물 위에서 푸우~ 숨 쉬어.",
+     "sfx": "whale",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "헤헤, 몰랐어! 고래는…",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Whale!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "우리도 고래처럼 볼 빵빵!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "puff",
+    "e": "content/ep/mo002/img/puff_kiki.webp",
+    "prompt": "볼에 바람을 넣고 빵빵!",
+    "say": [
+     [
+      "찰칵! 고래처럼 볼 빵빵!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/na002/img/whale_spout.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 2,
+     "y": 20,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "fish",
+     "e": "content/ep/na002/img/fish.webp",
+     "x": 40,
+     "y": 42,
+     "s": 12,
+     "anim": "peek"
+    },
+    {
+     "id": "shark",
+     "e": "content/ep/na002/img/shark_small.webp",
+     "x": 74,
+     "y": 36,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "crab",
+     "e": "content/ep/en001/img/crab.webp",
+     "x": 58,
+     "y": 62,
+     "s": 12,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 30,
+     "y": 6,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "whale",
+     "t": "푸우~ 바다엔 내 친구들도 살아!",
+     "sfx": "whale"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 파도 속에 누가 숨었을까?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "fish",
+     "crab",
+     "shark"
+    ],
+    "count": true,
+    "names": {
+     "fish": "물고기",
+     "crab": "꽃게",
+     "shark": "꼬마 상어"
+    },
+    "prompt": "바다 친구를 톡톡 찾아 줘!",
+    "sfx": "bubble",
+    "say": [
+     [
+      "바다 친구 셋, 다 찾았다!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 40,
+     "y": 24,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 70,
+     "y": 48,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel_happy.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 54,
+     "y": 58,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 8,
+     "y": 10,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "whale",
+     "t": "숲 친구도 만나 보고 싶어…"
+    },
+    {
+     "who": "ele",
+     "t": "바스락바스락~ 숲 친구랑 왔어!",
+     "sfx": "rustle"
+    },
+    {
+     "who": "squirrel",
+     "t": "안녕, 고래야!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 다람쥐는 어디 살까?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "바다, 숲, 하늘! 어디일까?",
+    "options": [
+     {
+      "label": "바다",
+      "e": "content/ep/na002/img/wave.webp"
+     },
+     {
+      "label": "숲",
+      "e": "content/ep/ko002/img/tree_small.webp"
+     },
+     {
+      "label": "하늘",
+      "e": "content/ep/na002/img/cloud.webp"
+     }
+    ],
+    "answer": 1,
+    "say": [
+     [
+      "맞아! 다람쥐는 숲에 살아!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "다람쥐는 나무 위를 쪼르르! 다시 골라 볼까?",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 58,
+     "y": 24,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bird",
+     "e": "content/ep/en002/img/bird.webp",
+     "x": 80,
+     "y": 4,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 8,
+     "y": 8,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel_happy.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 4,
+     "y": 54,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "lf1",
+     "e": "content/ep/na001/img/leaf_red.webp",
+     "x": 24,
+     "y": 70,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "lf2",
+     "e": "content/ep/ko002/img/leaf.webp",
+     "x": 34,
+     "y": 76,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "lf3",
+     "e": "content/ep/na001/img/leaf_brown.webp",
+     "x": 44,
+     "y": 70,
+     "s": 10,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "훨훨~ 아기 새는 하늘에 살아요.",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "bee",
+     "t": "나도 붕붕! 하늘을 날아!",
+     "sfx": "buzz",
+     "mood": "happy"
+    },
+    {
+     "who": "squirrel",
+     "t": "고래야, 숲 선물이야!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "lf1",
+     "lf2",
+     "lf3"
+    ],
+    "target": "whale",
+    "count": true,
+    "prompt": "나뭇잎을 고래 옆 물에 띄워 줘!",
+    "sfx": "plop",
+    "say": [
+     [
+      "나뭇잎 세 장이 둥둥!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "나뭇잎을 꾹 눌러 고래한테!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/na002/img/whale_spout.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 38,
+     "y": 16,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 10,
+     "y": 8,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 76,
+     "y": 52,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 2,
+     "y": 58,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 56,
+     "y": 54,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na001/img/squirrel_happy.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 26,
+     "y": 62,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "whale",
+     "t": "와, 숲 냄새다! 고마워, 푸우~",
+     "sfx": "whale",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "모르는 건 물어보면 돼요.",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "물어보니까 알았어!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴~ 바다 친구도 숲 친구도 다 친구!",
+     "sfx": "frog",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "name": "꼬마 고래",
+     "voice_style": "느긋하고 동글동글한 꼬마 목소리, 말끝에 푸우~",
+     "x": 42,
+     "y": 26,
+     "s": 28,
+     "anim": "peek"
+    },
+    {
+     "id": "bird",
+     "e": "content/ep/en002/img/bird.webp",
+     "x": 82,
+     "y": 4,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 36,
+     "y": 48,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 14,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 76,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 2,
+     "y": 52,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/wave.webp",
+     "x": 60,
+     "y": 64,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "whale",
+     "t": "또 물어보러 와! 푸우~",
+     "sfx": "whale",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "첨벙! 꼬마 고래가 바다로 쏙.",
+     "sfx": "splash"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/na002/voice.mp3",
+  "clips": {
+   "ko|푸우우~! 바다에서 이상한 소리가 났어요.": [
+    0.3,
+    5.444
+   ],
+   "ko|파도 사이로 거품이 뽀글뽀글!": [
+    6.043,
+    4.375
+   ],
+   "ko|붕붕~ 서준아, 거품 밑에 누가 있을까?": [
+    10.719,
+    5.021
+   ],
+   "ko|거품을 톡톡 터뜨려 볼래?": [
+    16.039,
+    2.685
+   ],
+   "ko|짠! 꼬마 고래였구나!": [
+    19.025,
+    2.558
+   ],
+   "ko|첨벙! 꼬마 고래가 쑥 나왔어요.": [
+    21.883,
+    4.929
+   ],
+   "ko|안녕! 나는 꼬마 고래야.": [
+    27.112,
+    5.49
+   ],
+   "ko|붕붕~ 고래는 어디 살까?": [
+    32.902,
+    4.145
+   ],
+   "ko|내가 여행에서 배웠는데~ 고래는 숲에도 살아!": [
+    37.347,
+    5.136
+   ],
+   "ko|숲…? 숲이 뭐야?": [
+    42.783,
+    5.032
+   ],
+   "ko|괜찮아! 고래한테 물어보자.": [
+    48.115,
+    3.059
+   ],
+   "ko|고래야, 너는 어디 살아?": [
+    51.474,
+    3.34
+   ],
+   "ko|나는 바다에 살아! 물 위에서 푸우~ 숨 쉬어.": [
+    55.114,
+    7.258
+   ],
+   "ko|헤헤, 몰랐어! 고래는…": [
+    62.672,
+    3.128
+   ],
+   "en|Whale!": [
+    66.1,
+    1.589
+   ],
+   "ko|우리도 고래처럼 볼 빵빵!": [
+    67.989,
+    4.622
+   ],
+   "ko|볼에 바람을 넣고 빵빵!": [
+    72.911,
+    3.776
+   ],
+   "ko|찰칵! 고래처럼 볼 빵빵!": [
+    76.987,
+    3.732
+   ],
+   "ko|푸우~ 바다엔 내 친구들도 살아!": [
+    81.019,
+    5.211
+   ],
+   "ko|붕붕~ 파도 속에 누가 숨었을까?": [
+    86.529,
+    4.481
+   ],
+   "ko|바다 친구를 톡톡 찾아 줘!": [
+    91.31,
+    3.322
+   ],
+   "ko|바다 친구 셋, 다 찾았다!": [
+    94.932,
+    3.974
+   ],
+   "ko|물고기!": [
+    99.206,
+    1.474
+   ],
+   "ko|꽃게!": [
+    100.98,
+    0.826
+   ],
+   "ko|꼬마 상어!": [
+    102.106,
+    1.858
+   ],
+   "ko|숲 친구도 만나 보고 싶어…": [
+    104.264,
+    3.545
+   ],
+   "ko|바스락바스락~ 숲 친구랑 왔어!": [
+    108.109,
+    4.189
+   ],
+   "ko|안녕, 고래야!": [
+    112.598,
+    1.531
+   ],
+   "ko|붕붕~ 다람쥐는 어디 살까?": [
+    114.429,
+    3.844
+   ],
+   "ko|바다, 숲, 하늘! 어디일까?": [
+    118.573,
+    4.927
+   ],
+   "ko|맞아! 다람쥐는 숲에 살아!": [
+    123.8,
+    3.229
+   ],
+   "ko|다람쥐는 나무 위를 쪼르르! 다시 골라 볼까?": [
+    127.329,
+    5.199
+   ],
+   "ko|훨훨~ 아기 새는 하늘에 살아요.": [
+    132.828,
+    5.169
+   ],
+   "ko|나도 붕붕! 하늘을 날아!": [
+    138.297,
+    3.523
+   ],
+   "ko|고래야, 숲 선물이야!": [
+    142.12,
+    2.827
+   ],
+   "ko|나뭇잎을 고래 옆 물에 띄워 줘!": [
+    145.247,
+    3.247
+   ],
+   "ko|나뭇잎 세 장이 둥둥!": [
+    148.795,
+    3.16
+   ],
+   "ko|나뭇잎을 꾹 눌러 고래한테!": [
+    152.255,
+    3.861
+   ],
+   "ko|와, 숲 냄새다! 고마워, 푸우~": [
+    156.416,
+    4.156
+   ],
+   "ko|모르는 건 물어보면 돼요.": [
+    160.872,
+    3.018
+   ],
+   "ko|물어보니까 알았어!": [
+    164.19,
+    2.346
+   ],
+   "ko|개굴개굴~ 바다 친구도 숲 친구도 다 친구!": [
+    166.836,
+    5.063
+   ],
+   "ko|또 물어보러 와! 푸우~": [
+    172.199,
+    3.081
+   ],
+   "ko|첨벙! 꼬마 고래가 바다로 쏙.": [
+    175.58,
+    4.761
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    180.641,
+    2.587
+   ],
+   "en|Bye!": [
+    183.528,
+    1.37
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    185.198,
+    3.873
+   ]
+  }
+ }
+}
