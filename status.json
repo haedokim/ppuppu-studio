@@ -1,0 +1,476 @@
+{
+ "at": "2026-11-01T05:33:54",
+ "agents": [
+  {
+   "id": "director",
+   "name": "감독",
+   "role": "전체 조율",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "analyst",
+   "name": "analyst",
+   "role": "반응 요약",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "planner",
+   "name": "planner",
+   "role": "기획",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "writer",
+   "name": "writer",
+   "role": "대본",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "artist",
+   "name": "artist",
+   "role": "그림",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "art-director",
+   "name": "art-director",
+   "role": "그림 검토",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "voice",
+   "name": "voice",
+   "role": "목소리",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "qa",
+   "name": "qa",
+   "role": "검수",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "publisher",
+   "name": "publisher",
+   "role": "배포",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "designer",
+   "name": "designer",
+   "role": "화면 디자인",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "development",
+   "name": "development",
+   "role": "발달 자문",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "dad",
+   "name": "해도 님",
+   "role": "승인",
+   "state": "waiting",
+   "what": "ko004 확인"
+  }
+ ],
+ "busy": false,
+ "running": [],
+ "last_activity": 1793478833,
+ "stall_minutes": 10,
+ "current": {
+  "id": "ko004",
+  "subject": "한글",
+  "title": "리본 ㄹ 초대장",
+  "step": "wait_plan",
+  "step_i": 1,
+  "review": null,
+  "steps": [
+   {
+    "k": "plan",
+    "t": "기획",
+    "who": "planner"
+   },
+   {
+    "k": "wait_plan",
+    "t": "승인 ①",
+    "who": "해도 님"
+   },
+   {
+    "k": "write",
+    "t": "대본",
+    "who": "writer"
+   },
+   {
+    "k": "make",
+    "t": "그림·목소리",
+    "who": "artist · voice"
+   },
+   {
+    "k": "qa",
+    "t": "검수",
+    "who": "qa"
+   },
+   {
+    "k": "wait_final",
+    "t": "승인 ②",
+    "who": "해도 님"
+   },
+   {
+    "k": "publish",
+    "t": "배포",
+    "who": "publisher"
+   },
+   {
+    "k": "done",
+    "t": "끝",
+    "who": ""
+   }
+  ],
+  "waiting": true,
+  "asked": "2026-10-31T21:52:11",
+  "answer": "pending",
+  "voice": null,
+  "images": null,
+  "qa": null,
+  "last_change": 1793451131,
+  "director": false,
+  "jobs": []
+ },
+ "episodes": [
+  {
+   "id": "ko004",
+   "subject": "한글",
+   "title": "리본 ㄹ 초대장",
+   "step": "wait_plan",
+   "step_i": 1,
+   "review": null,
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": true,
+   "asked": "2026-10-31T21:52:11",
+   "answer": "pending",
+   "voice": null,
+   "images": null,
+   "qa": null,
+   "last_change": 1793451131,
+   "director": false,
+   "jobs": []
+  },
+  {
+   "id": "mo004",
+   "subject": "운동",
+   "title": "후~ 하~ 별 숨쉬기",
+   "step": "wait_plan",
+   "step_i": 1,
+   "review": null,
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": true,
+   "asked": "2026-10-31T22:12:59",
+   "answer": "pending",
+   "voice": null,
+   "images": null,
+   "qa": null,
+   "last_change": 1793452379,
+   "director": false,
+   "jobs": []
+  }
+ ],
+ "lanes": {
+  "voice": {
+   "running": [],
+   "queued": []
+  },
+  "image": {
+   "running": [],
+   "queued": []
+  },
+  "cpu": {
+   "running": [],
+   "queued": []
+  },
+  "light": {
+   "running": [],
+   "queued": []
+  },
+  "recent": [
+   {
+    "ep": "na002",
+    "name": "녹음 다시 Whale",
+    "state": "done",
+    "ended": "2026-10-30T21:03:59"
+   },
+   {
+    "ep": "na002",
+    "name": "녹음 검사 2",
+    "state": "done",
+    "ended": "2026-10-30T21:07:00"
+   },
+   {
+    "ep": "na002",
+    "name": "묶기 2",
+    "state": "done",
+    "ended": "2026-10-30T21:07:23"
+   },
+   {
+    "ep": "na002",
+    "name": "그림 wave 다시",
+    "state": "done",
+    "ended": "2026-10-30T21:08:42"
+   },
+   {
+    "ep": "na002",
+    "name": "자동 플레이",
+    "state": "done",
+    "ended": "2026-10-30T21:17:03"
+   },
+   {
+    "ep": "na002",
+    "name": "미리보기",
+    "state": "done",
+    "ended": "2026-10-30T21:20:42"
+   }
+  ]
+ },
+ "alerts": [
+  "ko004 해도 님 답장을 기다려요 (기획안 승인)",
+  "mo004 해도 님 답장을 기다려요 (기획안 승인)"
+ ],
+ "tasks": [
+  {
+   "n": 34,
+   "title": "놀이·생활 습관 화면 그림 업그레이드(먼저 양치·모기 2화면 시안)",
+   "state": "waiting",
+   "detail": "15개 화면 완료 · 새 앱(v27) 배포 허락 기다림",
+   "upd": "2026-10-31T22:18"
+  },
+  {
+   "n": 3,
+   "title": "의성어 효과음 (Freesound)",
+   "state": "doing",
+   "detail": "다음 작업 · v19 확인 뒤 시작",
+   "upd": "2026-10-26T02:22"
+  },
+  {
+   "n": 40,
+   "title": "그림 한도 임시 150 → 그림 업그레이드 끝나면 40 으로 되돌리기",
+   "state": "doing",
+   "detail": "",
+   "upd": "2026-10-31T21:57"
+  },
+  {
+   "n": 29,
+   "title": "운동해요 따라 해요 동작 13개 모두 카메라로 세기(곰까지)",
+   "state": "done",
+   "detail": "v24 배포 완료",
+   "upd": "2026-10-30T07:50"
+  },
+  {
+   "n": 30,
+   "title": "이야기 보는 중 홈 버튼 → '그만 볼까요?' 되묻기",
+   "state": "done",
+   "detail": "v25 배포 완료",
+   "upd": "2026-10-30T07:55"
+  },
+  {
+   "n": 31,
+   "title": "하루 2편 중 1편 빠짐(10-30 자연) 원인 찾고 재발 방지",
+   "state": "done",
+   "detail": "문지기가 오늘 빠진 과목을 먼저 채우게 고침 · 배포는 감독이 직접",
+   "upd": "2026-10-30T19:31"
+  },
+  {
+   "n": 32,
+   "title": "일요일은 공장 쉬기(토요일 저녁에 월요일 편 미리)",
+   "state": "done",
+   "detail": "일요일엔 새 편 안 만듦 · 토요일 저녁에 월요일 편",
+   "upd": "2026-10-31T21:10"
+  },
+  {
+   "n": 33,
+   "title": "메인 화면 친구: 가장 최근 공개된 날 이야기 주인공만",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 35,
+   "title": "색칠 도안 놀이(눌러 채우기·무지개·색 이름)",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 36,
+   "title": "그림판 그림 저장(내 사진 + 태블릿 갤러리)",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 37,
+   "title": "모든 화면 뒤로가기 확인창",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 38,
+   "title": "색칠 도안 쉬운 단계 4장 추가",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 39,
+   "title": "색칠 제안 5개: 뿌뿌 미션·색 섞기·오늘 이야기 도안·숫자 색칠·아빠에게 보내기",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  }
+ ],
+ "budget": {
+  "image": [
+   0,
+   40
+  ],
+  "tts": [
+   0,
+   200
+  ],
+  "tts_note": null
+ },
+ "next_run": "2026-11-01T18:40",
+ "recent": [
+  {
+   "id": "na002",
+   "subject": "자연",
+   "title": "고래는 어디 살까?",
+   "for": "2026-10-30"
+  },
+  {
+   "id": "mu002",
+   "subject": "노래",
+   "title": "거북이랑 숲 행진",
+   "for": "2026-10-30"
+  },
+  {
+   "id": "en003",
+   "subject": "영어",
+   "title": "아기 곰의 무지개",
+   "for": "2026-10-29"
+  },
+  {
+   "id": "mo003",
+   "subject": "운동",
+   "title": "공룡 걸음 쿵쿵",
+   "for": "2026-10-29"
+  },
+  {
+   "id": "ko003",
+   "subject": "한글",
+   "title": "달팽이 다리 ㄷ",
+   "for": "2026-10-28"
+  },
+  {
+   "id": "na001",
+   "subject": "자연",
+   "title": "데굴데굴 도토리",
+   "for": "2026-10-28"
+  }
+ ],
+ "app": "v26"
+}
