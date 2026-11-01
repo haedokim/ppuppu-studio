@@ -1,0 +1,649 @@
+{
+ "id": "ko004",
+ "subject": "ko",
+ "hero": "ele",
+ "title": "리본 ㄹ 초대장",
+ "cover": "content/chars/ele/happy.webp",
+ "coloring": "content/ep/ko004/img/coloring.webp",
+ "color": "#ffc8dd",
+ "lesson": "하나씩 나눠 쓰면 모두 예뻐져요",
+ "goals": [
+  "한글: ㄹ 모양과 소리 (리을, 리본의 리을)",
+  "한글: ㄱ·ㄴ·ㄷ 다시 보기 — ㄷ 과 ㄹ 구별",
+  "숫자 하나~셋 세기",
+  "맛보기: Bye!",
+  "교훈: 나눠 쓰기"
+ ],
+ "dev": [
+  "인지",
+  "언어",
+  "소근육",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "kiki_tail",
+     "e": "content/ep/ko004/img/kiki_tail.webp",
+     "x": 56,
+     "y": 46,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 6,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "휘릭! 나무 뒤에서 꼬리가 살랑살랑!",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "ele",
+     "t": "서준아, 저 꼬리 누구 거지?"
+    },
+    {
+     "who": "ele",
+     "t": "쉿, 톡 눌러 봐 줄래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "kiki_tail",
+    "prompt": "알록달록 꼬리를 톡 눌러 봐!",
+    "sfx": "boing",
+    "reveal": "content/ep/ko004/img/kiki_ribbon.webp",
+    "say": [
+     [
+      "짠! 리본 칭칭 키키가 나왔어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/ep/ko004/img/kiki_ribbon.webp",
+     "x": 50,
+     "y": 34,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sad.webp",
+     "x": 4,
+     "y": 46,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "box",
+     "e": "content/ep/ko004/img/ribbon_box.webp",
+     "x": 28,
+     "y": 70,
+     "s": 16,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 80,
+     "y": 34,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "짠! 나 선물 같지? 헤헤.",
+     "sfx": "boing",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴! 초대장에 달 리본, 어디 갔지?",
+     "sfx": "frog",
+     "mood": "sad"
+    },
+    {
+     "who": "mon",
+     "t": "앗, 내가 다 감았어… 미안해.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 같이 나눠 쓰자."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 4,
+     "y": 40,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/ep/ko004/img/kiki_ribbon.webp",
+     "x": 74,
+     "y": 40,
+     "s": 36,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "리본은 '리' 소리야."
+    },
+    {
+     "who": "ele",
+     "t": "리을! 리본의 리을!"
+    },
+    {
+     "who": "ele",
+     "t": "리을은 꼬불꼬불 생겼어."
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "리을은 어디 있을까? 눌러 봐!",
+    "options": [
+     {
+      "e": "ㄴ"
+     },
+     {
+      "e": "ㄷ"
+     },
+     {
+      "e": "ㄹ"
+     }
+    ],
+    "answer": 2,
+    "wrong": [
+     [
+      "음~ 그건 리을이 아니야.",
+      "ko"
+     ],
+     [
+      "리을은 꼬불꼬불!",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아요! 이게 리을이에요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/ep/ko004/img/kiki_ribbon.webp",
+     "x": 38,
+     "y": 32,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 76,
+     "y": 10,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 4,
+     "y": 50,
+     "s": 30,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 리본 세 개, 누구 줄까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "mon",
+     "t": "내가 풀게! 하나씩 나눠 줄게!"
+    },
+    {
+     "who": "mon",
+     "t": "서준아, 톡톡 도와줘!"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "mon",
+    "n": 3,
+    "prompt": "키키를 톡톡 세 번 눌러 봐!",
+    "sfx": "pok",
+    "say": [
+     [
+      "하나, 둘, 셋! 리본이 다 풀렸어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 70,
+     "y": 34,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 84,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ribbons",
+     "e": "content/ep/ko004/img/ribbons3.webp",
+     "x": 38,
+     "y": 14,
+     "s": 16,
+     "anim": "none"
+    },
+    {
+     "id": "card1",
+     "e": "content/ep/ko004/img/invite_card.webp",
+     "x": 30,
+     "y": 60,
+     "s": 20,
+     "anim": "none"
+    },
+    {
+     "id": "card2",
+     "e": "content/ep/ko004/img/invite_card.webp",
+     "x": 44,
+     "y": 62,
+     "s": 20,
+     "anim": "none"
+    },
+    {
+     "id": "card3",
+     "e": "content/ep/ko004/img/invite_card.webp",
+     "x": 58,
+     "y": 60,
+     "s": 20,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "리본 하나씩, 초대장에 쏙!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "키키도 와! 차차도 와!"
+    },
+    {
+     "who": "peng",
+     "t": "와, 초대장이다!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "서준이도 초대할게! 활짝 웃어 봐!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "smile",
+    "e": "content/chars/frog/happy.webp",
+    "prompt": "포포처럼 활짝 웃어 봐!",
+    "say": [
+     [
+      "찰칵! 초대장 사진이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 38,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "리본의 리을, 같이 써 볼까?"
+    },
+    {
+     "who": "mon",
+     "t": "꼬불꼬불~ 천천히 써 보자!"
+    }
+   ],
+   "act": {
+    "type": "trace",
+    "letter": "ㄹ",
+    "n": 3,
+    "prompt": "손가락으로 리을을 세 번 따라 써 봐!",
+    "say": [
+     [
+      "우아! 멋진 리을이에요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 38,
+     "y": 26,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 2,
+     "y": 42,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 80,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/wave.webp",
+     "x": 24,
+     "y": 64,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 62,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 66,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "card",
+     "e": "content/ep/ko004/img/invite_card.webp",
+     "x": 44,
+     "y": 70,
+     "s": 16,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "코로 쓱쓱, 글자 완성!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "나눠 쓰니까 다 예뻐!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "하나씩 나눠 쓰면 모두 예뻐져."
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴, 음악회에서 만나!",
+     "sfx": "frog",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/ko004/voice.mp3",
+  "clips": {
+   "ko|휘릭! 나무 뒤에서 꼬리가 살랑살랑!": [
+    0.3,
+    5.091
+   ],
+   "ko|서준아, 저 꼬리 누구 거지?": [
+    5.691,
+    3.554
+   ],
+   "ko|쉿, 톡 눌러 봐 줄래?": [
+    9.545,
+    4.126
+   ],
+   "ko|알록달록 꼬리를 톡 눌러 봐!": [
+    13.971,
+    3.762
+   ],
+   "ko|짠! 리본 칭칭 키키가 나왔어요!": [
+    18.033,
+    4.67
+   ],
+   "ko|짠! 나 선물 같지? 헤헤.": [
+    23.002,
+    3.726
+   ],
+   "ko|개굴! 초대장에 달 리본, 어디 갔지?": [
+    27.028,
+    4.444
+   ],
+   "ko|앗, 내가 다 감았어… 미안해.": [
+    31.772,
+    4.885
+   ],
+   "ko|괜찮아! 같이 나눠 쓰자.": [
+    36.956,
+    3.755
+   ],
+   "ko|리본은 '리' 소리야.": [
+    41.011,
+    2.297
+   ],
+   "ko|리을! 리본의 리을!": [
+    43.608,
+    3.164
+   ],
+   "ko|리을은 꼬불꼬불 생겼어.": [
+    47.073,
+    2.972
+   ],
+   "ko|리을은 어디 있을까? 눌러 봐!": [
+    50.345,
+    3.088
+   ],
+   "ko|맞아요! 이게 리을이에요!": [
+    53.733,
+    3.404
+   ],
+   "ko|음~ 그건 리을이 아니야.": [
+    57.436,
+    2.634
+   ],
+   "ko|리을은 꼬불꼬불!": [
+    60.371,
+    3.267
+   ],
+   "ko|붕붕~ 리본 세 개, 누구 줄까?": [
+    63.938,
+    4.252
+   ],
+   "ko|내가 풀게! 하나씩 나눠 줄게!": [
+    68.49,
+    3.062
+   ],
+   "ko|서준아, 톡톡 도와줘!": [
+    71.852,
+    2.415
+   ],
+   "ko|키키를 톡톡 세 번 눌러 봐!": [
+    74.567,
+    2.498
+   ],
+   "ko|하나, 둘, 셋! 리본이 다 풀렸어요!": [
+    77.365,
+    4.448
+   ],
+   "ko|리본 하나씩, 초대장에 쏙!": [
+    82.114,
+    3.578
+   ],
+   "ko|키키도 와! 차차도 와!": [
+    85.992,
+    3.629
+   ],
+   "ko|와, 초대장이다!": [
+    89.921,
+    1.953
+   ],
+   "ko|서준이도 초대할게! 활짝 웃어 봐!": [
+    92.173,
+    3.715
+   ],
+   "ko|포포처럼 활짝 웃어 봐!": [
+    96.189,
+    2.102
+   ],
+   "ko|찰칵! 초대장 사진이야!": [
+    98.59,
+    2.583
+   ],
+   "ko|리본의 리을, 같이 써 볼까?": [
+    101.473,
+    2.547
+   ],
+   "ko|꼬불꼬불~ 천천히 써 보자!": [
+    104.32,
+    3.341
+   ],
+   "ko|손가락으로 리을을 세 번 따라 써 봐!": [
+    107.96,
+    4.063
+   ],
+   "ko|우아! 멋진 리을이에요!": [
+    112.323,
+    2.292
+   ],
+   "ko|코로 쓱쓱, 글자 완성!": [
+    114.915,
+    3.33
+   ],
+   "ko|나눠 쓰니까 다 예뻐!": [
+    118.545,
+    2.613
+   ],
+   "ko|하나씩 나눠 쓰면 모두 예뻐져.": [
+    121.458,
+    3.588
+   ],
+   "ko|개굴개굴, 음악회에서 만나!": [
+    125.346,
+    3.268
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    128.914,
+    2.361
+   ],
+   "en|Bye!": [
+    131.575,
+    1.183
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    133.058,
+    3.18
+   ]
+  }
+ }
+}
