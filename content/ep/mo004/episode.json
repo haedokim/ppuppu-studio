@@ -1,0 +1,656 @@
+{
+ "id": "mo004",
+ "subject": "mo",
+ "hero": "mon",
+ "title": "후~ 하~ 별 숨쉬기",
+ "cover": "content/chars/mon/happy.webp",
+ "coloring": "content/ep/mo004/img/coloring.webp",
+ "color": "#b8b5f0",
+ "lesson": "흔들려도 괜찮아, 숨 쉬고 다시 해 보면 돼요",
+ "goals": [
+  "운동: 두 팔 옆으로 벌리고 한 발 서기, 하나~셋 (균형)",
+  "운동: 코로 하~ 들이쉬고 입으로 후~ 내쉬기 세 번",
+  "운동: 두 손 높이 쭉 펴기 세 번 (카메라 stretch)",
+  "안전: 주변 보고 넓은 곳에서, 흔들리면 발 내려도 괜찮아",
+  "숫자 하나~셋 세기",
+  "맛보기: Good night!",
+  "교훈: 다시 해 보기"
+ ],
+ "dev": [
+  "대근육",
+  "소근육",
+  "인지",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "baby_star",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "e": "content/ep/mo004/img/baby_star_sleepy.webp",
+     "x": 44,
+     "y": 58,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 76,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "깜빡… 깜빡… 풀밭에 작은 빛이?",
+     "sfx": "bell"
+    },
+    {
+     "who": "baby_star",
+     "t": "서준아… 도와줄래? 눈이 안 떠져.",
+     "mood": "sleepy"
+    },
+    {
+     "who": "mon",
+     "t": "톡톡톡 깨워 보자!"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "baby_star",
+    "n": 3,
+    "prompt": "작은 빛을 톡톡톡 눌러 봐!",
+    "sfx": "bell",
+    "reveal": "content/ep/mo004/img/baby_star.webp",
+    "say": [
+     [
+      "짠! 아기 별이 눈을 반짝 떴어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "baby_star",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "x": 44,
+     "y": 46,
+     "s": 16,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 12,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 74,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "baby_star",
+     "t": "고마워! 하늘 집에 가고 싶어.",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 별은 어떻게 하늘에 가지?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "mon",
+     "t": "쭉쭉 별 체조! 뒤로 한 걸음!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "stretch",
+    "prompt": "두 손 높이 쭉! 별님한테 닿게!",
+    "sfx": "bell",
+    "say": [
+     [
+      "쭉! 쭉! 쭉! 아기 별이 둥실!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/ep/mo004/img/kiki_oneleg.webp",
+     "x": 6,
+     "y": 34,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/ep/mo004/img/coco_wobble.webp",
+     "x": 40,
+     "y": 42,
+     "s": 38,
+     "anim": "none"
+    },
+    {
+     "id": "baby_star",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "x": 64,
+     "y": 60,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 78,
+     "y": 36,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "이번엔 한 발로 반짝!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "어, 어, 어~ 폭신!",
+     "sfx": "plop"
+    },
+    {
+     "who": "ele",
+     "t": "나는 못 하겠어…",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 흔들려도 돼."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 38,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/sad.webp",
+     "x": 4,
+     "y": 46,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 76,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "baby_star",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "x": 62,
+     "y": 60,
+     "s": 14,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴~ 흔들흔들할 땐 숨 후~ 하~!",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "frog",
+     "t": "코로 하~, 입으로 후~ 해 봐."
+    },
+    {
+     "who": "ele",
+     "t": "응, 같이 해 볼게."
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "prompt": "코로 하~ 입으로 후~ 세 번!",
+    "sfx": "swoosh",
+    "say": [
+     [
+      "후~ 하~ 마음이 편안해졌어요.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/ep/mo004/img/kiki_oneleg.webp",
+     "x": 4,
+     "y": 34,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/ep/mo004/img/coco_oneleg.webp",
+     "x": 38,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 76,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "baby_star",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "x": 62,
+     "y": 30,
+     "s": 14,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "주변 보고, 두 팔은 옆으로!"
+    },
+    {
+     "who": "mon",
+     "t": "흔들리면 발 내려도 괜찮아."
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "prompt": "한 발로 서서 하나, 둘, 셋!",
+    "say": [
+     [
+      "하나, 둘, 셋! 한 발 서기 성공!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "baby_star",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "x": 44,
+     "y": 6,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 26,
+     "y": 54,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/ep/en001/img/wink_chacha.webp",
+     "x": 70,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "내가 했어! 한 발로 섰어!",
+     "mood": "happy"
+    },
+    {
+     "who": "baby_star",
+     "t": "반짝! 고마워! 윙크 해 줄게.",
+     "mood": "happy",
+     "sfx": "bell"
+    },
+    {
+     "who": "peng",
+     "t": "우리도 윙크! 찡긋!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "wink",
+    "e": "content/ep/en001/img/wink_chacha.webp",
+    "prompt": "차차처럼 찡긋 윙크해 봐!",
+    "say": [
+     [
+      "찰칵! 반짝반짝 윙크야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 40,
+     "y": 30,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "baby_star",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "x": 46,
+     "y": 4,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 16,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sleep.webp",
+     "x": 2,
+     "y": 56,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 70,
+     "y": 12,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "흔들려도 다시 하면 돼!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "숨 쉬고 다시 하니까 됐어.",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴~ 마지막으로 후~",
+     "mood": "sleepy",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Good night!",
+     "lang": "en",
+     "mood": "sleepy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!",
+     "mood": "sleepy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mo004/voice.mp3",
+  "clips": {
+   "ko|깜빡… 깜빡… 풀밭에 작은 빛이?": [
+    0.3,
+    5.282
+   ],
+   "ko|서준아… 도와줄래? 눈이 안 떠져.": [
+    5.882,
+    4.906
+   ],
+   "ko|톡톡톡 깨워 보자!": [
+    11.088,
+    1.852
+   ],
+   "ko|작은 빛을 톡톡톡 눌러 봐!": [
+    13.24,
+    3.183
+   ],
+   "ko|짠! 아기 별이 눈을 반짝 떴어요!": [
+    16.723,
+    3.845
+   ],
+   "ko|고마워! 하늘 집에 가고 싶어.": [
+    20.868,
+    3.126
+   ],
+   "ko|붕붕~ 별은 어떻게 하늘에 가지?": [
+    24.294,
+    4.098
+   ],
+   "ko|쭉쭉 별 체조! 뒤로 한 걸음!": [
+    28.692,
+    5.157
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    34.149,
+    4.327
+   ],
+   "ko|두 손 높이 쭉! 별님한테 닿게!": [
+    38.776,
+    4.043
+   ],
+   "ko|쭉! 쭉! 쭉! 아기 별이 둥실!": [
+    43.119,
+    4.039
+   ],
+   "ko|이번엔 한 발로 반짝!": [
+    47.458,
+    2.859
+   ],
+   "ko|어, 어, 어~ 폭신!": [
+    50.617,
+    1.963
+   ],
+   "ko|나는 못 하겠어…": [
+    52.88,
+    2.046
+   ],
+   "ko|괜찮아! 흔들려도 돼.": [
+    55.225,
+    2.174
+   ],
+   "ko|개굴~ 흔들흔들할 땐 숨 후~ 하~!": [
+    57.699,
+    6.077
+   ],
+   "ko|코로 하~, 입으로 후~ 해 봐.": [
+    64.076,
+    4.348
+   ],
+   "ko|응, 같이 해 볼게.": [
+    68.723,
+    1.783
+   ],
+   "ko|코로 하~ 입으로 후~ 세 번!": [
+    70.806,
+    3.911
+   ],
+   "ko|후~ 하~ 마음이 편안해졌어요.": [
+    75.017,
+    4.73
+   ],
+   "ko|주변 보고, 두 팔은 옆으로!": [
+    80.048,
+    4.41
+   ],
+   "ko|흔들리면 발 내려도 괜찮아.": [
+    84.757,
+    3.175
+   ],
+   "ko|한 발로 서서 하나, 둘, 셋!": [
+    88.232,
+    4.041
+   ],
+   "ko|하나, 둘, 셋! 한 발 서기 성공!": [
+    92.573,
+    5.35
+   ],
+   "ko|내가 했어! 한 발로 섰어!": [
+    98.223,
+    2.295
+   ],
+   "ko|반짝! 고마워! 윙크 해 줄게.": [
+    100.818,
+    4.502
+   ],
+   "ko|우리도 윙크! 찡긋!": [
+    105.62,
+    2.915
+   ],
+   "ko|차차처럼 찡긋 윙크해 봐!": [
+    108.835,
+    3.203
+   ],
+   "ko|찰칵! 반짝반짝 윙크야!": [
+    112.337,
+    4.119
+   ],
+   "ko|흔들려도 다시 하면 돼!": [
+    116.757,
+    2.308
+   ],
+   "ko|숨 쉬고 다시 하니까 됐어.": [
+    119.364,
+    2.706
+   ],
+   "ko|개굴~ 마지막으로 후~": [
+    122.37,
+    4.518
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    127.188,
+    2.549
+   ],
+   "en|Good night!": [
+    130.037,
+    1.345
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    131.682,
+    4.41
+   ]
+  }
+ }
+}
