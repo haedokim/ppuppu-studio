@@ -1,0 +1,892 @@
+{
+ "id": "mu003",
+ "subject": "mu",
+ "hero": "frog",
+ "title": "쉿! 아기 새가 자요",
+ "cover": "content/chars/frog/sing.webp",
+ "color": "#cfe8ff",
+ "coloring": "content/ep/mu003/img/coloring.webp",
+ "lesson": "자는 친구가 있으면 작게 말해요",
+ "goals": [
+  "노래: 크게/작게 듣고 구별하기 (쿵! 쿵! 공룡 발 · 딸랑~ 작은 방울)",
+  "노래: 「하나 둘 숫자 노래」 작게(자장 노래)·크게(언덕) 바꿔 부르기",
+  "노래: 연잎 북 살살 다섯 번 · 큰 박수 다섯 번",
+  "숫자 하나~다섯 세기",
+  "맛보기: Quiet! · Loud!",
+  "교훈: 다른 친구 마음 알기 — 자는 친구를 위해 작게 말하기"
+ ],
+ "dev": [
+  "대근육",
+  "사회성",
+  "인지",
+  "언어",
+  "소근육"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "babybird",
+     "e": "content/ep/mu003/img/nest_bush.webp",
+     "name": "아기 새",
+     "voice_style": "아주 작고 높은 아기 목소리, 졸리면 말끝을 길게, 삐약",
+     "x": 50,
+     "y": 52,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 6,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "쌔근… 쌔근… 작은 소리가 나요.",
+     "sfx": "snore"
+    },
+    {
+     "who": "frog",
+     "t": "쉿! 누구 소리지?"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 덤불을 살살 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "babybird",
+    "prompt": "흔들흔들 덤불을 살살 톡!",
+    "sfx": "rustle",
+    "reveal": "content/ep/mu003/img/babybird_sleep.webp",
+    "say": [
+     [
+      "쿨쿨~ 아기 새가 자고 있었어.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "babybird",
+     "e": "content/ep/mu003/img/babybird_awake.webp",
+     "name": "아기 새",
+     "voice_style": "아주 작고 높은 아기 목소리, 졸리면 말끝을 길게, 삐약",
+     "x": 46,
+     "y": 56,
+     "s": 28,
+     "anim": "none"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/sad.webp",
+     "x": 70,
+     "y": 8,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 4,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 74,
+     "y": 46,
+     "s": 32,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 22,
+     "y": 10,
+     "s": 32,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕! 다들 뭐 해~!",
+     "sfx": "buzz",
+     "mood": "happy"
+    },
+    {
+     "who": "babybird",
+     "t": "삐약! 깜짝이야…",
+     "sfx": "chick",
+     "mood": "sad"
+    },
+    {
+     "who": "bee",
+     "t": "앗, 너무 컸지… 미안해.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 다시 재워 주자."
+    },
+    {
+     "who": "ele",
+     "t": "공룡 발은 쿵! 쿵!",
+     "sfx": "thud"
+    },
+    {
+     "who": "ele",
+     "t": "작은 방울은 딸랑~",
+     "sfx": "bell"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "어떤 게 작은 소리일까?",
+    "options": [
+     {
+      "label": "쿵쿵",
+      "e": "content/ep/mo003/img/dino_feet.webp"
+     },
+     {
+      "label": "딸랑",
+      "e": "content/ep/mu003/img/bell_small.webp"
+     }
+    ],
+    "answer": 1,
+    "sfx": "bell",
+    "wrong": [
+     [
+      "쿵쿵은 큰 소리야. 다시 들어 봐!",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아! 딸랑~ 작은 소리!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "babybird",
+     "e": "content/ep/mu003/img/babybird_awake.webp",
+     "name": "아기 새",
+     "voice_style": "아주 작고 높은 아기 목소리, 졸리면 말끝을 길게, 삐약",
+     "x": 68,
+     "y": 58,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "drum",
+     "e": "content/ep/mu001/img/lotus_drum.webp",
+     "x": 36,
+     "y": 50,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 74,
+     "y": 20,
+     "s": 30,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 40,
+     "y": 4,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "작은 소리는 내가 잘해."
+    },
+    {
+     "who": "peng",
+     "t": "Quiet!",
+     "lang": "en"
+    },
+    {
+     "who": "peng",
+     "t": "작게, 작게!"
+    },
+    {
+     "who": "frog",
+     "t": "연잎 북을 살살 다섯 번!"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "drum",
+    "n": 5,
+    "prompt": "북을 살살 톡톡, 다섯 번!",
+    "sfx": "pok",
+    "say": [
+     [
+      "잘했어! 살살 작은 소리야.",
+      "ko"
+     ],
+     [
+      "아기 새가 꾸벅꾸벅 졸려.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "babybird",
+     "e": "content/ep/mu003/img/babybird_sleep.webp",
+     "name": "아기 새",
+     "voice_style": "아주 작고 높은 아기 목소리, 졸리면 말끝을 길게, 삐약",
+     "x": 44,
+     "y": 56,
+     "s": 28,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 72,
+     "y": 44,
+     "s": 30,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 74,
+     "y": 6,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "note1",
+     "e": "content/ep/mu001/img/note_blue.webp",
+     "x": 34,
+     "y": 14,
+     "s": 10,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "하나… 둘… 셋… 넷… 다섯…",
+     "mood": "sleepy"
+    },
+    {
+     "who": "frog",
+     "t": "작게… 작게… 쉿~",
+     "mood": "sleepy"
+    },
+    {
+     "who": "frog",
+     "t": "크게 크… 쉿! 이건 언덕에서!"
+    },
+    {
+     "who": "frog",
+     "t": "다 같이… 개굴…",
+     "sfx": "frog",
+     "mood": "sleepy"
+    },
+    {
+     "who": "narr",
+     "t": "쌔근쌔근… 아기 새가 쿨쿨 자요.",
+     "sfx": "snore",
+     "mood": "sleepy"
+    },
+    {
+     "who": "mon",
+     "t": "쉿, 우리 언덕에 가서 놀자."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 74,
+     "y": 38,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 44,
+     "y": 44,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "note1",
+     "e": "content/ep/mu001/img/note_pink.webp",
+     "x": 36,
+     "y": 10,
+     "s": 12,
+     "anim": "bob"
+    },
+    {
+     "id": "note2",
+     "e": "content/ep/mu001/img/note_blue.webp",
+     "x": 62,
+     "y": 14,
+     "s": 12,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "여기는 아무도 안 자!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "크게 해도 돼!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Loud!",
+     "lang": "en"
+    },
+    {
+     "who": "peng",
+     "t": "크게, 크게!"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 노래해요!",
+     "sfx": "frog",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "aah",
+    "e": "content/ep/mu001/img/aah_popo.webp",
+    "prompt": "포포처럼 입을 크게 아~!",
+    "say": [
+     [
+      "찰칵! 노래하는 입이야!",
+      "ko"
+     ],
+     [
+      "이제 뒤로 한 걸음!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 74,
+     "y": 40,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 48,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "note1",
+     "e": "content/ep/mu001/img/note_pink.webp",
+     "x": 36,
+     "y": 18,
+     "s": 12,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "하나, 둘, 셋, 넷, 다섯!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "작게 작게, 쉿~",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "크게 크게, 야호!",
+     "sfx": "yay",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "다 같이 개굴!",
+     "sfx": "frog",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 5,
+    "cam": "clap",
+    "prompt": "크게 짝짝! 박수 다섯 번!",
+    "sfx": "clap",
+    "say": [
+     [
+      "짝짝짝! 아주 큰 박수야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 52,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 44,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 38,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 여기선 크게 불러도 되네!",
+     "sfx": "buzz",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "코코도 크게 해 봐!"
+    },
+    {
+     "who": "ele",
+     "t": "야… 야호!",
+     "sfx": "yay",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "와, 코코 목소리 멋지다!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "이제 아기 새한테 가 볼까?"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "babybird",
+     "e": "content/ep/mu003/img/babybird_happy.webp",
+     "name": "아기 새",
+     "voice_style": "아주 작고 높은 아기 목소리, 졸리면 말끝을 길게, 삐약",
+     "x": 42,
+     "y": 56,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 60,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 20,
+     "y": 8,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 66,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 84,
+     "y": 50,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 84,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "babybird",
+     "t": "잘 잤다! 삐약!",
+     "sfx": "chick",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "안녕… 아까는 미안해."
+    },
+    {
+     "who": "babybird",
+     "t": "괜찮아! 나도 노래할래!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "자는 친구가 있으면 작게 말해요."
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mu003/voice.mp3",
+  "clips": {
+   "ko|쌔근… 쌔근… 작은 소리가 나요.": [
+    0.3,
+    4.775
+   ],
+   "ko|쉿! 누구 소리지?": [
+    5.375,
+    2.223
+   ],
+   "ko|서준아, 덤불을 살살 눌러 볼래?": [
+    7.898,
+    4.037
+   ],
+   "ko|흔들흔들 덤불을 살살 톡!": [
+    12.236,
+    3.905
+   ],
+   "ko|쿨쿨~ 아기 새가 자고 있었어.": [
+    16.441,
+    4.961
+   ],
+   "ko|붕붕! 다들 뭐 해~!": [
+    21.702,
+    2.462
+   ],
+   "ko|삐약! 깜짝이야…": [
+    24.463,
+    2.974
+   ],
+   "ko|앗, 너무 컸지… 미안해.": [
+    27.738,
+    3.178
+   ],
+   "ko|괜찮아! 다시 재워 주자.": [
+    31.216,
+    2.595
+   ],
+   "ko|공룡 발은 쿵! 쿵!": [
+    34.111,
+    3.014
+   ],
+   "ko|작은 방울은 딸랑~": [
+    37.424,
+    2.621
+   ],
+   "ko|어떤 게 작은 소리일까?": [
+    40.346,
+    2.022
+   ],
+   "ko|맞아! 딸랑~ 작은 소리!": [
+    42.667,
+    3.238
+   ],
+   "ko|쿵쿵은 큰 소리야. 다시 들어 봐!": [
+    46.205,
+    3.85
+   ],
+   "ko|작은 소리는 내가 잘해.": [
+    50.355,
+    2.381
+   ],
+   "en|Quiet!": [
+    53.036,
+    1.528
+   ],
+   "ko|작게, 작게!": [
+    54.864,
+    1.854
+   ],
+   "ko|연잎 북을 살살 다섯 번!": [
+    57.018,
+    4.586
+   ],
+   "ko|북을 살살 톡톡, 다섯 번!": [
+    61.904,
+    4.173
+   ],
+   "ko|잘했어! 살살 작은 소리야.": [
+    66.377,
+    4.413
+   ],
+   "ko|아기 새가 꾸벅꾸벅 졸려.": [
+    71.09,
+    4.027
+   ],
+   "ko|하나… 둘… 셋… 넷… 다섯…": [
+    75.417,
+    7.295
+   ],
+   "ko|작게… 작게… 쉿~": [
+    83.012,
+    3.549
+   ],
+   "ko|크게 크… 쉿! 이건 언덕에서!": [
+    86.861,
+    6.571
+   ],
+   "ko|다 같이… 개굴…": [
+    93.732,
+    2.25
+   ],
+   "ko|쌔근쌔근… 아기 새가 쿨쿨 자요.": [
+    96.282,
+    5.627
+   ],
+   "ko|쉿, 우리 언덕에 가서 놀자.": [
+    102.209,
+    3.005
+   ],
+   "ko|여기는 아무도 안 자!": [
+    105.514,
+    2.272
+   ],
+   "ko|크게 해도 돼!": [
+    108.086,
+    1.341
+   ],
+   "en|Loud!": [
+    109.727,
+    1.597
+   ],
+   "ko|크게, 크게!": [
+    111.625,
+    1.361
+   ],
+   "ko|개굴개굴, 다 같이 노래해요!": [
+    113.286,
+    2.932
+   ],
+   "ko|포포처럼 입을 크게 아~!": [
+    116.518,
+    3.411
+   ],
+   "ko|찰칵! 노래하는 입이야!": [
+    120.229,
+    2.619
+   ],
+   "ko|이제 뒤로 한 걸음!": [
+    123.148,
+    2.971
+   ],
+   "ko|하나, 둘, 셋, 넷, 다섯!": [
+    126.419,
+    4.718
+   ],
+   "ko|작게 작게, 쉿~": [
+    131.437,
+    2.679
+   ],
+   "ko|크게 크게, 야호!": [
+    134.416,
+    3.215
+   ],
+   "ko|다 같이 개굴!": [
+    137.931,
+    3.621
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    141.852,
+    4.282
+   ],
+   "ko|크게 짝짝! 박수 다섯 번!": [
+    146.433,
+    2.834
+   ],
+   "ko|짝짝짝! 아주 큰 박수야!": [
+    149.568,
+    3.285
+   ],
+   "ko|붕붕~ 여기선 크게 불러도 되네!": [
+    153.152,
+    4.649
+   ],
+   "ko|코코도 크게 해 봐!": [
+    158.101,
+    2.153
+   ],
+   "ko|야… 야호!": [
+    160.555,
+    3.111
+   ],
+   "ko|와, 코코 목소리 멋지다!": [
+    163.966,
+    2.781
+   ],
+   "ko|이제 아기 새한테 가 볼까?": [
+    167.047,
+    2.393
+   ],
+   "ko|잘 잤다! 삐약!": [
+    169.74,
+    2.069
+   ],
+   "ko|안녕… 아까는 미안해.": [
+    172.109,
+    2.671
+   ],
+   "ko|괜찮아! 나도 노래할래!": [
+    175.079,
+    2.402
+   ],
+   "ko|자는 친구가 있으면 작게 말해요.": [
+    177.781,
+    3.425
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    181.506,
+    2.59
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    184.395,
+    3.765
+   ]
+  }
+ }
+}
