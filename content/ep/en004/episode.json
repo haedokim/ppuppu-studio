@@ -1,0 +1,836 @@
+{
+ "id": "en004",
+ "subject": "en",
+ "hero": "peng",
+ "title": "부엉이와 별 다섯 개",
+ "cover": "content/chars/peng/happy.webp",
+ "coloring": "content/ep/en004/img/coloring.webp",
+ "color": "#b8b5f0",
+ "lesson": "한 명씩 차례대로 하면 다 같이 할 수 있어요",
+ "goals": [
+  "영어: 숫자 One~Five — Four·Five 새로, One·Two·Three 다시 보기",
+  "영어: 동물 Owl (부엉이)",
+  "영어: 알파벳 D — D, dinosaur!",
+  "맛보기: Good night!",
+  "교훈: 차례 지키기"
+ ],
+ "dev": [
+  "언어",
+  "인지",
+  "소근육",
+  "대근육",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "owl_ball",
+     "e": "content/ep/en004/img/owl_ball.webp",
+     "x": 44,
+     "y": 52,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 6,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "데굴데굴! 동그란 게 굴러 왔어요.",
+     "sfx": "bounce"
+    },
+    {
+     "who": "peng",
+     "t": "어? 공룡 알인가?"
+    },
+    {
+     "who": "peng",
+     "t": "서준아, 톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "owl_ball",
+    "reveal": "content/ep/en004/img/owlet.webp",
+    "prompt": "동그란 걸 톡 눌러 봐!",
+    "sfx": "owl",
+    "say": [
+     [
+      "짠! 아기 부엉이였어!",
+      "ko"
+     ],
+     [
+      "부엉이는 영어로 Owl!",
+      "ko"
+     ],
+     [
+      "Owl!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "owlet",
+     "name": "아기 부엉이",
+     "voice_style": "동글동글하고 조금 졸린 아기 목소리, 말끝에 부엉~",
+     "e": "content/ep/en004/img/owlet.webp",
+     "x": 40,
+     "y": 46,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 10,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "owlet",
+     "t": "부엉~ 데굴데굴 구르기 했어.",
+     "sfx": "owl",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 부엉이는 왜 밤에 안 자?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "owlet",
+     "t": "부엉이는 밤에 놀아!"
+    },
+    {
+     "who": "owlet",
+     "t": "이렇게 눈을 동그랗게!"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "surprise",
+    "e": "content/ep/en004/img/owlet_wide.webp",
+    "prompt": "부엉이처럼 눈을 동그랗게!",
+    "say": [
+     [
+      "찰칵! 부엉이 눈이야!",
+      "ko"
+     ],
+     [
+      "Owl!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "st1",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 8,
+     "y": 8,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "st2",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 27,
+     "y": 22,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "st3",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 45,
+     "y": 6,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "st4",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 63,
+     "y": 22,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "st5",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 82,
+     "y": 8,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "owlet",
+     "name": "아기 부엉이",
+     "voice_style": "동글동글하고 조금 졸린 아기 목소리, 말끝에 부엉~",
+     "e": "content/ep/en004/img/owlet.webp",
+     "x": 30,
+     "y": 50,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 66,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "반짝반짝! 별 다섯 개가 떴어요.",
+     "sfx": "bell"
+    },
+    {
+     "who": "owlet",
+     "t": "자기 전에 별을 세야 해.",
+     "mood": "sleepy"
+    },
+    {
+     "who": "peng",
+     "t": "내가! 내가 먼저! 내가!"
+    },
+    {
+     "who": "narr",
+     "t": "와글와글! 너무 시끄러워요.",
+     "sfx": "yay"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "owlet",
+     "name": "아기 부엉이",
+     "voice_style": "동글동글하고 조금 졸린 아기 목소리, 말끝에 부엉~",
+     "e": "content/ep/en004/img/owlet_wide.webp",
+     "x": 40,
+     "y": 48,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/sad.webp",
+     "x": 70,
+     "y": 44,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 12,
+     "y": 10,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "owlet",
+     "t": "어? 별이 쏙 숨었어…",
+     "sfx": "swoosh",
+     "mood": "sad"
+    },
+    {
+     "who": "peng",
+     "t": "앗, 너무 시끄러웠지… 미안해.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 차례차례 해 보자."
+    },
+    {
+     "who": "frog",
+     "t": "개굴~ 한 명씩 차례대로 세 보자!",
+     "sfx": "frog"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "s1",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 8,
+     "y": 8,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "s2",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 27,
+     "y": 24,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "s3",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 45,
+     "y": 6,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "s4",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 63,
+     "y": 24,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "s5",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 82,
+     "y": 8,
+     "s": 16,
+     "anim": "peek"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 50,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 50,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "내 차례야…"
+    },
+    {
+     "who": "ele",
+     "t": "One…",
+     "lang": "en"
+    },
+    {
+     "who": "peng",
+     "t": "이번엔 기다릴게. 서준이 차례!"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "s1",
+     "s2",
+     "s3",
+     "s4",
+     "s5"
+    ],
+    "count": true,
+    "names": {
+     "s1": "One",
+     "s2": "Two",
+     "s3": "Three",
+     "s4": "Four",
+     "s5": "Five"
+    },
+    "prompt": "별을 하나씩 톡 눌러 봐!",
+    "sfx": "bell",
+    "say": [
+     [
+      "맞아! 별 다섯 개!",
+      "ko"
+     ],
+     [
+      "Five!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "dino",
+     "e": "content/ep/en004/img/star_dino.webp",
+     "x": 30,
+     "y": 4,
+     "s": 44,
+     "anim": "none"
+    },
+    {
+     "id": "owlet",
+     "name": "아기 부엉이",
+     "voice_style": "동글동글하고 조금 졸린 아기 목소리, 말끝에 부엉~",
+     "e": "content/ep/en004/img/owlet.webp",
+     "x": 6,
+     "y": 52,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 72,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "owlet",
+     "t": "다 나왔다! 반짝반짝!",
+     "sfx": "bell",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "별을 이으니까… 짠! 공룡이에요!",
+     "sfx": "yay"
+    },
+    {
+     "who": "peng",
+     "t": "내가 여행에서 배웠는데~",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "D, dinosaur!",
+     "lang": "en"
+    }
+   ],
+   "act": {
+    "type": "trace",
+    "letter": "D",
+    "n": 2,
+    "prompt": "손가락으로 D를 따라 써 봐!",
+    "say": [
+     [
+      "D, dinosaur!",
+      "en"
+     ],
+     [
+      "공룡은 영어로 Dinosaur!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "owlet",
+     "name": "아기 부엉이",
+     "voice_style": "동글동글하고 조금 졸린 아기 목소리, 말끝에 부엉~",
+     "e": "content/ep/en004/img/owlet_fly.webp",
+     "x": 38,
+     "y": 34,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 74,
+     "y": 38,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "owlet",
+     "t": "이제 둥지로 날아갈래.",
+     "mood": "sleepy"
+    },
+    {
+     "who": "mon",
+     "t": "부엉이처럼 날개 파닥파닥!",
+     "sfx": "swoosh",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "서준이도 뒤로 한 걸음!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "flap",
+    "prompt": "두 팔을 위아래로 파닥파닥!",
+    "sfx": "swoosh",
+    "say": [
+     [
+      "파닥파닥! 부엉이처럼 날았어!",
+      "ko"
+     ],
+     [
+      "Owl!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "owlet",
+     "name": "아기 부엉이",
+     "voice_style": "동글동글하고 조금 졸린 아기 목소리, 말끝에 부엉~",
+     "e": "content/ep/en004/img/owlet.webp",
+     "x": 42,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 38,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 2,
+     "y": 56,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 16,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 82,
+     "y": 40,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 74,
+     "y": 10,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "차례차례 하니까 별이 다 나왔어!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "한 명씩 하면 다 같이 할 수 있어.",
+     "mood": "happy"
+    },
+    {
+     "who": "owlet",
+     "t": "고마워! 부엉~",
+     "sfx": "owl",
+     "mood": "sleepy"
+    },
+    {
+     "who": "owlet",
+     "t": "Good night!",
+     "lang": "en",
+     "mood": "sleepy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye, Owl!",
+     "lang": "en",
+     "mood": "sleepy"
+    },
+    {
+     "who": "pp",
+     "t": "즐거웠어! 오늘은 여기까지! 안녕!",
+     "mood": "sleepy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/en004/voice.mp3",
+  "clips": {
+   "ko|데굴데굴! 동그란 게 굴러 왔어요.": [
+    0.3,
+    4.412
+   ],
+   "ko|어? 공룡 알인가?": [
+    5.012,
+    2.661
+   ],
+   "ko|서준아, 톡 눌러 볼래?": [
+    7.973,
+    2.54
+   ],
+   "ko|동그란 걸 톡 눌러 봐!": [
+    10.813,
+    2.973
+   ],
+   "ko|짠! 아기 부엉이였어!": [
+    14.086,
+    3.019
+   ],
+   "ko|부엉이는 영어로 Owl!": [
+    17.405,
+    3.471
+   ],
+   "en|Owl!": [
+    21.175,
+    1.064
+   ],
+   "ko|부엉~ 데굴데굴 구르기 했어.": [
+    22.54,
+    4.805
+   ],
+   "ko|붕붕~ 부엉이는 왜 밤에 안 자?": [
+    27.645,
+    5.254
+   ],
+   "ko|부엉이는 밤에 놀아!": [
+    33.199,
+    4.403
+   ],
+   "ko|이렇게 눈을 동그랗게!": [
+    37.902,
+    4.564
+   ],
+   "ko|부엉이처럼 눈을 동그랗게!": [
+    42.766,
+    3.58
+   ],
+   "ko|찰칵! 부엉이 눈이야!": [
+    46.645,
+    2.83
+   ],
+   "ko|반짝반짝! 별 다섯 개가 떴어요.": [
+    49.776,
+    4.832
+   ],
+   "ko|자기 전에 별을 세야 해.": [
+    54.908,
+    6.106
+   ],
+   "ko|내가! 내가 먼저! 내가!": [
+    61.314,
+    3.268
+   ],
+   "ko|와글와글! 너무 시끄러워요.": [
+    64.882,
+    4.103
+   ],
+   "ko|어? 별이 쏙 숨었어…": [
+    69.285,
+    4.698
+   ],
+   "ko|앗, 너무 시끄러웠지… 미안해.": [
+    74.284,
+    4.29
+   ],
+   "ko|괜찮아! 차례차례 해 보자.": [
+    78.874,
+    2.981
+   ],
+   "ko|개굴~ 한 명씩 차례대로 세 보자!": [
+    82.155,
+    5.17
+   ],
+   "ko|내 차례야…": [
+    87.625,
+    0.988
+   ],
+   "en|One…": [
+    88.913,
+    1.309
+   ],
+   "ko|이번엔 기다릴게. 서준이 차례!": [
+    90.522,
+    3.527
+   ],
+   "ko|별을 하나씩 톡 눌러 봐!": [
+    94.349,
+    3.207
+   ],
+   "ko|맞아! 별 다섯 개!": [
+    97.856,
+    2.866
+   ],
+   "en|Five!": [
+    101.022,
+    1.346
+   ],
+   "ko|One!": [
+    102.669,
+    1.012
+   ],
+   "ko|Two!": [
+    103.981,
+    0.583
+   ],
+   "ko|Three!": [
+    104.863,
+    0.946
+   ],
+   "ko|Four!": [
+    106.109,
+    0.768
+   ],
+   "ko|Five!": [
+    107.177,
+    0.916
+   ],
+   "ko|다 나왔다! 반짝반짝!": [
+    108.393,
+    4.602
+   ],
+   "ko|별을 이으니까… 짠! 공룡이에요!": [
+    113.295,
+    5.569
+   ],
+   "ko|내가 여행에서 배웠는데~": [
+    119.164,
+    3.307
+   ],
+   "en|D, dinosaur!": [
+    122.771,
+    2.664
+   ],
+   "ko|손가락으로 D를 따라 써 봐!": [
+    125.735,
+    3.597
+   ],
+   "ko|공룡은 영어로 Dinosaur!": [
+    129.632,
+    3.99
+   ],
+   "ko|이제 둥지로 날아갈래.": [
+    133.922,
+    4.564
+   ],
+   "ko|부엉이처럼 날개 파닥파닥!": [
+    138.786,
+    3.536
+   ],
+   "ko|서준이도 뒤로 한 걸음!": [
+    142.622,
+    3.913
+   ],
+   "ko|두 팔을 위아래로 파닥파닥!": [
+    146.835,
+    3.189
+   ],
+   "ko|파닥파닥! 부엉이처럼 날았어!": [
+    150.324,
+    3.7
+   ],
+   "ko|차례차례 하니까 별이 다 나왔어!": [
+    154.323,
+    3.914
+   ],
+   "ko|한 명씩 하면 다 같이 할 수 있어.": [
+    158.538,
+    3.664
+   ],
+   "ko|고마워! 부엉~": [
+    162.502,
+    2.618
+   ],
+   "en|Good night!": [
+    165.42,
+    2.31
+   ],
+   "en|Bye, Owl!": [
+    168.03,
+    2.107
+   ],
+   "ko|즐거웠어! 오늘은 여기까지! 안녕!": [
+    170.437,
+    5.839
+   ]
+  }
+ }
+}
