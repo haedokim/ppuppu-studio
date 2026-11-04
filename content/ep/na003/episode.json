@@ -1,0 +1,926 @@
+{
+ "id": "na003",
+ "subject": "na",
+ "hero": "bee",
+ "title": "누구 발자국일까?",
+ "cover": "content/chars/bee/wave.webp",
+ "coloring": "content/ep/na003/img/coloring.webp",
+ "color": "#a8d98a",
+ "lesson": "손이 안 닿는 친구는 도와주면 돼요",
+ "goals": [
+  "자연: 큰 공룡·작은 공룡 — 큰 공룡은 발자국도 커요",
+  "자연: 풀 먹는 공룡 — 목긴 공룡은 목이 길어서 높은 나뭇잎도 냠냠 먹어요",
+  "숫자 하나~셋 세기 · 쿵쿵 걸음 넷",
+  "맛보기 영어: Dinosaur! · Bye!",
+  "교훈: 손이 안 닿는 친구 돕기"
+ ],
+ "dev": [
+  "인지",
+  "소근육",
+  "대근육",
+  "언어",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail.webp",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게",
+     "x": 4,
+     "y": 60,
+     "s": 22,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 74,
+     "y": 6,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "p1",
+     "e": "content/ep/na003/img/big_print.webp",
+     "x": 26,
+     "y": 64,
+     "s": 20,
+     "anim": "none"
+    },
+    {
+     "id": "p2",
+     "e": "content/ep/na003/img/big_print.webp",
+     "x": 46,
+     "y": 52,
+     "s": 20,
+     "anim": "none"
+    },
+    {
+     "id": "p3",
+     "e": "content/ep/na003/img/big_print.webp",
+     "x": 66,
+     "y": 64,
+     "s": 20,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "snail",
+     "t": "서준아! 언덕에 큰 웅덩이가 생겼어!",
+     "sfx": "splash"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 웅덩이가 몇 개일까?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "p1",
+     "p2",
+     "p3"
+    ],
+    "count": true,
+    "prompt": "웅덩이를 톡톡 세어 볼래?",
+    "sfx": "splash",
+    "say": [
+     [
+      "어? 웅덩이에 발가락이 있어!",
+      "ko"
+     ],
+     [
+      "커다란 발자국이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 70,
+     "y": 36,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 40,
+     "y": 4,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "bigp",
+     "e": "content/ep/na003/img/big_print.webp",
+     "x": 30,
+     "y": 62,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "smallp",
+     "e": "content/ep/mo003/img/dino_print.webp",
+     "x": 58,
+     "y": 76,
+     "s": 12,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴! 뿌뿌 발자국이다!",
+     "sfx": "frog",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "어? 내 발은 요만해~"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 뿌뿌 발자국은 어느 쪽일까?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "뿌뿌 발자국을 골라 볼래?",
+    "options": [
+     {
+      "e": "content/ep/na003/img/big_print.webp"
+     },
+     {
+      "e": "content/ep/mo003/img/dino_print.webp"
+     }
+    ],
+    "answer": 1,
+    "say": [
+     [
+      "맞아! 뿌뿌 발은 요만해.",
+      "ko"
+     ],
+     [
+      "큰 발자국은 큰 공룡 거야!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "뿌뿌는 작은 공룡이야. 다시 볼까?",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 70,
+     "y": 34,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 34,
+     "y": 34,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 40,
+     "y": 2,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "bigp",
+     "e": "content/ep/na003/img/big_print.webp",
+     "x": 50,
+     "y": 76,
+     "s": 18,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "헤헤, 뿌뿌 발도 귀여워!",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "그때 멀리서 쿵… 쿵…",
+     "sfx": "thud"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 발자국 따라가 보자!"
+    },
+    {
+     "who": "pp",
+     "t": "주변 보고, 뒤로 한 걸음!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "cam": "stomp",
+    "n": 4,
+    "prompt": "큰 공룡처럼 쿵쿵, 네 번!",
+    "sfx": "thud",
+    "say": [
+     [
+      "쿵! 쿵! 큰 공룡 걸음이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck.webp",
+     "name": "목긴 공룡",
+     "voice_style": "느릿느릿 포근하고 낮은 큰 목소리, 다정하게",
+     "x": 46,
+     "y": 0,
+     "s": 72,
+     "anim": "peek"
+    },
+    {
+     "id": "tree",
+     "e": "content/ep/na003/img/tall_tree.webp",
+     "x": 30,
+     "y": 6,
+     "s": 70,
+     "anim": "none"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 4,
+     "y": 6,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "나무 뒤에서 긴 목이 쑥!",
+     "sfx": "brachio"
+    },
+    {
+     "who": "longneck",
+     "t": "안녕! 나는 나뭇잎을 냠냠 먹어.",
+     "sfx": "chomp",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 목이 왜 길까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "longneck",
+     "t": "높은 잎도 먹으려고!"
+    },
+    {
+     "who": "ele",
+     "t": "나뭇잎을 먹네. 풀 먹는 공룡이구나."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck.webp",
+     "name": "목긴 공룡",
+     "voice_style": "느릿느릿 포근하고 낮은 큰 목소리, 다정하게",
+     "x": 58,
+     "y": 0,
+     "s": 66,
+     "anim": "none"
+    },
+    {
+     "id": "tree",
+     "e": "content/ep/na003/img/tall_tree.webp",
+     "x": 26,
+     "y": 6,
+     "s": 70,
+     "anim": "none"
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 동글동글한 아기 목소리",
+     "x": 34,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 2,
+     "y": 54,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 6,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "longneck_baby",
+     "t": "영차, 영차… 나는 안 닿아…",
+     "mood": "sad"
+    },
+    {
+     "who": "peng",
+     "t": "큰 공룡, 작은 공룡!"
+    },
+    {
+     "who": "peng",
+     "t": "Dinosaur!",
+     "lang": "en"
+    },
+    {
+     "who": "bee",
+     "t": "서준아, 우리가 도와줄까?"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "tree",
+     "e": "content/ep/na003/img/tall_tree.webp",
+     "x": 2,
+     "y": 6,
+     "s": 66,
+     "anim": "none"
+    },
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck_bend.webp",
+     "name": "목긴 공룡",
+     "voice_style": "느릿느릿 포근하고 낮은 큰 목소리, 다정하게",
+     "x": 54,
+     "y": 10,
+     "s": 60,
+     "anim": "none"
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 동글동글한 아기 목소리",
+     "x": 62,
+     "y": 52,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 54,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "l1",
+     "e": "content/ep/ko002/img/leaf.webp",
+     "x": 30,
+     "y": 62,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "l2",
+     "e": "content/ep/ko002/img/leaf.webp",
+     "x": 40,
+     "y": 74,
+     "s": 10,
+     "anim": "bob"
+    },
+    {
+     "id": "l3",
+     "e": "content/ep/ko002/img/leaf.webp",
+     "x": 50,
+     "y": 62,
+     "s": 10,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "바스락~ 코로 가지를 살짝 당길게.",
+     "sfx": "rustle"
+    },
+    {
+     "who": "narr",
+     "t": "엄마 공룡도 목을 쭉 숙였어요."
+    },
+    {
+     "who": "longneck",
+     "t": "아가야, 이 잎 먹으렴."
+    }
+   ],
+   "act": {
+    "type": "drag",
+    "items": [
+     "l1",
+     "l2",
+     "l3"
+    ],
+    "target": "longneck_baby",
+    "count": true,
+    "prompt": "나뭇잎을 아기 공룡에게 주자!",
+    "sfx": "rustle",
+    "say": [
+     [
+      "아기 공룡 배가 든든해졌어!",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "나뭇잎을 꾹 눌러 아기 공룡한테!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby_happy.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 동글동글한 아기 목소리",
+     "x": 34,
+     "y": 34,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 8,
+     "y": 6,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 74,
+     "y": 56,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "longneck_baby",
+     "t": "아~ 냠냠! 맛있다!",
+     "sfx": "chomp",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "서준이도 공룡처럼 아~!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "aah",
+    "e": "content/ep/na003/img/longneck_baby_happy.webp",
+    "prompt": "입을 크게 아~ 해 볼래?",
+    "say": [
+     [
+      "찰칵! 냠냠 공룡 입이다!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck.webp",
+     "name": "목긴 공룡",
+     "voice_style": "느릿느릿 포근하고 낮은 큰 목소리, 다정하게",
+     "x": 56,
+     "y": 0,
+     "s": 66,
+     "anim": "none"
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby_happy.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 동글동글한 아기 목소리",
+     "x": 40,
+     "y": 52,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 8,
+     "y": 6,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 54,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 20,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "longneck_baby",
+     "t": "서준아, 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "longneck",
+     "t": "도와줘서 고마워요.",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "손이 안 닿는 친구는 도와주면 돼요.",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 하니까 쉽다!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck.webp",
+     "name": "목긴 공룡",
+     "voice_style": "느릿느릿 포근하고 낮은 큰 목소리, 다정하게",
+     "x": 74,
+     "y": 10,
+     "s": 34,
+     "anim": "none",
+     "flip": true
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby_happy.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 동글동글한 아기 목소리",
+     "x": 64,
+     "y": 30,
+     "s": 18,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "snail",
+     "e": "content/ep/ko003/img/snail_wink.webp",
+     "name": "느림보 달팽이",
+     "voice_style": "아주 느릿하고 다정한 꼬마 목소리, 말끝을 길게",
+     "x": 4,
+     "y": 66,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 34,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 66,
+     "y": 56,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/wave.webp",
+     "x": 18,
+     "y": 60,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 12,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "쿵… 쿵… 공룡들이 언덕 너머로 가요.",
+     "sfx": "thud"
+    },
+    {
+     "who": "snail",
+     "t": "또 놀러 와~!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/na003/voice.mp3",
+  "clips": {
+   "ko|서준아! 언덕에 큰 웅덩이가 생겼어!": [
+    0.3,
+    6.469
+   ],
+   "ko|붕붕~ 웅덩이가 몇 개일까?": [
+    7.069,
+    4.758
+   ],
+   "ko|웅덩이를 톡톡 세어 볼래?": [
+    12.128,
+    2.715
+   ],
+   "ko|어? 웅덩이에 발가락이 있어!": [
+    15.142,
+    3.871
+   ],
+   "ko|커다란 발자국이야!": [
+    19.313,
+    2.44
+   ],
+   "ko|개굴! 뿌뿌 발자국이다!": [
+    22.053,
+    2.955
+   ],
+   "ko|어? 내 발은 요만해~": [
+    25.307,
+    3.134
+   ],
+   "ko|붕붕~ 뿌뿌 발자국은 어느 쪽일까?": [
+    28.741,
+    4.685
+   ],
+   "ko|뿌뿌 발자국을 골라 볼래?": [
+    33.726,
+    2.527
+   ],
+   "ko|맞아! 뿌뿌 발은 요만해.": [
+    36.554,
+    3.424
+   ],
+   "ko|큰 발자국은 큰 공룡 거야!": [
+    40.277,
+    3.504
+   ],
+   "ko|뿌뿌는 작은 공룡이야. 다시 볼까?": [
+    44.081,
+    3.985
+   ],
+   "ko|헤헤, 뿌뿌 발도 귀여워!": [
+    48.366,
+    2.741
+   ],
+   "ko|그때 멀리서 쿵… 쿵…": [
+    51.407,
+    4.731
+   ],
+   "ko|하나, 둘, 셋! 발자국 따라가 보자!": [
+    56.438,
+    5.406
+   ],
+   "ko|주변 보고, 뒤로 한 걸음!": [
+    62.143,
+    3.887
+   ],
+   "ko|큰 공룡처럼 쿵쿵, 네 번!": [
+    66.33,
+    4.158
+   ],
+   "ko|쿵! 쿵! 큰 공룡 걸음이야!": [
+    70.788,
+    3.634
+   ],
+   "ko|나무 뒤에서 긴 목이 쑥!": [
+    74.722,
+    4.575
+   ],
+   "ko|안녕! 나는 나뭇잎을 냠냠 먹어.": [
+    79.597,
+    6.01
+   ],
+   "ko|붕붕~ 목이 왜 길까?": [
+    85.907,
+    3.456
+   ],
+   "ko|높은 잎도 먹으려고!": [
+    89.663,
+    3.8
+   ],
+   "ko|나뭇잎을 먹네. 풀 먹는 공룡이구나.": [
+    93.763,
+    4.781
+   ],
+   "ko|영차, 영차… 나는 안 닿아…": [
+    98.844,
+    3.817
+   ],
+   "ko|큰 공룡, 작은 공룡!": [
+    102.961,
+    3.293
+   ],
+   "en|Dinosaur!": [
+    106.554,
+    1.925
+   ],
+   "ko|서준아, 우리가 도와줄까?": [
+    108.78,
+    2.879
+   ],
+   "ko|바스락~ 코로 가지를 살짝 당길게.": [
+    111.959,
+    5.183
+   ],
+   "ko|엄마 공룡도 목을 쭉 숙였어요.": [
+    117.442,
+    4.661
+   ],
+   "ko|아가야, 이 잎 먹으렴.": [
+    122.402,
+    3.992
+   ],
+   "ko|나뭇잎을 아기 공룡에게 주자!": [
+    126.694,
+    3.541
+   ],
+   "ko|아기 공룡 배가 든든해졌어!": [
+    130.535,
+    3.911
+   ],
+   "ko|나뭇잎을 꾹 눌러 아기 공룡한테!": [
+    134.747,
+    4.431
+   ],
+   "ko|아~ 냠냠! 맛있다!": [
+    139.477,
+    3.989
+   ],
+   "ko|서준이도 공룡처럼 아~!": [
+    143.766,
+    4.129
+   ],
+   "ko|입을 크게 아~ 해 볼래?": [
+    148.195,
+    3.333
+   ],
+   "ko|찰칵! 냠냠 공룡 입이다!": [
+    151.828,
+    3.962
+   ],
+   "ko|서준아, 고마워!": [
+    156.091,
+    2.284
+   ],
+   "ko|도와줘서 고마워요.": [
+    158.674,
+    4.168
+   ],
+   "ko|손이 안 닿는 친구는 도와주면 돼요.": [
+    163.142,
+    3.474
+   ],
+   "ko|하나, 둘, 셋! 같이 하니까 쉽다!": [
+    166.916,
+    5.583
+   ],
+   "ko|쿵… 쿵… 공룡들이 언덕 너머로 가요.": [
+    172.8,
+    5.589
+   ],
+   "ko|또 놀러 와~!": [
+    178.689,
+    2.521
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    181.51,
+    3.177
+   ],
+   "en|Bye!": [
+    184.987,
+    1.177
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    186.463,
+    3.103
+   ]
+  }
+ }
+}
