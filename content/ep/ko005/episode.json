@@ -1,0 +1,828 @@
+{
+ "id": "ko005",
+ "subject": "ko",
+ "hero": "ele",
+ "title": "에취! 네모 ㅁ 모자",
+ "cover": "content/chars/ele/happy.webp",
+ "coloring": "content/ep/ko005/img/coloring.webp",
+ "color": "#bde0fe",
+ "lesson": "에취! 할 땐 팔로 쏙 가려요",
+ "goals": [
+  "한글: ㅁ 모양과 소리 (미음, 모자의 미음)",
+  "한글: ㄷ·ㄹ 다시 보기 — ㄹ 과 ㅁ 구별",
+  "숫자 하나~셋 세기",
+  "맛보기: 음절 박자 모-자, Bye!",
+  "교훈: 재채기는 팔로 가리기"
+ ],
+ "dev": [
+  "인지",
+  "언어",
+  "소근육",
+  "사회성",
+  "자조"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "hat_yellow",
+     "e": "content/ep/ko005/img/hat_yellow.webp",
+     "x": 60,
+     "y": 52,
+     "s": 20,
+     "anim": "peek"
+    },
+    {
+     "id": "ele",
+     "e": "content/ep/ko005/img/koko_achoo.webp",
+     "x": 6,
+     "y": 38,
+     "s": 46,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "에… 에… 에취!",
+     "sfx": "sneeze"
+    },
+    {
+     "who": "narr",
+     "t": "휘리릭! 모자들이 날아갔어요.",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "ele",
+     "t": "앗! 서준아, 저게 뭐지? 톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "hat_yellow",
+    "prompt": "살랑살랑 노란 것을 톡 눌러 봐!",
+    "sfx": "boing",
+    "say": [
+     [
+      "짠! 노란 모자였어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 72,
+     "y": 38,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "hat_yellow",
+     "e": "content/ep/ko005/img/hat_yellow.webp",
+     "x": 76,
+     "y": 24,
+     "s": 14,
+     "anim": "none"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/sad.webp",
+     "x": 4,
+     "y": 40,
+     "s": 42,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 40,
+     "y": 30,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "내 모자다! 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "미안해… 내 재채기 때문에.",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 같이 찾자."
+    },
+    {
+     "who": "ele",
+     "t": "쓱쓱! 모자의 미음! 네모 네모!",
+     "sfx": "brush"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "네모 네모 미음은 어디 있을까?",
+    "options": [
+     {
+      "e": "ㄷ"
+     },
+     {
+      "e": "ㄹ"
+     },
+     {
+      "e": "ㅁ"
+     }
+    ],
+    "answer": 2,
+    "wrong": [
+     [
+      "음~ 그건 미음이 아니야.",
+      "ko"
+     ],
+     [
+      "미음은 네모 네모!",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아! 미음! 모자의 미음!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "wave",
+     "e": "content/ep/na002/img/wave.webp",
+     "x": 48,
+     "y": 60,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "hat_blue",
+     "e": "content/ep/ko005/img/hat_blue.webp",
+     "x": 56,
+     "y": 52,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "x": 74,
+     "y": 50,
+     "s": 26,
+     "anim": "peek",
+     "name": "꼬마 고래"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/sad.webp",
+     "x": 4,
+     "y": 44,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 26,
+     "y": 28,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 30,
+     "y": 64,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "첨벙! 내 모자가 바다에!",
+     "sfx": "splash",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "바다엔 혼자 들어가면 안 돼."
+    },
+    {
+     "who": "whale",
+     "t": "푸우~ 내가 도와줄게!",
+     "sfx": "whale"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 볼 빵빵 푸우~ 같이 해 줘!"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "puff",
+    "e": "content/ep/mo002/img/puff_kiki.webp",
+    "prompt": "볼을 빵빵하게 해 봐!",
+    "say": [
+     [
+      "찰칵! 푸우~ 고래 볼이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "whale",
+     "e": "content/ep/na002/img/whale_spout.webp",
+     "x": 60,
+     "y": 30,
+     "s": 40,
+     "anim": "bob",
+     "name": "꼬마 고래"
+    },
+    {
+     "id": "hat_blue",
+     "e": "content/ep/ko005/img/hat_blue.webp",
+     "x": 40,
+     "y": 72,
+     "s": 14,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 6,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "푸우~ 고래가 물을 뿜었어요!",
+     "sfx": "whale"
+    },
+    {
+     "who": "narr",
+     "t": "톡! 파란 모자가 모래 위로!",
+     "sfx": "pok"
+    },
+    {
+     "who": "peng",
+     "t": "모자 찾아 줘서 고마워, 고래야!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "sandcastle",
+     "e": "content/ep/ko005/img/sandcastle.webp",
+     "x": 34,
+     "y": 24,
+     "s": 52,
+     "anim": "none"
+    },
+    {
+     "id": "hat_red",
+     "e": "content/ep/ko005/img/hat_red.webp",
+     "x": 50,
+     "y": 62,
+     "s": 10,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 76,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 40,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 80,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 빨간 모자는 어디 있을까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "ele",
+     "t": "문도 네모! 미음 모양이야."
+    },
+    {
+     "who": "pp",
+     "t": "서준아, 똑똑똑 두드려 볼래?",
+     "sfx": "knock"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "sandcastle",
+    "n": 3,
+    "prompt": "모래성 문을 똑똑똑 세 번!",
+    "sfx": "knock",
+    "say": [
+     [
+      "하나, 둘, 셋! 문이 열렸어요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "crab",
+     "e": "content/ep/ko005/img/crab_hat.webp",
+     "x": 42,
+     "y": 48,
+     "s": 30,
+     "anim": "bob",
+     "name": "빨간 게",
+     "voice_style": "장난스럽고 짧게 끊어 말하는 꼬마 목소리"
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 6,
+     "y": 34,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/ep/ko005/img/koko_achoo.webp",
+     "x": 74,
+     "y": 38,
+     "s": 38,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "crab",
+     "t": "어? 이거 네 모자야?"
+    },
+    {
+     "who": "crab",
+     "t": "딱 맞았는데~"
+    },
+    {
+     "who": "pp",
+     "t": "헤헤, 찾아 줘서 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "에… 에… 코가 간질간질!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/ep/ko005/img/koko_cover.webp",
+     "x": 4,
+     "y": 40,
+     "s": 42,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 44,
+     "y": 46,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 74,
+     "y": 46,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "hat_yellow",
+     "e": "content/ep/ko005/img/hat_yellow.webp",
+     "x": 40,
+     "y": 78,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "hat_blue",
+     "e": "content/ep/ko005/img/hat_blue.webp",
+     "x": 54,
+     "y": 78,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "hat_red",
+     "e": "content/ep/ko005/img/hat_red.webp",
+     "x": 68,
+     "y": 78,
+     "s": 12,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "잠깐! 팔로 쏙!"
+    },
+    {
+     "who": "ele",
+     "t": "에취~ 모자가 그대로야!",
+     "sfx": "sneeze",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴, 에취 할 땐 팔로 쏙!",
+     "sfx": "frog"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 에취 할 땐…?"
+    },
+    {
+     "who": "frog",
+     "t": "팔로 쏙! 잘했어!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 38,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "모자의 미음, 같이 써 볼까?"
+    },
+    {
+     "who": "ele",
+     "t": "모-자! 짝짝!",
+     "sfx": "clap"
+    },
+    {
+     "who": "mon",
+     "t": "네모 네모, 천천히 써 보자!"
+    }
+   ],
+   "act": {
+    "type": "trace",
+    "letter": "ㅁ",
+    "n": 3,
+    "prompt": "손가락으로 미음을 세 번 따라 써 봐!",
+    "say": [
+     [
+      "우아! 미음! 모자의 미음!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 38,
+     "y": 26,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 2,
+     "y": 42,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 80,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/wave.webp",
+     "x": 24,
+     "y": 64,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 62,
+     "y": 54,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 66,
+     "y": 8,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "코로 쓱쓱, 글자 완성!",
+     "sfx": "brush",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "에취! 할 땐 팔로 쏙 가려요.",
+     "sfx": "sneeze"
+    },
+    {
+     "who": "mon",
+     "t": "모자 다 찾았다!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/ko005/voice.mp3",
+  "clips": {
+   "ko|에… 에… 에취!": [
+    0.3,
+    2.224
+   ],
+   "ko|휘리릭! 모자들이 날아갔어요.": [
+    2.824,
+    4.621
+   ],
+   "ko|앗! 서준아, 저게 뭐지? 톡 눌러 볼래?": [
+    7.745,
+    5.014
+   ],
+   "ko|살랑살랑 노란 것을 톡 눌러 봐!": [
+    13.059,
+    4.029
+   ],
+   "ko|짠! 노란 모자였어!": [
+    17.387,
+    2.957
+   ],
+   "ko|내 모자다! 고마워!": [
+    20.644,
+    2.627
+   ],
+   "ko|미안해… 내 재채기 때문에.": [
+    23.571,
+    3.835
+   ],
+   "ko|괜찮아! 같이 찾자.": [
+    27.706,
+    2.302
+   ],
+   "ko|쓱쓱! 모자의 미음! 네모 네모!": [
+    30.308,
+    5.041
+   ],
+   "ko|네모 네모 미음은 어디 있을까?": [
+    35.648,
+    4.502
+   ],
+   "ko|맞아! 미음! 모자의 미음!": [
+    40.451,
+    4.912
+   ],
+   "ko|음~ 그건 미음이 아니야.": [
+    45.663,
+    3.617
+   ],
+   "ko|미음은 네모 네모!": [
+    49.579,
+    3.144
+   ],
+   "ko|첨벙! 내 모자가 바다에!": [
+    53.024,
+    3.769
+   ],
+   "ko|바다엔 혼자 들어가면 안 돼.": [
+    57.093,
+    3.595
+   ],
+   "ko|푸우~ 내가 도와줄게!": [
+    60.988,
+    3.13
+   ],
+   "ko|서준아, 볼 빵빵 푸우~ 같이 해 줘!": [
+    64.418,
+    4.693
+   ],
+   "ko|볼을 빵빵하게 해 봐!": [
+    69.411,
+    2.753
+   ],
+   "ko|찰칵! 푸우~ 고래 볼이야!": [
+    72.464,
+    3.454
+   ],
+   "ko|푸우~ 고래가 물을 뿜었어요!": [
+    76.218,
+    5.042
+   ],
+   "ko|톡! 파란 모자가 모래 위로!": [
+    81.56,
+    4.604
+   ],
+   "ko|모자 찾아 줘서 고마워, 고래야!": [
+    86.464,
+    2.289
+   ],
+   "ko|붕붕~ 빨간 모자는 어디 있을까?": [
+    89.053,
+    4.577
+   ],
+   "ko|문도 네모! 미음 모양이야.": [
+    93.93,
+    3.734
+   ],
+   "ko|서준아, 똑똑똑 두드려 볼래?": [
+    97.964,
+    3.477
+   ],
+   "ko|모래성 문을 똑똑똑 세 번!": [
+    101.741,
+    4.53
+   ],
+   "ko|하나, 둘, 셋! 문이 열렸어요!": [
+    106.571,
+    5.217
+   ],
+   "ko|어? 이거 네 모자야?": [
+    112.088,
+    2.867
+   ],
+   "ko|딱 맞았는데~": [
+    115.255,
+    1.544
+   ],
+   "ko|헤헤, 찾아 줘서 고마워!": [
+    117.098,
+    2.769
+   ],
+   "ko|에… 에… 코가 간질간질!": [
+    120.167,
+    4.367
+   ],
+   "ko|잠깐! 팔로 쏙!": [
+    124.835,
+    2.486
+   ],
+   "ko|에취~ 모자가 그대로야!": [
+    127.621,
+    3.559
+   ],
+   "ko|개굴개굴, 에취 할 땐 팔로 쏙!": [
+    131.48,
+    4.979
+   ],
+   "ko|서준아, 에취 할 땐…?": [
+    136.759,
+    3.154
+   ],
+   "ko|팔로 쏙! 잘했어!": [
+    140.213,
+    3.386
+   ],
+   "ko|모자의 미음, 같이 써 볼까?": [
+    143.899,
+    3.321
+   ],
+   "ko|모-자! 짝짝!": [
+    147.52,
+    3.133
+   ],
+   "ko|네모 네모, 천천히 써 보자!": [
+    150.953,
+    4.252
+   ],
+   "ko|손가락으로 미음을 세 번 따라 써 봐!": [
+    155.505,
+    3.825
+   ],
+   "ko|우아! 미음! 모자의 미음!": [
+    159.631,
+    3.681
+   ],
+   "ko|코로 쓱쓱, 글자 완성!": [
+    163.611,
+    3.615
+   ],
+   "ko|에취! 할 땐 팔로 쏙 가려요.": [
+    167.526,
+    4.526
+   ],
+   "ko|모자 다 찾았다!": [
+    172.352,
+    2.81
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    175.462,
+    3.19
+   ],
+   "en|Bye!": [
+    178.951,
+    1.157
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    180.409,
+    3.539
+   ]
+  }
+ }
+}
