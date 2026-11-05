@@ -1,0 +1,665 @@
+{
+ "id": "mo005",
+ "subject": "mo",
+ "hero": "mon",
+ "title": "데굴데굴 공 찾기",
+ "cover": "content/chars/mon/happy.webp",
+ "coloring": "content/ep/mo005/img/coloring.webp",
+ "color": "#b7e4c7",
+ "lesson": "놀고 나면 공은 바구니에 쏙 넣어요",
+ "goals": [
+  "운동: 제자리 달리기 다다다 — 무릎 번갈아 다섯 걸음 (카메라 run)",
+  "운동: 앉았다 일어나기 세 번 (카메라 squat)",
+  "운동: 제자리에서 발 앞으로 뻥 발차기 세 번 (카메라 kick)",
+  "안전: 공이 굴러가면 먼저 멈춰서 주변 보기",
+  "숫자 하나~다섯 세기",
+  "맛보기: Ball! · Bye!",
+  "교훈: 정리정돈 — 놀고 나면 바구니에 쏙"
+ ],
+ "dev": [
+  "대근육",
+  "소근육",
+  "인지",
+  "사회성",
+  "자조"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bush",
+     "e": "content/ep/en002/img/bush.webp",
+     "x": 44,
+     "y": 50,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/sad.webp",
+     "x": 6,
+     "y": 38,
+     "s": 42,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "통! 통! 데구르르~",
+     "sfx": "bounce"
+    },
+    {
+     "who": "mon",
+     "t": "서준아, 도와줘! 내 공이 없어졌어!",
+     "mood": "sad"
+    },
+    {
+     "who": "mon",
+     "t": "바스락! 동그란 거다! 톡 눌러 볼래?",
+     "sfx": "rustle"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "bush",
+    "prompt": "흔들흔들 덤불을 톡 눌러 봐!",
+    "sfx": "boing",
+    "reveal": "content/ep/mo005/img/chacha_bush.webp",
+    "say": [
+     [
+      "짠! 공이 아니라 차차였어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 40,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ball",
+     "e": "content/ep/mo005/img/ball.webp",
+     "x": 82,
+     "y": 66,
+     "s": 12,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/run.webp",
+     "x": 4,
+     "y": 38,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 62,
+     "y": 30,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "헤헤, 나야! 공은 저기 데굴데굴~",
+     "sfx": "swoosh",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "멈춰! 먼저 잘 둘러봐!"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "뒤로 한 걸음! 제자리에서 다다다!",
+     "sfx": "run"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 5,
+    "cam": "run",
+    "prompt": "제자리에서 다다다 달려!",
+    "sfx": "run",
+    "say": [
+     [
+      "다다다! 공이 저기 멈췄어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "log",
+     "e": "content/ep/mo005/img/log_tunnel.webp",
+     "x": 38,
+     "y": 60,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 44,
+     "y": 12,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 72,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 4,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "공이 통나무 밑으로 쏙!",
+     "sfx": "plop"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 통나무 밑에 동그란 게 있어!",
+     "sfx": "buzz"
+    },
+    {
+     "who": "ele",
+     "t": "쏙 앉아서 보자!"
+    },
+    {
+     "who": "mon",
+     "t": "좋아! 쏙 앉았다, 쭉 일어나기!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "squat",
+    "prompt": "쏙 앉았다, 쭉 일어나!",
+    "sfx": "pop",
+    "say": [
+     [
+      "쏙! 쭉! 통나무 밑에 공이 보여!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/ep/mo005/img/coco_trunk.webp",
+     "x": 2,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/ep/mo005/img/kiki_kick.webp",
+     "x": 34,
+     "y": 36,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 76,
+     "y": 52,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 70,
+     "y": 14,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "코코가 긴 코로 공을 쏙!",
+     "sfx": "pop"
+    },
+    {
+     "who": "mon",
+     "t": "고마워, 코코!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴! 나한테 뻥!",
+     "sfx": "frog"
+    },
+    {
+     "who": "pp",
+     "t": "진짜 공 말고, 발만 뻥!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "kick",
+    "prompt": "제자리에서 발 앞으로 뻥!",
+    "sfx": "kick",
+    "say": [
+     [
+      "뻥! 멋진 발차기야!",
+      "ko"
+     ],
+     [
+      "Ball!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "ball",
+     "e": "content/ep/mo005/img/ball.webp",
+     "x": 56,
+     "y": 64,
+     "s": 12,
+     "anim": "bob"
+    },
+    {
+     "id": "basket",
+     "e": "content/ep/mo005/img/basket.webp",
+     "x": 70,
+     "y": 56,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 4,
+     "y": 38,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 36,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴~ 키키, 공 또 굴러가!",
+     "sfx": "bounce"
+    },
+    {
+     "who": "mon",
+     "t": "앗! 바구니에 쏙!",
+     "sfx": "plop"
+    },
+    {
+     "who": "frog",
+     "t": "놀고 나면, 바구니에 쏙!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 놀고 나면…?"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "basket",
+     "e": "content/ep/mo005/img/basket.webp",
+     "x": 44,
+     "y": 62,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "ball",
+     "e": "content/ep/mo005/img/ball.webp",
+     "x": 49,
+     "y": 58,
+     "s": 10,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 4,
+     "y": 36,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 44,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 26,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 60,
+     "y": 56,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "바구니에 쏙! 이제 안 굴러가!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "다 같이 웃으면서 찰칵!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "smile",
+    "e": "content/chars/mon/happy.webp",
+    "prompt": "키키처럼 활짝 웃어 봐!",
+    "say": [
+     [
+      "찰칵! 공놀이 친구들 사진이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 40,
+     "y": 28,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "basket",
+     "e": "content/ep/mo005/img/basket.webp",
+     "x": 44,
+     "y": 66,
+     "s": 18,
+     "anim": "none"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 76,
+     "y": 38,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 62,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 14,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 70,
+     "y": 10,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 58,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "놀고 나면 공은 바구니에 쏙!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mo005/voice.mp3",
+  "clips": {
+   "ko|통! 통! 데구르르~": [
+    0.3,
+    3.545
+   ],
+   "ko|서준아, 도와줘! 내 공이 없어졌어!": [
+    4.145,
+    5.714
+   ],
+   "ko|바스락! 동그란 거다! 톡 눌러 볼래?": [
+    10.159,
+    4.867
+   ],
+   "ko|흔들흔들 덤불을 톡 눌러 봐!": [
+    15.327,
+    3.454
+   ],
+   "ko|짠! 공이 아니라 차차였어!": [
+    19.081,
+    3.752
+   ],
+   "ko|헤헤, 나야! 공은 저기 데굴데굴~": [
+    23.133,
+    4.526
+   ],
+   "ko|멈춰! 먼저 잘 둘러봐!": [
+    27.959,
+    3.89
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    32.149,
+    3.835
+   ],
+   "ko|뒤로 한 걸음! 제자리에서 다다다!": [
+    36.284,
+    4.537
+   ],
+   "ko|제자리에서 다다다 달려!": [
+    41.121,
+    3.303
+   ],
+   "ko|다다다! 공이 저기 멈췄어!": [
+    44.724,
+    3.203
+   ],
+   "ko|공이 통나무 밑으로 쏙!": [
+    48.227,
+    3.784
+   ],
+   "ko|붕붕~ 통나무 밑에 동그란 게 있어!": [
+    52.312,
+    5.33
+   ],
+   "ko|쏙 앉아서 보자!": [
+    57.942,
+    2.462
+   ],
+   "ko|좋아! 쏙 앉았다, 쭉 일어나기!": [
+    60.704,
+    4.361
+   ],
+   "ko|쏙 앉았다, 쭉 일어나!": [
+    65.365,
+    3.416
+   ],
+   "ko|쏙! 쭉! 통나무 밑에 공이 보여!": [
+    69.081,
+    5.366
+   ],
+   "ko|코코가 긴 코로 공을 쏙!": [
+    74.747,
+    4.3
+   ],
+   "ko|고마워, 코코!": [
+    79.347,
+    2.115
+   ],
+   "ko|개굴! 나한테 뻥!": [
+    81.762,
+    2.619
+   ],
+   "ko|진짜 공 말고, 발만 뻥!": [
+    84.681,
+    3.337
+   ],
+   "ko|제자리에서 발 앞으로 뻥!": [
+    88.318,
+    3.583
+   ],
+   "ko|뻥! 멋진 발차기야!": [
+    92.201,
+    2.915
+   ],
+   "en|Ball!": [
+    95.416,
+    1.197
+   ],
+   "ko|개굴~ 키키, 공 또 굴러가!": [
+    96.913,
+    3.762
+   ],
+   "ko|앗! 바구니에 쏙!": [
+    100.975,
+    3.145
+   ],
+   "ko|놀고 나면, 바구니에 쏙!": [
+    104.42,
+    2.677
+   ],
+   "ko|서준아, 놀고 나면…?": [
+    107.397,
+    2.713
+   ],
+   "ko|바구니에 쏙! 이제 안 굴러가!": [
+    110.41,
+    4.812
+   ],
+   "ko|다 같이 웃으면서 찰칵!": [
+    115.522,
+    3.272
+   ],
+   "ko|키키처럼 활짝 웃어 봐!": [
+    119.094,
+    3.234
+   ],
+   "ko|찰칵! 공놀이 친구들 사진이야!": [
+    122.627,
+    3.591
+   ],
+   "ko|놀고 나면 공은 바구니에 쏙!": [
+    126.519,
+    3.708
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    130.526,
+    3.329
+   ],
+   "en|Bye!": [
+    134.155,
+    1.156
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    135.612,
+    3.79
+   ]
+  }
+ }
+}
