@@ -1,0 +1,779 @@
+{
+ "id": "en005",
+ "subject": "en",
+ "hero": "peng",
+ "title": "덜덜! 코코의 겨울옷",
+ "cover": "content/chars/peng/happy.webp",
+ "coloring": "content/ep/en005/img/coloring.webp",
+ "color": "#a9d6f5",
+ "lesson": "추운 날엔 따뜻하게 입고 나가요",
+ "goals": [
+  "영어: 몸 Head·Hand·Foot (머리·손·발)",
+  "영어: 알파벳 E — E, elephant!",
+  "영어: 숫자 One~Four 다시 보기",
+  "맛보기: Bye!",
+  "교훈: 추운 날엔 따뜻하게 입기"
+ ],
+ "dev": [
+  "언어",
+  "인지",
+  "소근육",
+  "사회성",
+  "자조"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "blanket",
+     "e": "content/ep/en005/img/blanket_pile.webp",
+     "x": 28,
+     "y": 34,
+     "s": 50,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 72,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "휘잉~ 찬바람이 불었어요.",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "peng",
+     "t": "어? 담요가 덜덜 떨어!",
+     "sfx": "rustle"
+    },
+    {
+     "who": "peng",
+     "t": "서준아, 톡톡톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "blanket",
+    "n": 3,
+    "reveal": "content/ep/en005/img/koko_shiver.webp",
+    "prompt": "담요를 톡톡톡 세 번!",
+    "sfx": "rustle",
+    "say": [
+     [
+      "짠! 코코였어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/ep/en005/img/koko_shiver.webp",
+     "x": 28,
+     "y": 30,
+     "s": 50,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 70,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 2,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "추워… 덜덜덜.",
+     "sfx": "rustle",
+     "mood": "sad"
+    },
+    {
+     "who": "peng",
+     "t": "내가 여행에서 배웠는데~"
+    },
+    {
+     "who": "peng",
+     "t": "추우면 따뜻하게 입어! 짠!",
+     "sfx": "yay"
+    },
+    {
+     "who": "pp",
+     "t": "와, 따뜻한 옷이다!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "머리는 영어로 Head! Head 에 쓰는 건?",
+    "answer": 0,
+    "options": [
+     {
+      "label": "털모자",
+      "e": "content/ep/en005/img/hat_knit.webp"
+     },
+     {
+      "label": "장화",
+      "e": "content/ep/en005/img/boot.webp"
+     }
+    ],
+    "wrong": [
+     [
+      "장화는 발에 신어요. 다시 골라 볼까?",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아! 모자는 Head!",
+      "ko"
+     ],
+     [
+      "Head!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/ep/en005/img/koko_shiver.webp",
+     "x": 38,
+     "y": 12,
+     "s": 50,
+     "anim": "none"
+    },
+    {
+     "id": "hat",
+     "e": "content/ep/en005/img/hat_knit.webp",
+     "x": 48,
+     "y": 8,
+     "s": 14,
+     "anim": "none"
+    },
+    {
+     "id": "mitten",
+     "e": "content/ep/en005/img/mitten.webp",
+     "x": 49,
+     "y": 31,
+     "s": 13,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 2,
+     "y": 58,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/ep/en005/img/kiki_blow.webp",
+     "x": 76,
+     "y": 34,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "쏙! 장갑은 Hand! 여기?",
+     "sfx": "boing"
+    },
+    {
+     "who": "ele",
+     "t": "헤헤… 이건 내 코야.",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "내 Hand 가 차가워! 호~"
+    },
+    {
+     "who": "mon",
+     "t": "서준이도 손에 호~ 해 볼래?"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "kiss",
+    "e": "content/ep/en005/img/kiki_blow.webp",
+    "prompt": "입을 동그랗게 모아서 호~!",
+    "say": [
+     [
+      "찰칵! 호~ 따뜻한 입김!",
+      "ko"
+     ],
+     [
+      "손은 영어로 Hand!",
+      "ko"
+     ],
+     [
+      "Hand!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/ep/en005/img/koko_shiver.webp",
+     "x": 30,
+     "y": 12,
+     "s": 50,
+     "anim": "none"
+    },
+    {
+     "id": "hat",
+     "e": "content/ep/en005/img/hat_knit.webp",
+     "x": 40,
+     "y": 8,
+     "s": 14,
+     "anim": "none"
+    },
+    {
+     "id": "b1",
+     "e": "content/ep/en005/img/boot.webp",
+     "x": 3,
+     "y": 64,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "b2",
+     "e": "content/ep/en005/img/boot.webp",
+     "x": 27,
+     "y": 74,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "b3",
+     "e": "content/ep/en005/img/boot.webp",
+     "x": 55,
+     "y": 74,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "b4",
+     "e": "content/ep/en005/img/boot.webp",
+     "x": 80,
+     "y": 64,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 62,
+     "y": 24,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 코코 발이 시리대!",
+     "sfx": "buzz"
+    },
+    {
+     "who": "bee",
+     "t": "코끼리 발은 몇 개야?"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "b1",
+     "b2",
+     "b3",
+     "b4"
+    ],
+    "count": true,
+    "names": {
+     "b1": "One",
+     "b2": "Two",
+     "b3": "Three",
+     "b4": "Four"
+    },
+    "prompt": "장화를 하나씩 톡 눌러 봐!",
+    "sfx": "boing",
+    "say": [
+     [
+      "발이 네 개! 장화 쏙!",
+      "ko"
+     ],
+     [
+      "발은 영어로 Foot!",
+      "ko"
+     ],
+     [
+      "Foot!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/ep/en005/img/koko_warm.webp",
+     "x": 30,
+     "y": 22,
+     "s": 56,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 56,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 72,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴! 장화 신고 쿵쿵!",
+     "sfx": "thud",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "고마워, 차차! 뿌우~!",
+     "sfx": "elephant",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "코끼리는 영어로 Elephant!"
+    },
+    {
+     "who": "peng",
+     "t": "E, elephant!",
+     "lang": "en"
+    }
+   ],
+   "act": {
+    "type": "trace",
+    "letter": "E",
+    "n": 2,
+    "prompt": "손가락으로 E를 따라 써 봐!",
+    "say": [
+     [
+      "잘 썼어!",
+      "ko"
+     ],
+     [
+      "E, elephant!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 38,
+     "y": 40,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/ep/en005/img/koko_warm.webp",
+     "x": 2,
+     "y": 30,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 70,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 82,
+     "y": 30,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 58,
+     "y": 6,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 해 볼까?",
+     "sfx": "frog",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "머리, Head 에 모자!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "장갑은 Hand!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "장화는 Foot!"
+    },
+    {
+     "who": "frog",
+     "t": "한 번 더, Head 에…"
+    },
+    {
+     "who": "peng",
+     "t": "모자! 서준이도 잘했어!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/ep/en005/img/koko_warm.webp",
+     "x": 30,
+     "y": 24,
+     "s": 50,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 70,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 4,
+     "y": 46,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 56,
+     "y": 64,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 84,
+     "y": 30,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 18,
+     "y": 6,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "휘잉~ 다 같이 언덕으로!",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "ele",
+     "t": "하나도 안 추워! 뿌우~",
+     "sfx": "elephant",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "추운 날엔 따뜻하게 입고 나가요."
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/en005/voice.mp3",
+  "clips": {
+   "ko|휘잉~ 찬바람이 불었어요.": [
+    0.3,
+    3.394
+   ],
+   "ko|어? 담요가 덜덜 떨어!": [
+    3.994,
+    3.586
+   ],
+   "ko|서준아, 톡톡톡 눌러 볼래?": [
+    7.88,
+    3.498
+   ],
+   "ko|담요를 톡톡톡 세 번!": [
+    11.678,
+    4.798
+   ],
+   "ko|짠! 코코였어!": [
+    16.776,
+    2.68
+   ],
+   "ko|추워… 덜덜덜.": [
+    19.756,
+    2.611
+   ],
+   "ko|내가 여행에서 배웠는데~": [
+    22.667,
+    2.98
+   ],
+   "ko|추우면 따뜻하게 입어! 짠!": [
+    25.947,
+    4.055
+   ],
+   "ko|와, 따뜻한 옷이다!": [
+    30.302,
+    2.764
+   ],
+   "ko|머리는 영어로 Head! Head 에 쓰는 건?": [
+    33.367,
+    4.746
+   ],
+   "ko|맞아! 모자는 Head!": [
+    38.413,
+    3.026
+   ],
+   "en|Head!": [
+    41.739,
+    0.805
+   ],
+   "ko|장화는 발에 신어요. 다시 골라 볼까?": [
+    42.844,
+    4.675
+   ],
+   "ko|쏙! 장갑은 Hand! 여기?": [
+    47.819,
+    3.846
+   ],
+   "ko|헤헤… 이건 내 코야.": [
+    51.965,
+    2.913
+   ],
+   "ko|내 Hand 가 차가워! 호~": [
+    55.178,
+    3.465
+   ],
+   "ko|서준이도 손에 호~ 해 볼래?": [
+    58.944,
+    3.654
+   ],
+   "ko|입을 동그랗게 모아서 호~!": [
+    62.898,
+    4.649
+   ],
+   "ko|찰칵! 호~ 따뜻한 입김!": [
+    67.847,
+    4.87
+   ],
+   "ko|손은 영어로 Hand!": [
+    73.016,
+    2.934
+   ],
+   "en|Hand!": [
+    76.251,
+    1.027
+   ],
+   "ko|붕붕~ 코코 발이 시리대!": [
+    77.578,
+    3.767
+   ],
+   "ko|코끼리 발은 몇 개야?": [
+    81.645,
+    2.774
+   ],
+   "ko|장화를 하나씩 톡 눌러 봐!": [
+    84.719,
+    4.193
+   ],
+   "ko|발이 네 개! 장화 쏙!": [
+    89.212,
+    3.338
+   ],
+   "ko|발은 영어로 Foot!": [
+    92.85,
+    2.095
+   ],
+   "en|Foot!": [
+    95.245,
+    0.876
+   ],
+   "ko|One!": [
+    96.422,
+    0.861
+   ],
+   "ko|Two!": [
+    97.583,
+    0.853
+   ],
+   "ko|Three!": [
+    98.736,
+    1.081
+   ],
+   "ko|Four!": [
+    100.117,
+    1.075
+   ],
+   "ko|개굴! 장화 신고 쿵쿵!": [
+    101.492,
+    3.973
+   ],
+   "ko|고마워, 차차! 뿌우~!": [
+    105.766,
+    3.62
+   ],
+   "ko|코끼리는 영어로 Elephant!": [
+    109.686,
+    3.338
+   ],
+   "en|E, elephant!": [
+    113.325,
+    2.522
+   ],
+   "ko|손가락으로 E를 따라 써 봐!": [
+    116.147,
+    3.189
+   ],
+   "ko|잘 썼어!": [
+    119.636,
+    1.594
+   ],
+   "ko|개굴개굴, 다 같이 해 볼까?": [
+    121.53,
+    2.901
+   ],
+   "ko|머리, Head 에 모자!": [
+    124.731,
+    3.871
+   ],
+   "ko|장갑은 Hand!": [
+    128.902,
+    2.458
+   ],
+   "ko|장화는 Foot!": [
+    131.66,
+    1.778
+   ],
+   "ko|한 번 더, Head 에…": [
+    133.738,
+    3.642
+   ],
+   "ko|모자! 서준이도 잘했어!": [
+    137.68,
+    3.782
+   ],
+   "ko|휘잉~ 다 같이 언덕으로!": [
+    141.762,
+    4.421
+   ],
+   "ko|하나도 안 추워! 뿌우~": [
+    146.484,
+    3.846
+   ],
+   "ko|추운 날엔 따뜻하게 입고 나가요.": [
+    150.63,
+    3.275
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    154.205,
+    3.134
+   ],
+   "en|Bye!": [
+    157.639,
+    1.394
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    159.333,
+    3.974
+   ]
+  }
+ }
+}
