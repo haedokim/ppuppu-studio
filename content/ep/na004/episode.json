@@ -1,0 +1,935 @@
+{
+ "id": "na004",
+ "subject": "na",
+ "hero": "bee",
+ "title": "쑥쑥 자라라, 해바라기",
+ "cover": "content/chars/bee/happy.webp",
+ "coloring": "content/ep/na004/img/coloring.webp",
+ "color": "#ffe08a",
+ "lesson": "기다려 주면 쑥쑥 자라요",
+ "goals": [
+  "자연: 식물 자라기 — 씨앗이 싹이 되고, 싹이 꽃이 돼요 (해바라기)",
+  "자연: 씨앗이 자라려면 흙·물·햇빛이 필요해요",
+  "숫자 하나~셋 세기",
+  "따라 말하기: 씨앗이 쏙! 싹이 쑥! 꽃이 활짝!",
+  "맛보기 영어: Flower! · Bye!",
+  "교훈: 기다리기 — 기다려 주면 쑥쑥 자라요"
+ ],
+ "dev": [
+  "인지",
+  "소근육",
+  "대근육",
+  "언어",
+  "사회성"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "squirrel",
+     "e": "content/ep/na004/img/squirrel_paws.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 40,
+     "y": 34,
+     "s": 40,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 72,
+     "y": 6,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "바스락! 풀숲에서 꼬리가 살랑~",
+     "sfx": "rustle"
+    },
+    {
+     "who": "squirrel",
+     "t": "서준아, 나 또 왔어! 내 손에 뭐가 있게?",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 궁금해! 톡 눌러 볼래?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "squirrel",
+    "prompt": "꼭 쥔 두 손을 톡 눌러 봐!",
+    "sfx": "pop",
+    "reveal": "content/ep/na004/img/squirrel_seed.webp",
+    "say": [
+     [
+      "짠! 해바라기 씨앗이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "mound",
+     "e": "content/ep/na004/img/soil_seed.webp",
+     "x": 38,
+     "y": 58,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na004/img/squirrel_paws.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 6,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 70,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 40,
+     "y": 4,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 70,
+     "y": 2,
+     "s": 34,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "squirrel",
+     "t": "내 씨앗, 같이 심어 볼래?",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 씨앗은 왜 흙에 넣을까?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "ele",
+     "t": "흙 속에 쏙! 흙 이불을 덮어 줘야 해.",
+     "sfx": "plop"
+    },
+    {
+     "who": "pp",
+     "t": "서준아, 흙 이불 덮어 줄래?"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "mound",
+    "n": 3,
+    "prompt": "흙을 톡톡톡, 세 번 두드려 줘!",
+    "sfx": "pok",
+    "say": [
+     [
+      "폭신폭신, 흙 이불 다 덮었다!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "mound",
+     "e": "content/ep/na004/img/soil_mound.webp",
+     "x": 38,
+     "y": 62,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 6,
+     "y": 44,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na004/img/squirrel_paws.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 72,
+     "y": 48,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 40,
+     "y": 4,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "다 됐다! 꽃 나와라! …어? 왜 안 나와?",
+     "sfx": "boing"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 씨앗도 목이 마를까?",
+     "sfx": "buzz"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "씨앗한테 뭐가 필요할까?",
+    "options": [
+     {
+      "e": "content/ep/mo001/img/water_bottle.webp"
+     },
+     {
+      "e": "content/ep/mo005/img/ball.webp"
+     }
+    ],
+    "answer": 0,
+    "say": [
+     [
+      "맞아! 씨앗은 물을 마셔요.",
+      "ko"
+     ]
+    ],
+    "wrong": [
+     [
+      "공은 못 마셔요. 다시 골라 볼까?",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "tree",
+     "e": "content/ep/mo002/img/tall_tree.webp",
+     "x": 2,
+     "y": 0,
+     "s": 76,
+     "anim": "none"
+    },
+    {
+     "id": "mound",
+     "e": "content/ep/na004/img/soil_mound.webp",
+     "x": 40,
+     "y": 66,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 56,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/think.webp",
+     "x": 52,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na004/img/squirrel_paws.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 22,
+     "y": 52,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 20,
+     "y": 14,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "똑… 똑… 주룩주룩! 비가 와요.",
+     "sfx": "rain"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴! 비 오는 날 좋아!",
+     "sfx": "frog",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "씨앗아, 아직이야? 꺼내 볼까?"
+    },
+    {
+     "who": "squirrel",
+     "t": "헤헤, 꺼내면 못 자라~ 기다려 줘."
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "sun",
+     "e": "content/ep/na004/img/sun.webp",
+     "x": 68,
+     "y": 2,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "cloud",
+     "e": "content/ep/na004/img/cloud.webp",
+     "x": 62,
+     "y": 2,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mound",
+     "e": "content/ep/na004/img/soil_mound.webp",
+     "x": 40,
+     "y": 68,
+     "s": 20,
+     "anim": "none"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 54,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 74,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 4,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 34,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "헤헤, 기다릴게!",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 비가 그쳤어!",
+     "sfx": "buzz"
+    },
+    {
+     "who": "bee",
+     "t": "어? 구름이 해님을 가렸네."
+    },
+    {
+     "who": "ele",
+     "t": "씨앗은 햇빛도 좋아해."
+    },
+    {
+     "who": "mon",
+     "t": "같이 숨쉬어 보자! 하나, 둘, 셋!"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "cam": "breathe",
+    "n": 3,
+    "prompt": "두 팔 위로 하~, 내리면서 후~!",
+    "sfx": "swoosh",
+    "say": [
+     [
+      "후~ 구름이 둥실 비켰어!",
+      "ko"
+     ],
+     [
+      "와, 해님이 반짝!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "sun",
+     "e": "content/ep/na004/img/sun.webp",
+     "x": 74,
+     "y": 2,
+     "s": 24,
+     "anim": "none"
+    },
+    {
+     "id": "sprout",
+     "e": "content/ep/na004/img/sprout.webp",
+     "x": 38,
+     "y": 56,
+     "s": 30,
+     "anim": "peek"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 40,
+     "y": 14,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 56,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 70,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na004/img/squirrel_paws.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 18,
+     "y": 52,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bee",
+     "t": "붕붕~ 여기 작은 게 쏙!",
+     "sfx": "buzz"
+    },
+    {
+     "who": "narr",
+     "t": "흙에서 연두 싹이 나왔어요!",
+     "sfx": "pop"
+    },
+    {
+     "who": "frog",
+     "t": "씨앗이 쏙! 싹이 쑥!",
+     "sfx": "plop",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "서준이도 깜짝 얼굴!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "surprise",
+    "e": "content/ep/na001/img/surprise_bibi.webp",
+    "prompt": "눈 동그랗게, 입은 오! 깜짝!",
+    "say": [
+     [
+      "찰칵! 깜짝 싹 사진이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "sun",
+     "e": "content/ep/na004/img/sun.webp",
+     "x": 76,
+     "y": 2,
+     "s": 22,
+     "anim": "none"
+    },
+    {
+     "id": "sunflower",
+     "e": "content/ep/na004/img/sunflower.webp",
+     "x": 36,
+     "y": 4,
+     "s": 76,
+     "anim": "none"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 50,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 70,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 4,
+     "y": 56,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na004/img/squirrel_paws.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 18,
+     "y": 52,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "여러 밤 자고 일어났더니… 쑥쑥!",
+     "sfx": "yay"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 해바라기 꽃이 활짝!",
+     "sfx": "buzz",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "꽃은 영어로…",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Flower!",
+     "lang": "en",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "sunflower",
+     "e": "content/ep/na004/img/sunflower.webp",
+     "x": 38,
+     "y": 4,
+     "s": 72,
+     "anim": "none"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 52,
+     "y": 10,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 52,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 64,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 20,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 48,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "씨앗이 쏙! 싹이 쑥! 꽃이 활짝!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "이번엔 서준이랑! 씨앗이 쏙! 싹이 쑥!…",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "꽃이 활짝!",
+     "sfx": "clap",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "기다려 주면 쑥쑥 자라요.",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "sunflower",
+     "e": "content/ep/na004/img/sunflower.webp",
+     "x": 40,
+     "y": 6,
+     "s": 60,
+     "anim": "none"
+    },
+    {
+     "id": "squirrel",
+     "e": "content/ep/na004/img/squirrel_paws.webp",
+     "name": "아기 다람쥐",
+     "voice_style": "작고 빠른 아기 목소리, 조금 울먹이다가 밝아짐",
+     "x": 22,
+     "y": 56,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 64,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 36,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 10,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 2,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 48,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "기다리니까 꽃이 폈어!",
+     "mood": "happy"
+    },
+    {
+     "who": "squirrel",
+     "t": "또 놀러 올게!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 즐거웠어! 오늘은 여기까지, 안녕!",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/na004/voice.mp3",
+  "clips": {
+   "ko|바스락! 풀숲에서 꼬리가 살랑~": [
+    0.3,
+    5.078
+   ],
+   "ko|서준아, 나 또 왔어! 내 손에 뭐가 있게?": [
+    5.678,
+    4.177
+   ],
+   "ko|붕붕~ 궁금해! 톡 눌러 볼래?": [
+    10.155,
+    4.579
+   ],
+   "ko|꼭 쥔 두 손을 톡 눌러 봐!": [
+    15.034,
+    3.373
+   ],
+   "ko|짠! 해바라기 씨앗이야!": [
+    18.707,
+    3.149
+   ],
+   "ko|내 씨앗, 같이 심어 볼래?": [
+    22.156,
+    2.579
+   ],
+   "ko|붕붕~ 씨앗은 왜 흙에 넣을까?": [
+    25.035,
+    4.71
+   ],
+   "ko|흙 속에 쏙! 흙 이불을 덮어 줘야 해.": [
+    30.044,
+    4.737
+   ],
+   "ko|서준아, 흙 이불 덮어 줄래?": [
+    35.081,
+    2.941
+   ],
+   "ko|흙을 톡톡톡, 세 번 두드려 줘!": [
+    38.323,
+    4.558
+   ],
+   "ko|폭신폭신, 흙 이불 다 덮었다!": [
+    43.18,
+    3.493
+   ],
+   "ko|다 됐다! 꽃 나와라! …어? 왜 안 나와?": [
+    46.973,
+    5.015
+   ],
+   "ko|붕붕~ 씨앗도 목이 마를까?": [
+    52.288,
+    4.028
+   ],
+   "ko|씨앗한테 뭐가 필요할까?": [
+    56.616,
+    2.989
+   ],
+   "ko|맞아! 씨앗은 물을 마셔요.": [
+    59.906,
+    3.888
+   ],
+   "ko|공은 못 마셔요. 다시 골라 볼까?": [
+    64.094,
+    3.679
+   ],
+   "ko|똑… 똑… 주룩주룩! 비가 와요.": [
+    68.073,
+    5.319
+   ],
+   "ko|개굴개굴! 비 오는 날 좋아!": [
+    73.692,
+    4.267
+   ],
+   "ko|씨앗아, 아직이야? 꺼내 볼까?": [
+    78.26,
+    3.453
+   ],
+   "ko|헤헤, 꺼내면 못 자라~ 기다려 줘.": [
+    82.013,
+    3.932
+   ],
+   "ko|헤헤, 기다릴게!": [
+    86.245,
+    1.835
+   ],
+   "ko|붕붕~ 비가 그쳤어!": [
+    88.38,
+    3.135
+   ],
+   "ko|어? 구름이 해님을 가렸네.": [
+    91.815,
+    3.134
+   ],
+   "ko|씨앗은 햇빛도 좋아해.": [
+    95.249,
+    3.384
+   ],
+   "ko|같이 숨쉬어 보자! 하나, 둘, 셋!": [
+    98.934,
+    4.282
+   ],
+   "ko|두 팔 위로 하~, 내리면서 후~!": [
+    103.515,
+    4.971
+   ],
+   "ko|후~ 구름이 둥실 비켰어!": [
+    108.787,
+    4.919
+   ],
+   "ko|와, 해님이 반짝!": [
+    114.005,
+    2.698
+   ],
+   "ko|붕붕~ 여기 작은 게 쏙!": [
+    117.003,
+    4.49
+   ],
+   "ko|흙에서 연두 싹이 나왔어요!": [
+    121.794,
+    3.324
+   ],
+   "ko|씨앗이 쏙! 싹이 쑥!": [
+    125.417,
+    4.12
+   ],
+   "ko|서준이도 깜짝 얼굴!": [
+    129.838,
+    2.941
+   ],
+   "ko|눈 동그랗게, 입은 오! 깜짝!": [
+    133.079,
+    4.643
+   ],
+   "ko|찰칵! 깜짝 싹 사진이야!": [
+    138.021,
+    3.978
+   ],
+   "ko|여러 밤 자고 일어났더니… 쑥쑥!": [
+    142.299,
+    5.858
+   ],
+   "ko|붕붕~ 해바라기 꽃이 활짝!": [
+    148.457,
+    3.763
+   ],
+   "ko|꽃은 영어로…": [
+    152.519,
+    1.827
+   ],
+   "en|Flower!": [
+    154.646,
+    1.399
+   ],
+   "ko|씨앗이 쏙! 싹이 쑥! 꽃이 활짝!": [
+    156.345,
+    6.18
+   ],
+   "ko|이번엔 서준이랑! 씨앗이 쏙! 싹이 쑥!…": [
+    162.825,
+    5.552
+   ],
+   "ko|꽃이 활짝!": [
+    168.677,
+    2.551
+   ],
+   "ko|기다려 주면 쑥쑥 자라요.": [
+    171.529,
+    2.865
+   ],
+   "ko|기다리니까 꽃이 폈어!": [
+    174.693,
+    3.303
+   ],
+   "ko|또 놀러 올게!": [
+    178.296,
+    1.702
+   ],
+   "en|Bye!": [
+    180.298,
+    1.444
+   ],
+   "ko|오늘도 즐거웠어! 오늘은 여기까지, 안녕!": [
+    182.042,
+    5.336
+   ]
+  }
+ }
+}
