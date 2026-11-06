@@ -1,0 +1,858 @@
+{
+ "id": "mu004",
+ "subject": "mu",
+ "hero": "frog",
+ "title": "쓱싹쓱싹 별 잔치",
+ "cover": "content/chars/frog/sing.webp",
+ "color": "#ffe9a8",
+ "coloring": "content/ep/mu004/img/coloring.webp",
+ "lesson": "먹고 나면 이를 쓱싹쓱싹 닦아요",
+ "goals": [
+  "노래: 「쓱싹쓱싹 이 닦기 노래」 따라 부르기 + 칫솔 톡 네 번",
+  "노래: 지난 노래 다시 — 빠르게 박수 다섯 번 · 크게 야호!",
+  "생활: 위에 이·아래 이 쓱싹, 물로 오물오물 퉤",
+  "숫자 하나~다섯 세기",
+  "맛보기 영어: Brush! · Bye!",
+  "교훈: 먹고 나면 이 닦기 · 처음인 친구 도와주기"
+ ],
+ "dev": [
+  "대근육",
+  "소근육",
+  "인지",
+  "언어",
+  "사회성",
+  "자조"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "baby_star",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "x": 78,
+     "y": 6,
+     "s": 18,
+     "anim": "peek"
+    },
+    {
+     "id": "box",
+     "e": "content/ep/mu004/img/star_box.webp",
+     "x": 38,
+     "y": 48,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "box_open",
+     "e": "content/ep/mu004/img/star_box_open.webp",
+     "x": 38,
+     "y": 48,
+     "s": 36,
+     "anim": "none",
+     "hidden": true
+    },
+    {
+     "id": "s1",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 26,
+     "y": 8,
+     "s": 15,
+     "anim": "bob"
+    },
+    {
+     "id": "s2",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 46,
+     "y": 20,
+     "s": 15,
+     "anim": "bob"
+    },
+    {
+     "id": "s3",
+     "e": "content/ep/en004/img/star.webp",
+     "x": 64,
+     "y": 30,
+     "s": 15,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 2,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "반짝! 창문으로 상자가 쏙 들어왔어요.",
+     "sfx": "bell"
+    },
+    {
+     "who": "frog",
+     "t": "반짝 상자네? 뭐가 들어 있을까?"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 별을 톡톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "s1",
+     "s2",
+     "s3"
+    ],
+    "count": true,
+    "prompt": "별 단추를 톡톡톡 눌러 봐!",
+    "sfx": "bell",
+    "say": [
+     [
+      "짠! 반짝 칫솔이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "baby_star",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "x": 80,
+     "y": 4,
+     "s": 16,
+     "anim": "bob"
+    },
+    {
+     "id": "cookie",
+     "e": "content/ep/mu004/img/star_cookie.webp",
+     "x": 44,
+     "y": 66,
+     "s": 16,
+     "anim": "none"
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 높은 아기 공룡 목소리, 까치발처럼 쪼르르",
+     "x": 58,
+     "y": 34,
+     "s": 40,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 26,
+     "y": 44,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 44,
+     "y": 6,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 2,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 16,
+     "y": 4,
+     "s": 30,
+     "anim": "peek"
+    }
+   ],
+   "lines": [
+    {
+     "who": "baby_star",
+     "t": "오늘 밤 별 잔치에 와!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "잔치 전에 별 쿠키 냠냠!",
+     "sfx": "chomp",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 이에 뭐가 콕! 이 닦자!",
+     "sfx": "buzz"
+    },
+    {
+     "who": "longneck_baby",
+     "t": "이 닦기? 그게 뭐야?"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 같이 해 보자."
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "먹고 나면 뭐가 필요할까?",
+    "options": [
+     {
+      "label": "칫솔",
+      "e": "content/ep/mu004/img/toothbrush_dino.webp"
+     },
+     {
+      "label": "공",
+      "e": "content/ep/mo005/img/ball.webp"
+     }
+    ],
+    "answer": 0,
+    "sfx": "brush",
+    "wrong": [
+     [
+      "공은 내일 놀자! 다시 골라 볼까?",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아! 칫솔로 쓱싹!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/mu004/img/longneck_baby_aah.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 높은 아기 공룡 목소리, 까치발처럼 쪼르르",
+     "x": 56,
+     "y": 30,
+     "s": 44,
+     "anim": "none",
+     "flip": true
+    },
+    {
+     "id": "brush",
+     "e": "content/ep/mu004/img/toothbrush_dino.webp",
+     "x": 36,
+     "y": 52,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 2,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 30,
+     "y": 4,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "longneck_baby",
+     "t": "아~ 내 이도 닦아 줘!"
+    },
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 노래해요!",
+     "sfx": "frog",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "칫솔질은 영어로…"
+    },
+    {
+     "who": "peng",
+     "t": "Brush!",
+     "lang": "en"
+    },
+    {
+     "who": "frog",
+     "t": "위에 이도 쓱싹쓱싹",
+     "sfx": "brush",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "아래 이도 쓱싹쓱싹",
+     "sfx": "brush",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "brush",
+    "n": 4,
+    "prompt": "칫솔을 노래 맞춰 톡, 네 번!",
+    "sfx": "brush",
+    "say": [
+     [
+      "쓱싹쓱싹, 반짝반짝!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/house_room.webp",
+   "actors": [
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/mu004/img/longneck_baby_shiny.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 높은 아기 공룡 목소리, 까치발처럼 쪼르르",
+     "x": 54,
+     "y": 30,
+     "s": 44,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 30,
+     "y": 56,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 8,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "퐁퐁! 코로 물을 떠 왔어.",
+     "sfx": "water"
+    },
+    {
+     "who": "ele",
+     "t": "물로 오물오물, 퉤!",
+     "sfx": "plop"
+    },
+    {
+     "who": "longneck_baby",
+     "t": "반짝반짝! 고마워, 서준아!",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "쓱싹쓱싹, 반짝반짝!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "이제 별 잔치 가자!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "lantern",
+     "e": "content/ep/mu004/img/star_lantern.webp",
+     "x": 30,
+     "y": 0,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "star_dino",
+     "e": "content/ep/en004/img/star_dino.webp",
+     "x": 62,
+     "y": 2,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "baby_star",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "x": 84,
+     "y": 10,
+     "s": 16,
+     "anim": "bob"
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/mu004/img/longneck_baby_shiny.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 높은 아기 공룡 목소리, 까치발처럼 쪼르르",
+     "x": 60,
+     "y": 38,
+     "s": 38,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 82,
+     "y": 50,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 2,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 30,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "baby_star",
+     "t": "어서 와! 반짝반짝 잔치야!",
+     "sfx": "bell",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "지난번 노래 기억나? 이번엔 빠르게!"
+    },
+    {
+     "who": "mon",
+     "t": "뒤로 한 걸음!"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 5,
+    "cam": "clap",
+    "prompt": "빠르게 짝짝! 박수 다섯 번!",
+    "sfx": "clap",
+    "say": [
+     [
+      "짝짝짝! 빠른 박수 최고야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "lantern",
+     "e": "content/ep/mu004/img/star_lantern.webp",
+     "x": 34,
+     "y": 0,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 2,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 32,
+     "y": 48,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 56,
+     "y": 44,
+     "s": 30,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 46,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 66,
+     "y": 6,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "baby_star",
+     "e": "content/ep/mo004/img/baby_star.webp",
+     "name": "아기 별",
+     "voice_style": "아주 작고 졸린 아기 목소리, 반짝반짝 말끝을 살짝 올림",
+     "x": 86,
+     "y": 4,
+     "s": 14,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "이번엔 크게, 야호!",
+     "sfx": "yay",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "쓱싹쓱싹…",
+     "sfx": "brush"
+    },
+    {
+     "who": "frog",
+     "t": "반짝반짝!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "반짝 이로 윙크 해 볼래?"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "wink",
+    "e": "content/ep/en001/img/wink_chacha.webp",
+    "prompt": "차차처럼 찡긋, 윙크!",
+    "say": [
+     [
+      "찰칵! 반짝반짝 별 잔치 사진이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/night_hill.webp",
+   "actors": [
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/mu004/img/longneck_baby_shiny.webp",
+     "name": "아기 목긴 공룡",
+     "voice_style": "작고 높은 아기 공룡 목소리, 까치발처럼 쪼르르",
+     "x": 58,
+     "y": 32,
+     "s": 40,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 26,
+     "y": 36,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 84,
+     "y": 50,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 42,
+     "y": 58,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 46,
+     "y": 6,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 84,
+     "y": 8,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "먹고 나면 이를 쓱싹쓱싹 닦아요.",
+     "sfx": "brush"
+    },
+    {
+     "who": "longneck_baby",
+     "t": "나도 이제 할 수 있어!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mu004/voice.mp3",
+  "clips": {
+   "ko|반짝! 창문으로 상자가 쏙 들어왔어요.": [
+    0.3,
+    6.105
+   ],
+   "ko|반짝 상자네? 뭐가 들어 있을까?": [
+    6.705,
+    4.158
+   ],
+   "ko|서준아, 별을 톡톡 눌러 볼래?": [
+    11.163,
+    4.405
+   ],
+   "ko|별 단추를 톡톡톡 눌러 봐!": [
+    15.868,
+    3.763
+   ],
+   "ko|짠! 반짝 칫솔이야!": [
+    19.931,
+    2.735
+   ],
+   "ko|오늘 밤 별 잔치에 와!": [
+    22.966,
+    4.231
+   ],
+   "ko|잔치 전에 별 쿠키 냠냠!": [
+    27.497,
+    4.35
+   ],
+   "ko|붕붕~ 이에 뭐가 콕! 이 닦자!": [
+    32.147,
+    4.96
+   ],
+   "ko|이 닦기? 그게 뭐야?": [
+    37.407,
+    2.865
+   ],
+   "ko|괜찮아! 같이 해 보자.": [
+    40.572,
+    2.346
+   ],
+   "ko|먹고 나면 뭐가 필요할까?": [
+    43.218,
+    2.801
+   ],
+   "ko|맞아! 칫솔로 쓱싹!": [
+    46.32,
+    3.186
+   ],
+   "ko|공은 내일 놀자! 다시 골라 볼까?": [
+    49.805,
+    4.306
+   ],
+   "ko|아~ 내 이도 닦아 줘!": [
+    54.412,
+    2.755
+   ],
+   "ko|개굴개굴, 다 같이 노래해요!": [
+    57.467,
+    3.778
+   ],
+   "ko|칫솔질은 영어로…": [
+    61.545,
+    2.247
+   ],
+   "en|Brush!": [
+    64.092,
+    1.796
+   ],
+   "ko|위에 이도 쓱싹쓱싹": [
+    66.188,
+    2.72
+   ],
+   "ko|아래 이도 쓱싹쓱싹": [
+    69.209,
+    2.862
+   ],
+   "ko|칫솔을 노래 맞춰 톡, 네 번!": [
+    72.371,
+    4.095
+   ],
+   "ko|쓱싹쓱싹, 반짝반짝!": [
+    76.766,
+    3.562
+   ],
+   "ko|퐁퐁! 코로 물을 떠 왔어.": [
+    80.627,
+    3.558
+   ],
+   "ko|물로 오물오물, 퉤!": [
+    84.486,
+    3.055
+   ],
+   "ko|반짝반짝! 고마워, 서준아!": [
+    87.841,
+    3.104
+   ],
+   "ko|이제 별 잔치 가자!": [
+    91.245,
+    2.356
+   ],
+   "ko|어서 와! 반짝반짝 잔치야!": [
+    93.901,
+    4.252
+   ],
+   "ko|지난번 노래 기억나? 이번엔 빠르게!": [
+    98.453,
+    3.981
+   ],
+   "ko|뒤로 한 걸음!": [
+    102.734,
+    1.958
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    104.991,
+    4.399
+   ],
+   "ko|빠르게 짝짝! 박수 다섯 번!": [
+    109.691,
+    3.935
+   ],
+   "ko|짝짝짝! 빠른 박수 최고야!": [
+    113.926,
+    3.375
+   ],
+   "ko|이번엔 크게, 야호!": [
+    117.601,
+    3.876
+   ],
+   "ko|쓱싹쓱싹…": [
+    121.777,
+    1.605
+   ],
+   "ko|반짝반짝!": [
+    123.682,
+    1.305
+   ],
+   "ko|반짝 이로 윙크 해 볼래?": [
+    125.287,
+    2.356
+   ],
+   "ko|차차처럼 찡긋, 윙크!": [
+    127.944,
+    3.502
+   ],
+   "ko|찰칵! 반짝반짝 별 잔치 사진이야!": [
+    131.745,
+    4.242
+   ],
+   "ko|먹고 나면 이를 쓱싹쓱싹 닦아요.": [
+    136.287,
+    4.222
+   ],
+   "ko|나도 이제 할 수 있어!": [
+    140.809,
+    2.355
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    143.465,
+    3.757
+   ],
+   "en|Bye!": [
+    147.522,
+    1.139
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    148.96,
+    3.764
+   ]
+  }
+ }
+}
