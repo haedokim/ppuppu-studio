@@ -1,0 +1,515 @@
+{
+ "at": "2026-11-07T21:23:07",
+ "agents": [
+  {
+   "id": "director",
+   "name": "감독",
+   "role": "전체 조율",
+   "state": "active",
+   "what": "mo006 진행"
+  },
+  {
+   "id": "analyst",
+   "name": "analyst",
+   "role": "반응 요약",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "planner",
+   "name": "planner",
+   "role": "기획",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "writer",
+   "name": "writer",
+   "role": "대본",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "artist",
+   "name": "artist",
+   "role": "그림",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "art-director",
+   "name": "art-director",
+   "role": "그림 검토",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "voice",
+   "name": "voice",
+   "role": "목소리",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "qa",
+   "name": "qa",
+   "role": "검수",
+   "state": "active",
+   "what": "mo006"
+  },
+  {
+   "id": "publisher",
+   "name": "publisher",
+   "role": "배포",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "designer",
+   "name": "designer",
+   "role": "화면 디자인",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "development",
+   "name": "development",
+   "role": "발달 자문",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "dad",
+   "name": "해도 님",
+   "role": "승인",
+   "state": "waiting",
+   "what": "10월 발달 관찰(/dev-check)"
+  }
+ ],
+ "busy": true,
+ "running": [
+  "감독(공장 실행)"
+ ],
+ "last_activity": 1794054186,
+ "stall_minutes": 10,
+ "current": {
+  "id": "ko006",
+  "subject": "한글",
+  "title": "빵빵! 버스의 ㅂ",
+  "step": "qa",
+  "step_i": 4,
+  "review": null,
+  "steps": [
+   {
+    "k": "plan",
+    "t": "기획",
+    "who": "planner"
+   },
+   {
+    "k": "wait_plan",
+    "t": "승인 ①",
+    "who": "해도 님"
+   },
+   {
+    "k": "write",
+    "t": "대본",
+    "who": "writer"
+   },
+   {
+    "k": "make",
+    "t": "그림·목소리",
+    "who": "artist · voice"
+   },
+   {
+    "k": "qa",
+    "t": "검수",
+    "who": "qa"
+   },
+   {
+    "k": "wait_final",
+    "t": "승인 ②",
+    "who": "해도 님"
+   },
+   {
+    "k": "publish",
+    "t": "배포",
+    "who": "publisher"
+   },
+   {
+    "k": "done",
+    "t": "끝",
+    "who": ""
+   }
+  ],
+  "waiting": false,
+  "asked": "2026-11-07T18:54:20",
+  "answer": "ok",
+  "voice": [
+   47,
+   47
+  ],
+  "images": null,
+  "qa": "FAIL",
+  "last_change": 1794053611,
+  "director": false,
+  "jobs": []
+ },
+ "episodes": [
+  {
+   "id": "ko006",
+   "subject": "한글",
+   "title": "빵빵! 버스의 ㅂ",
+   "step": "qa",
+   "step_i": 4,
+   "review": null,
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": false,
+   "asked": "2026-11-07T18:54:20",
+   "answer": "ok",
+   "voice": [
+    47,
+    47
+   ],
+   "images": null,
+   "qa": "FAIL",
+   "last_change": 1794053611,
+   "director": false,
+   "jobs": []
+  },
+  {
+   "id": "mo006",
+   "subject": "운동",
+   "title": "거꾸로 가방 체조",
+   "step": "qa",
+   "step_i": 4,
+   "review": null,
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": false,
+   "asked": "2026-11-07T19:16:11",
+   "answer": "ok",
+   "voice": [
+    39,
+    39
+   ],
+   "images": [
+    6,
+    7
+   ],
+   "qa": null,
+   "last_change": 1794054175,
+   "director": true,
+   "jobs": []
+  }
+ ],
+ "lanes": {
+  "voice": {
+   "running": [],
+   "queued": []
+  },
+  "image": {
+   "running": [],
+   "queued": []
+  },
+  "cpu": {
+   "running": [],
+   "queued": []
+  },
+  "light": {
+   "running": [],
+   "queued": []
+  },
+  "recent": [
+   {
+    "ep": "ko006",
+    "name": "재녹음 2차",
+    "state": "done",
+    "ended": "2026-11-07T20:57:02"
+   },
+   {
+    "ep": "ko006",
+    "name": "녹음 재검사 2",
+    "state": "done",
+    "ended": "2026-11-07T21:03:02"
+   },
+   {
+    "ep": "ko006",
+    "name": "다시 묶기 2",
+    "state": "done",
+    "ended": "2026-11-07T21:03:13"
+   },
+   {
+    "ep": "ko006",
+    "name": "미리보기 다시 2",
+    "state": "done",
+    "ended": "2026-11-07T21:13:10"
+   },
+   {
+    "ep": "mo006",
+    "name": "자동 플레이 다시(debug)",
+    "state": "failed",
+    "ended": "2026-11-07T21:09:02"
+   },
+   {
+    "ep": "mo006",
+    "name": "자동 플레이 다시(멈춘 곳 기록)",
+    "state": "failed",
+    "ended": "2026-11-07T21:19:47"
+   }
+  ]
+ },
+ "alerts": [],
+ "tasks": [
+  {
+   "n": 43,
+   "title": "10월 발달 관찰(/dev-check)",
+   "state": "waiting",
+   "detail": "보고서·아빠 질문 보냄, 커리큘럼 바꿀지 해도 님 답 기다림",
+   "upd": "2026-11-01T19:23"
+  },
+  {
+   "n": 32,
+   "title": "일요일은 공장 쉬기(토요일 저녁에 월요일 편 미리)",
+   "state": "done",
+   "detail": "일요일엔 새 편 안 만듦 · 토요일 저녁에 월요일 편",
+   "upd": "2026-10-31T21:10"
+  },
+  {
+   "n": 33,
+   "title": "메인 화면 친구: 가장 최근 공개된 날 이야기 주인공만",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 35,
+   "title": "색칠 도안 놀이(눌러 채우기·무지개·색 이름)",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 36,
+   "title": "그림판 그림 저장(내 사진 + 태블릿 갤러리)",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 37,
+   "title": "모든 화면 뒤로가기 확인창",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 38,
+   "title": "색칠 도안 쉬운 단계 4장 추가",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 39,
+   "title": "색칠 제안 5개: 뿌뿌 미션·색 섞기·오늘 이야기 도안·숫자 색칠·아빠에게 보내기",
+   "state": "done",
+   "detail": "v26 배포 완료",
+   "upd": "2026-10-31T21:58"
+  },
+  {
+   "n": 34,
+   "title": "놀이·생활 습관 화면 그림 업그레이드(먼저 양치·모기 2화면 시안)",
+   "state": "done",
+   "detail": "v27 올림",
+   "upd": "2026-11-01T09:01"
+  },
+  {
+   "n": 40,
+   "title": "그림 한도 임시 150 → 그림 업그레이드 끝나면 40 으로 되돌리기",
+   "state": "done",
+   "detail": "40 으로 되돌렸다가 11-01 다시 120 (42번)",
+   "upd": "2026-11-01T09:28"
+  },
+  {
+   "n": 3,
+   "title": "의성어 효과음 (Freesound)",
+   "state": "done",
+   "detail": "v28 올림",
+   "upd": "2026-11-02T21:58"
+  },
+  {
+   "n": 41,
+   "title": "놀이·생활 화면 놀이 방법 움직이게 (예: 손 씻기 문지르면 손이 비벼짐)",
+   "state": "done",
+   "detail": "v28 올림",
+   "upd": "2026-11-02T21:58"
+  },
+  {
+   "n": 42,
+   "title": "그림·목소리 한도 임시로 늘림(그림 120·목소리 400) → 업데이트 끝나면 40·200 으로 되돌리기",
+   "state": "done",
+   "detail": "40·200 으로 되돌림",
+   "upd": "2026-11-02T21:58"
+  },
+  {
+   "n": 44,
+   "title": "두 명이 하는 놀이: 과일 따기 시합(화면 반반, 아빠 쪽 조금 어렵게)",
+   "state": "done",
+   "detail": "v28 올림",
+   "upd": "2026-11-02T21:58"
+  },
+  {
+   "n": 45,
+   "title": "11-01 16시~11-02 18시 기록 지우기(서준이 아님)",
+   "state": "done",
+   "detail": "시트 629줄 지움 · 별 610→362 · 이어보기 3편 · 하루 기록 되돌림(새 앱 v28부터 반영)",
+   "upd": "2026-11-02T22:25"
+  },
+  {
+   "n": 46,
+   "title": "운동 편 동작(뛰기·한 발 서기 등)도 카메라로 알아보기 — 앞으로 모든 운동 편",
+   "state": "done",
+   "detail": "v29 올림 · mo004 다시 올림",
+   "upd": "2026-11-02T22:28"
+  },
+  {
+   "n": 47,
+   "title": "2인용 놀이 3~4가지 더",
+   "state": "done",
+   "detail": "v30 올림",
+   "upd": "2026-11-02T22:54"
+  }
+ ],
+ "budget": {
+  "image": [
+   20,
+   40
+  ],
+  "tts": [
+   101,
+   200
+  ],
+  "tts_note": null
+ },
+ "next_run": "2026-11-08T18:40",
+ "recent": [
+  {
+   "id": "mu004",
+   "subject": "노래",
+   "title": "쓱싹쓱싹 별 잔치",
+   "for": "2026-11-06"
+  },
+  {
+   "id": "na004",
+   "subject": "자연",
+   "title": "쑥쑥 자라라, 해바라기",
+   "for": "2026-11-06"
+  },
+  {
+   "id": "mo005",
+   "subject": "운동",
+   "title": "데굴데굴 공 찾기",
+   "for": "2026-11-05"
+  },
+  {
+   "id": "en005",
+   "subject": "영어",
+   "title": "덜덜! 코코의 겨울옷",
+   "for": "2026-11-05"
+  },
+  {
+   "id": "ko005",
+   "subject": "한글",
+   "title": "에취! 네모 ㅁ 모자",
+   "for": "2026-11-04"
+  },
+  {
+   "id": "na003",
+   "subject": "자연",
+   "title": "누구 발자국일까?",
+   "for": "2026-11-04"
+  }
+ ],
+ "app": "v30"
+}
