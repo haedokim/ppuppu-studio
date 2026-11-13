@@ -1,0 +1,679 @@
+{
+ "id": "mo006",
+ "subject": "mo",
+ "hero": "mon",
+ "title": "거꾸로 가방 체조",
+ "cover": "content/chars/mon/happy.webp",
+ "coloring": "content/ep/mo006/img/coloring.webp",
+ "color": "#ffd6a5",
+ "lesson": "친구가 실수하면 '괜찮아!' 말해 줘요",
+ "goals": [
+  "운동: 허리 숙여 발끝 콕 세 번 (카메라 bend)",
+  "운동: 허리 왼쪽·오른쪽 빙글 비틀기 세 번 (카메라 twist)",
+  "운동: 두 팔 올리며 하~, 내리며 후~ 숨쉬기 세 번 (카메라 breathe)",
+  "안전: 친구랑 팔이 닿지 않게 떨어져서 하기",
+  "숫자 하나~셋 세기, 첫 번째·두 번째·세 번째",
+  "맛보기: Sun! · Bye!",
+  "교훈: 실수한 친구에게 '괜찮아!' 말해 주기"
+ ],
+ "dev": [
+  "대근육",
+  "소근육",
+  "인지",
+  "사회성",
+  "언어"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/beach_sunset.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/ep/mo006/img/chacha_bag_front.webp",
+     "x": 40,
+     "y": 36,
+     "s": 46,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/think.webp",
+     "x": 4,
+     "y": 38,
+     "s": 42,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "빙글빙글~ 내 가방이 없어졌어!",
+     "sfx": "swoosh"
+    },
+    {
+     "who": "mon",
+     "t": "어? 차차 배에 동그란 게…?"
+    },
+    {
+     "who": "mon",
+     "t": "서준아, 차차 배를 톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "peng",
+    "prompt": "차차 배를 톡 눌러 봐!",
+    "sfx": "boing",
+    "reveal": "content/ep/mo006/img/chacha_bag_hug.webp",
+    "say": [
+     [
+      "짠! 가방이 배에 있었네!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_sunset.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/ep/mo006/img/chacha_bag_hug.webp",
+     "x": 2,
+     "y": 40,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 22,
+     "y": 36,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 46,
+     "y": 8,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "card1",
+     "e": "content/ep/mo006/img/exercise_card.webp",
+     "x": 44,
+     "y": 72,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "card2",
+     "e": "content/ep/mo006/img/exercise_card.webp",
+     "x": 60,
+     "y": 62,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "crab",
+     "e": "content/ep/en001/img/crab.webp",
+     "x": 76,
+     "y": 62,
+     "s": 20,
+     "anim": "bob",
+     "name": "빨간 게",
+     "voice_style": "장난스럽고 짧게 끊어 말하는 꼬마 목소리"
+    },
+    {
+     "id": "card3",
+     "e": "content/ep/mo006/img/exercise_card.webp",
+     "x": 32,
+     "y": 80,
+     "s": 11,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "헤헤, 앞으로 메고 있었네!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "괜찮아! 나도 맨날 깜빡해!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "앗, 내 체조 카드!",
+     "sfx": "swoosh",
+     "mood": "sad"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 저기 하나, 저기 또!",
+     "sfx": "buzz"
+    },
+    {
+     "who": "crab",
+     "t": "집게집게~ 이거 찾아?",
+     "sfx": "snap"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "card1",
+     "card2",
+     "card3"
+    ],
+    "count": true,
+    "prompt": "카드 세 장을 톡톡톡 찾아 줘!",
+    "sfx": "pop",
+    "say": [
+     [
+      "카드 다 찾았다!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_sunset.webp",
+   "actors": [
+    {
+     "id": "mon",
+     "e": "content/ep/mo006/img/kiki_bend.webp",
+     "x": 4,
+     "y": 36,
+     "s": 44,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 46,
+     "y": 30,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "첫 번째! 허리 숙여 발끝 콕!"
+    },
+    {
+     "who": "pp",
+     "t": "친구랑 팔이 안 닿게, 떨어져서!"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "뒤로 한 걸음! 준비됐니?"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "bend",
+    "prompt": "허리 숙여 발끝 콕!",
+    "sfx": "pop",
+    "say": [
+     [
+      "콕! 다리 사이로 해님이 거꾸로야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_sunset.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/ep/mo006/img/kiki_twist.webp",
+     "x": 34,
+     "y": 34,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 70,
+     "y": 52,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "두 번째 카드야. 허리를 왼쪽, 오른쪽!"
+    },
+    {
+     "who": "narr",
+     "t": "빙글~ 키키 꼬리가 포포 볼에 톡!",
+     "sfx": "boing"
+    },
+    {
+     "who": "mon",
+     "t": "앗, 미안해, 포포!",
+     "mood": "sad"
+    },
+    {
+     "who": "frog",
+     "t": "괜찮아! 조금 떨어져서 하자.",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "twist",
+    "prompt": "왼쪽 빙글, 오른쪽 빙글!",
+    "sfx": "swoosh",
+    "say": [
+     [
+      "빙글빙글! 허리가 쭉쭉 늘어났어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_sunset.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 4,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 40,
+     "y": 48,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 70,
+     "y": 36,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "해님이 바다 쪽으로 내려가요."
+    },
+    {
+     "who": "peng",
+     "t": "와, 해님 봐!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Sun!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "세 번째 카드! 숨 크게 하~ 후~"
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "breathe",
+    "prompt": "팔 올리며 하~, 내리며 후~",
+    "say": [
+     [
+      "후~ 몸이 말랑말랑해졌어.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_sunset.webp",
+   "actors": [
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 2,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 26,
+     "y": 54,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 44,
+     "y": 34,
+     "s": 40,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 70,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 72,
+     "y": 8,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "peng",
+     "t": "괜찮다고 해 줘서 고마워!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "개굴! 친구가 실수하면?",
+     "sfx": "frog"
+    },
+    {
+     "who": "mon",
+     "t": "괜찮아!",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 친구가 실수하면…?"
+    },
+    {
+     "who": "mon",
+     "t": "친구가 실수하면 '괜찮아!' 말해 줘요.",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_sunset.webp",
+   "actors": [
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 40,
+     "y": 26,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 76,
+     "y": 38,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 60,
+     "y": 52,
+     "s": 28,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 14,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 70,
+     "y": 8,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 58,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "체조하니까 몸이 쭉쭉!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!",
+     "mood": "happy"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mo006/voice.mp3",
+  "clips": {
+   "ko|빙글빙글~ 내 가방이 없어졌어!": [
+    0.3,
+    4.244
+   ],
+   "ko|어? 차차 배에 동그란 게…?": [
+    4.844,
+    3.399
+   ],
+   "ko|서준아, 차차 배를 톡 눌러 볼래?": [
+    8.543,
+    3.905
+   ],
+   "ko|차차 배를 톡 눌러 봐!": [
+    12.748,
+    3.305
+   ],
+   "ko|짠! 가방이 배에 있었네!": [
+    16.353,
+    3.532
+   ],
+   "ko|헤헤, 앞으로 메고 있었네!": [
+    20.185,
+    2.628
+   ],
+   "ko|괜찮아! 나도 맨날 깜빡해!": [
+    23.113,
+    4.181
+   ],
+   "ko|앗, 내 체조 카드!": [
+    27.594,
+    2.863
+   ],
+   "ko|붕붕~ 저기 하나, 저기 또!": [
+    30.757,
+    4.281
+   ],
+   "ko|집게집게~ 이거 찾아?": [
+    35.338,
+    2.404
+   ],
+   "ko|카드 세 장을 톡톡톡 찾아 줘!": [
+    38.042,
+    3.289
+   ],
+   "ko|카드 다 찾았다!": [
+    41.631,
+    2.146
+   ],
+   "ko|첫 번째! 허리 숙여 발끝 콕!": [
+    44.077,
+    3.776
+   ],
+   "ko|친구랑 팔이 안 닿게, 떨어져서!": [
+    48.153,
+    4.202
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    52.655,
+    3.755
+   ],
+   "ko|뒤로 한 걸음! 준비됐니?": [
+    56.709,
+    3.598
+   ],
+   "ko|허리 숙여 발끝 콕!": [
+    60.607,
+    2.359
+   ],
+   "ko|콕! 다리 사이로 해님이 거꾸로야!": [
+    63.267,
+    4.196
+   ],
+   "ko|두 번째 카드야. 허리를 왼쪽, 오른쪽!": [
+    67.762,
+    5.182
+   ],
+   "ko|빙글~ 키키 꼬리가 포포 볼에 톡!": [
+    73.244,
+    4.829
+   ],
+   "ko|앗, 미안해, 포포!": [
+    78.373,
+    2.444
+   ],
+   "ko|괜찮아! 조금 떨어져서 하자.": [
+    81.117,
+    3.502
+   ],
+   "ko|왼쪽 빙글, 오른쪽 빙글!": [
+    84.919,
+    3.663
+   ],
+   "ko|빙글빙글! 허리가 쭉쭉 늘어났어!": [
+    88.882,
+    4.715
+   ],
+   "ko|해님이 바다 쪽으로 내려가요.": [
+    93.897,
+    4.267
+   ],
+   "ko|와, 해님 봐!": [
+    98.464,
+    2.165
+   ],
+   "en|Sun!": [
+    100.929,
+    1.264
+   ],
+   "ko|세 번째 카드! 숨 크게 하~ 후~": [
+    102.493,
+    5.84
+   ],
+   "ko|팔 올리며 하~, 내리며 후~": [
+    108.633,
+    3.986
+   ],
+   "ko|후~ 몸이 말랑말랑해졌어.": [
+    112.918,
+    4.158
+   ],
+   "ko|괜찮다고 해 줘서 고마워!": [
+    117.377,
+    2.667
+   ],
+   "ko|개굴! 친구가 실수하면?": [
+    120.343,
+    3.5
+   ],
+   "ko|괜찮아!": [
+    124.144,
+    1.13
+   ],
+   "ko|서준아, 친구가 실수하면…?": [
+    125.574,
+    3.454
+   ],
+   "ko|친구가 실수하면 '괜찮아!' 말해 줘요.": [
+    129.328,
+    4.174
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    133.802,
+    3.568
+   ],
+   "ko|체조하니까 몸이 쭉쭉!": [
+    137.67,
+    3.114
+   ],
+   "en|Bye!": [
+    141.084,
+    1.132
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    142.516,
+    3.44
+   ]
+  }
+ }
+}
