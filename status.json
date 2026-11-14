@@ -1,0 +1,450 @@
+{
+ "at": "2026-11-15T06:59:25",
+ "agents": [
+  {
+   "id": "director",
+   "name": "감독",
+   "role": "전체 조율",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "analyst",
+   "name": "analyst",
+   "role": "반응 요약",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "planner",
+   "name": "planner",
+   "role": "기획",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "writer",
+   "name": "writer",
+   "role": "대본",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "artist",
+   "name": "artist",
+   "role": "그림",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "art-director",
+   "name": "art-director",
+   "role": "그림 검토",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "voice",
+   "name": "voice",
+   "role": "목소리",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "qa",
+   "name": "qa",
+   "role": "검수",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "publisher",
+   "name": "publisher",
+   "role": "배포",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "designer",
+   "name": "designer",
+   "role": "화면 디자인",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "development",
+   "name": "development",
+   "role": "발달 자문",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "dad",
+   "name": "해도 님",
+   "role": "승인",
+   "state": "waiting",
+   "what": "ko006 확인"
+  }
+ ],
+ "busy": false,
+ "running": [],
+ "last_activity": 1794693564,
+ "stall_minutes": 10,
+ "current": {
+  "id": "ko006",
+  "subject": "한글",
+  "title": "빵빵! 버스의 ㅂ",
+  "step": "wait_final",
+  "step_i": 5,
+  "review": null,
+  "steps": [
+   {
+    "k": "plan",
+    "t": "기획",
+    "who": "planner"
+   },
+   {
+    "k": "wait_plan",
+    "t": "승인 ①",
+    "who": "해도 님"
+   },
+   {
+    "k": "write",
+    "t": "대본",
+    "who": "writer"
+   },
+   {
+    "k": "make",
+    "t": "그림·목소리",
+    "who": "artist · voice"
+   },
+   {
+    "k": "qa",
+    "t": "검수",
+    "who": "qa"
+   },
+   {
+    "k": "wait_final",
+    "t": "승인 ②",
+    "who": "해도 님"
+   },
+   {
+    "k": "publish",
+    "t": "배포",
+    "who": "publisher"
+   },
+   {
+    "k": "done",
+    "t": "끝",
+    "who": ""
+   }
+  ],
+  "waiting": true,
+  "asked": "2026-11-07T21:32:53",
+  "answer": "pending",
+  "voice": [
+   47,
+   47
+  ],
+  "images": null,
+  "qa": "FAIL",
+  "last_change": 1794054773,
+  "director": false,
+  "jobs": []
+ },
+ "episodes": [
+  {
+   "id": "ko006",
+   "subject": "한글",
+   "title": "빵빵! 버스의 ㅂ",
+   "step": "wait_final",
+   "step_i": 5,
+   "review": null,
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": true,
+   "asked": "2026-11-07T21:32:53",
+   "answer": "pending",
+   "voice": [
+    47,
+    47
+   ],
+   "images": null,
+   "qa": "FAIL",
+   "last_change": 1794054773,
+   "director": false,
+   "jobs": []
+  },
+  {
+   "id": "mu005",
+   "subject": "노래",
+   "title": "토닥토닥 마음 노래",
+   "step": "wait_final",
+   "step_i": 5,
+   "review": null,
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": true,
+   "asked": "2026-11-14T10:57:32",
+   "answer": "pending",
+   "voice": [
+    41,
+    41
+   ],
+   "images": null,
+   "qa": "PASS",
+   "last_change": 1794621452,
+   "director": false,
+   "jobs": []
+  }
+ ],
+ "lanes": {
+  "voice": {
+   "running": [],
+   "queued": []
+  },
+  "image": {
+   "running": [],
+   "queued": []
+  },
+  "cpu": {
+   "running": [],
+   "queued": []
+  },
+  "light": {
+   "running": [],
+   "queued": []
+  },
+  "recent": [
+   {
+    "ep": "mu005",
+    "name": "미리보기 2",
+    "state": "done",
+    "ended": "2026-11-14T10:24:31"
+   },
+   {
+    "ep": "mu005",
+    "name": "재녹음 짧은말",
+    "state": "done",
+    "ended": "2026-11-14T10:29:35"
+   },
+   {
+    "ep": "mu005",
+    "name": "녹음 검사 3",
+    "state": "done",
+    "ended": "2026-11-14T10:31:47"
+   },
+   {
+    "ep": "mu005",
+    "name": "묶기 3",
+    "state": "done",
+    "ended": "2026-11-14T10:32:09"
+   },
+   {
+    "ep": "mu005",
+    "name": "자동 플레이 3",
+    "state": "done",
+    "ended": "2026-11-14T10:35:25"
+   },
+   {
+    "ep": "mu005",
+    "name": "미리보기 3",
+    "state": "done",
+    "ended": "2026-11-14T10:38:39"
+   }
+  ]
+ },
+ "alerts": [
+  "ko006 해도 님 답장을 기다려요 (완성본 승인)",
+  "mu005 해도 님 답장을 기다려요 (완성본 승인)"
+ ],
+ "tasks": [
+  {
+   "n": 43,
+   "title": "10월 발달 관찰(/dev-check)",
+   "state": "waiting",
+   "detail": "보고서·아빠 질문 보냄, 커리큘럼 바꿀지 해도 님 답 기다림",
+   "upd": "2026-11-01T19:23"
+  },
+  {
+   "n": 48,
+   "title": "같이 놀아요 6번째 놀이: 공 주고받기",
+   "state": "done",
+   "detail": "만들어 둠 — v31 배포 말씀 기다림",
+   "upd": "2026-11-14T07:54"
+  },
+  {
+   "n": 49,
+   "title": "같이 놀아요 '누구랑' 단추에 가족 그림",
+   "state": "done",
+   "detail": "만들어 둠 — v31 배포 말씀 기다림",
+   "upd": "2026-11-14T07:54"
+  },
+  {
+   "n": 50,
+   "title": "새 스티커 알림 창 없애기(작은 표시만)",
+   "state": "done",
+   "detail": "만들어 둠 — v31 배포 말씀 기다림",
+   "upd": "2026-11-14T07:54"
+  },
+  {
+   "n": 51,
+   "title": "배워요 빈칸: 어디 있을까?(위치 말)",
+   "state": "done",
+   "detail": "만들어 둠 — v32 배포 말씀 기다림",
+   "upd": "2026-11-14T17:04"
+  },
+  {
+   "n": 52,
+   "title": "배워요 '살살 놀아요'(장난감 던지지 않기) 추가",
+   "state": "done",
+   "detail": "만들어 둠 — v32 배포 말씀 기다림",
+   "upd": "2026-11-14T17:04"
+  },
+  {
+   "n": 53,
+   "title": "정리하기 → 진열장 제자리(그림자) 놓기로 변경",
+   "state": "done",
+   "detail": "만들어 둠 — v32 배포 말씀 기다림",
+   "upd": "2026-11-14T17:04"
+  },
+  {
+   "n": 54,
+   "title": "이야기 하루 2편 → 1편으로 줄이기",
+   "state": "done",
+   "detail": "",
+   "upd": "2026-11-14T17:05"
+  }
+ ],
+ "budget": {
+  "image": [
+   0,
+   40
+  ],
+  "tts": [
+   0,
+   200
+  ],
+  "tts_note": null
+ },
+ "next_run": "2026-11-15T18:40",
+ "recent": [
+  {
+   "id": "mo006",
+   "subject": "운동",
+   "title": "거꾸로 가방 체조",
+   "for": "2026-11-09"
+  },
+  {
+   "id": "mu004",
+   "subject": "노래",
+   "title": "쓱싹쓱싹 별 잔치",
+   "for": "2026-11-06"
+  },
+  {
+   "id": "na004",
+   "subject": "자연",
+   "title": "쑥쑥 자라라, 해바라기",
+   "for": "2026-11-06"
+  },
+  {
+   "id": "mo005",
+   "subject": "운동",
+   "title": "데굴데굴 공 찾기",
+   "for": "2026-11-05"
+  },
+  {
+   "id": "en005",
+   "subject": "영어",
+   "title": "덜덜! 코코의 겨울옷",
+   "for": "2026-11-05"
+  },
+  {
+   "id": "ko005",
+   "subject": "한글",
+   "title": "에취! 네모 ㅁ 모자",
+   "for": "2026-11-04"
+  }
+ ],
+ "app": "v32"
+}
