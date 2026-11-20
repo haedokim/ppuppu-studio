@@ -1,0 +1,834 @@
+{
+ "id": "ko006",
+ "subject": "ko",
+ "hero": "ele",
+ "title": "빵빵! 버스의 ㅂ",
+ "cover": "content/chars/ele/happy.webp",
+ "coloring": "content/ep/ko006/img/coloring.webp",
+ "color": "#ffe8a3",
+ "lesson": "차에 타면 앉아서 벨트를 딸깍 매요",
+ "goals": [
+  "한글: ㅂ 모양과 소리 (비읍, 버스의 비읍)",
+  "한글: ㅁ 다시 보기 — ㅁ·ㅂ 구별 (미음에 귀 두 개 쫑긋)",
+  "숫자 하나~셋 세기",
+  "맛보기: 음절 박자 버-스, 따라 말하기 '타면 먼저 딸깍!', Hello! · Bye!",
+  "교훈: 차에 타면 앉아서 벨트 매기"
+ ],
+ "dev": [
+  "인지",
+  "언어",
+  "소근육",
+  "사회성",
+  "자조"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck.webp",
+     "x": 48,
+     "y": 18,
+     "s": 40,
+     "anim": "peek",
+     "name": "목긴 공룡"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 8,
+     "y": 10,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 4,
+     "y": 42,
+     "s": 40,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "빵! 빵빵! 언덕 너머에서 소리가 나요.",
+     "sfx": "horn"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 이게 무슨 소리지?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "ele",
+     "t": "서준아, 언덕 위를 톡 눌러 볼래?"
+    }
+   ],
+   "act": {
+    "type": "tap",
+    "target": "longneck",
+    "reveal": "content/ep/ko006/img/bus_longneck.webp",
+    "prompt": "언덕 위에 쏙 나온 걸 톡!",
+    "sfx": "car",
+    "say": [
+     [
+      "짠! 부릉부릉~ 마을 버스예요!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/ko006/img/bus_tilt.webp",
+     "x": 42,
+     "y": 22,
+     "s": 44,
+     "anim": "none",
+     "name": "목긴 공룡"
+    },
+    {
+     "id": "wheel",
+     "e": "content/ep/ko006/img/wheel.webp",
+     "x": 84,
+     "y": 76,
+     "s": 12,
+     "anim": "bob"
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby.webp",
+     "x": 80,
+     "y": 40,
+     "s": 24,
+     "anim": "none",
+     "name": "아기 목긴 공룡"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 24,
+     "y": 28,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 44,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "longneck",
+     "t": "빵빵! 바다 가는 버스예요~",
+     "sfx": "horn",
+     "mood": "happy"
+    },
+    {
+     "who": "narr",
+     "t": "덜컹! 버스가 기우뚱!",
+     "sfx": "thud"
+    },
+    {
+     "who": "longneck_baby",
+     "t": "엄마, 바퀴가 없어!",
+     "mood": "sad"
+    },
+    {
+     "who": "pp",
+     "t": "괜찮아! 같이 찾자."
+    },
+    {
+     "who": "ele",
+     "t": "쓱쓱! 버스의 버, 비읍이야.",
+     "sfx": "brush"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "미음에 귀 두 개 쫑긋! 비읍은 어디?",
+    "options": [
+     {
+      "e": "ㅁ"
+     },
+     {
+      "e": "ㅂ"
+     },
+     {
+      "e": "ㄹ"
+     }
+    ],
+    "answer": 1,
+    "wrong": [
+     [
+      "음~ 그건 비읍이 아니야.",
+      "ko"
+     ],
+     [
+      "비읍은 귀 두 개 쫑긋!",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아! 비읍! 버스의 비읍!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/hill_day.webp",
+   "actors": [
+    {
+     "id": "bus",
+     "e": "content/ep/ko006/img/bus_tilt.webp",
+     "x": 62,
+     "y": 4,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "wheel_mud",
+     "e": "content/ep/ko006/img/wheel_mud.webp",
+     "x": 52,
+     "y": 56,
+     "s": 28,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 26,
+     "y": 30,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 80,
+     "y": 40,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/think.webp",
+     "x": 2,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "데굴데굴 바퀴 자국… 이쪽이야!",
+     "sfx": "bounce"
+    },
+    {
+     "who": "narr",
+     "t": "바퀴가 진흙에 폭 빠졌어요.",
+     "sfx": "plop"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!"
+    },
+    {
+     "who": "pp",
+     "t": "서준아, 톡톡톡 밀어 줘!"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "wheel_mud",
+    "n": 3,
+    "prompt": "바퀴를 톡톡톡, 영차 세 번!",
+    "sfx": "pop",
+    "say": [
+     [
+      "영차! 쏙! 바퀴가 나왔어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/ep/ko006/img/bg_bus_inside.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck.webp",
+     "x": 70,
+     "y": 4,
+     "s": 32,
+     "anim": "none",
+     "name": "목긴 공룡"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/jump.webp",
+     "x": 54,
+     "y": 14,
+     "s": 22,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 4,
+     "y": 44,
+     "s": 32,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 32,
+     "y": 52,
+     "s": 26,
+     "anim": "none"
+    },
+    {
+     "id": "belt1",
+     "e": "content/ep/ko006/img/belt.webp",
+     "x": 16,
+     "y": 78,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "belt2",
+     "e": "content/ep/ko006/img/belt.webp",
+     "x": 40,
+     "y": 80,
+     "s": 12,
+     "anim": "none"
+    },
+    {
+     "id": "belt3",
+     "e": "content/ep/ko006/img/belt.webp",
+     "x": 62,
+     "y": 76,
+     "s": 12,
+     "anim": "none"
+    }
+   ],
+   "lines": [
+    {
+     "who": "longneck",
+     "t": "고마워! 타면 먼저 벨트 딸깍!",
+     "sfx": "snap",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 창밖 구경!",
+     "sfx": "buzz"
+    },
+    {
+     "who": "bee",
+     "t": "덜컹! 앗, 깜짝이야!",
+     "sfx": "thud"
+    },
+    {
+     "who": "longneck",
+     "t": "잠깐! 앉아서 딸깍!"
+    },
+    {
+     "who": "bee",
+     "t": "헤헤, 앉을게!"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "belt1",
+     "belt2",
+     "belt3"
+    ],
+    "count": true,
+    "prompt": "벨트 고리를 하나씩 톡톡 눌러 봐!",
+    "sfx": "snap",
+    "say": [
+     [
+      "딸깍! 모두 벨트 맸어!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/ep/ko006/img/bg_bus_inside.webp",
+   "actors": [
+    {
+     "id": "longneck",
+     "e": "content/ep/na003/img/longneck.webp",
+     "x": 70,
+     "y": 4,
+     "s": 32,
+     "anim": "none",
+     "name": "목긴 공룡"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 58,
+     "y": 46,
+     "s": 24,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 4,
+     "y": 44,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 32,
+     "y": 48,
+     "s": 28,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴개굴, 타면 먼저 딸깍!",
+     "sfx": "frog"
+    },
+    {
+     "who": "frog",
+     "t": "한 번 더! 타면 먼저 딸깍!",
+     "sfx": "snap"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 타면 먼저…?"
+    },
+    {
+     "who": "frog",
+     "t": "딸깍! 잘했어!",
+     "sfx": "snap",
+     "mood": "happy"
+    },
+    {
+     "who": "ele",
+     "t": "비읍! 버스의 비읍!"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "bus",
+     "e": "content/ep/ko006/img/bus_longneck.webp",
+     "x": 30,
+     "y": 18,
+     "s": 42,
+     "anim": "none"
+    },
+    {
+     "id": "whale",
+     "e": "content/ep/ko001/img/whale.webp",
+     "x": 76,
+     "y": 50,
+     "s": 24,
+     "anim": "peek",
+     "name": "꼬마 고래"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 4,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 54,
+     "y": 64,
+     "s": 24,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "narr",
+     "t": "부릉부릉~ 버스가 바다에 왔어요.",
+     "sfx": "car"
+    },
+    {
+     "who": "whale",
+     "t": "푸우~ 어서 와!",
+     "sfx": "whale"
+    },
+    {
+     "who": "peng",
+     "t": "Hello!",
+     "lang": "en"
+    },
+    {
+     "who": "frog",
+     "t": "와~ 바다다!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 2,
+     "y": 40,
+     "s": 42,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 78,
+     "y": 40,
+     "s": 30,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "버스의 비읍, 같이 써 볼까?"
+    },
+    {
+     "who": "ele",
+     "t": "버-스! 짝짝!",
+     "sfx": "clap"
+    },
+    {
+     "who": "ele",
+     "t": "미음에 귀 두 개 쫑긋!"
+    }
+   ],
+   "act": {
+    "type": "trace",
+    "letter": "ㅂ",
+    "n": 2,
+    "prompt": "손가락으로 비읍을 두 번 따라 써 봐!",
+    "say": [
+     [
+      "우아! 비읍! 버스의 비읍!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/beach_day.webp",
+   "actors": [
+    {
+     "id": "bus",
+     "e": "content/ep/ko006/img/bus_longneck.webp",
+     "x": 50,
+     "y": 6,
+     "s": 36,
+     "anim": "none"
+    },
+    {
+     "id": "longneck_baby",
+     "e": "content/ep/na003/img/longneck_baby_happy.webp",
+     "x": 82,
+     "y": 42,
+     "s": 24,
+     "anim": "bob",
+     "name": "아기 목긴 공룡"
+    },
+    {
+     "id": "pp",
+     "e": "pp_cheer",
+     "x": 36,
+     "y": 30,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 2,
+     "y": 42,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 22,
+     "y": 8,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 60,
+     "y": 56,
+     "s": 26,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 22,
+     "y": 62,
+     "s": 26,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "ele",
+     "t": "코로 쓱쓱, 글자 완성!",
+     "sfx": "brush",
+     "mood": "happy"
+    },
+    {
+     "who": "bee",
+     "t": "차에 타면 앉아서 벨트를 딸깍 매요.",
+     "sfx": "snap"
+    },
+    {
+     "who": "longneck_baby",
+     "t": "딸깍! 나도 잘 맸어.",
+     "sfx": "snap",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/ko006/voice.mp3",
+  "clips": {
+   "ko|빵! 빵빵! 언덕 너머에서 소리가 나요.": [
+    0.3,
+    4.92
+   ],
+   "ko|붕붕~ 이게 무슨 소리지?": [
+    5.52,
+    3.851
+   ],
+   "ko|서준아, 언덕 위를 톡 눌러 볼래?": [
+    9.671,
+    4.594
+   ],
+   "ko|언덕 위에 쏙 나온 걸 톡!": [
+    14.565,
+    3.447
+   ],
+   "ko|짠! 부릉부릉~ 마을 버스예요!": [
+    18.312,
+    4.13
+   ],
+   "ko|빵빵! 바다 가는 버스예요~": [
+    22.742,
+    4.262
+   ],
+   "ko|덜컹! 버스가 기우뚱!": [
+    27.304,
+    4.912
+   ],
+   "ko|엄마, 바퀴가 없어!": [
+    32.515,
+    3.173
+   ],
+   "ko|괜찮아! 같이 찾자.": [
+    35.988,
+    2.561
+   ],
+   "ko|쓱쓱! 버스의 버, 비읍이야.": [
+    38.849,
+    4.849
+   ],
+   "ko|미음에 귀 두 개 쫑긋! 비읍은 어디?": [
+    43.998,
+    5.083
+   ],
+   "ko|맞아! 비읍! 버스의 비읍!": [
+    49.381,
+    4.331
+   ],
+   "ko|음~ 그건 비읍이 아니야.": [
+    54.012,
+    3.057
+   ],
+   "ko|비읍은 귀 두 개 쫑긋!": [
+    57.369,
+    3.481
+   ],
+   "ko|데굴데굴 바퀴 자국… 이쪽이야!": [
+    61.151,
+    3.785
+   ],
+   "ko|바퀴가 진흙에 폭 빠졌어요.": [
+    65.235,
+    4.53
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    70.065,
+    4.639
+   ],
+   "ko|서준아, 톡톡톡 밀어 줘!": [
+    75.004,
+    3.426
+   ],
+   "ko|바퀴를 톡톡톡, 영차 세 번!": [
+    78.73,
+    3.969
+   ],
+   "ko|영차! 쏙! 바퀴가 나왔어!": [
+    82.998,
+    3.578
+   ],
+   "ko|고마워! 타면 먼저 벨트 딸깍!": [
+    86.876,
+    5.264
+   ],
+   "ko|붕붕~ 창밖 구경!": [
+    92.44,
+    2.693
+   ],
+   "ko|덜컹! 앗, 깜짝이야!": [
+    95.434,
+    3.102
+   ],
+   "ko|잠깐! 앉아서 딸깍!": [
+    98.836,
+    4.466
+   ],
+   "ko|헤헤, 앉을게!": [
+    103.602,
+    1.822
+   ],
+   "ko|벨트 고리를 하나씩 톡톡 눌러 봐!": [
+    105.725,
+    4.383
+   ],
+   "ko|딸깍! 모두 벨트 맸어!": [
+    110.407,
+    3.529
+   ],
+   "ko|개굴개굴, 타면 먼저 딸깍!": [
+    114.237,
+    3.296
+   ],
+   "ko|한 번 더! 타면 먼저 딸깍!": [
+    117.832,
+    4.409
+   ],
+   "ko|서준아, 타면 먼저…?": [
+    122.542,
+    3.381
+   ],
+   "ko|딸깍! 잘했어!": [
+    126.223,
+    2.455
+   ],
+   "ko|비읍! 버스의 비읍!": [
+    128.978,
+    3.482
+   ],
+   "ko|부릉부릉~ 버스가 바다에 왔어요.": [
+    132.76,
+    4.008
+   ],
+   "ko|푸우~ 어서 와!": [
+    137.067,
+    2.456
+   ],
+   "en|Hello!": [
+    139.823,
+    1.137
+   ],
+   "ko|와~ 바다다!": [
+    141.261,
+    2.452
+   ],
+   "ko|버스의 비읍, 같이 써 볼까?": [
+    144.013,
+    3.481
+   ],
+   "ko|버-스! 짝짝!": [
+    147.794,
+    2.58
+   ],
+   "ko|미음에 귀 두 개 쫑긋!": [
+    150.674,
+    3.554
+   ],
+   "ko|손가락으로 비읍을 두 번 따라 써 봐!": [
+    154.528,
+    3.637
+   ],
+   "ko|우아! 비읍! 버스의 비읍!": [
+    158.465,
+    3.804
+   ],
+   "ko|코로 쓱쓱, 글자 완성!": [
+    162.569,
+    4.642
+   ],
+   "ko|차에 타면 앉아서 벨트를 딸깍 매요.": [
+    167.512,
+    4.894
+   ],
+   "ko|딸깍! 나도 잘 맸어.": [
+    172.705,
+    2.929
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    175.935,
+    3.026
+   ],
+   "en|Bye!": [
+    179.261,
+    1.036
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    180.597,
+    4.03
+   ]
+  }
+ }
+}
