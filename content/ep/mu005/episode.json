@@ -1,0 +1,820 @@
+{
+ "id": "mu005",
+ "subject": "mu",
+ "hero": "frog",
+ "title": "토닥토닥 마음 노래",
+ "cover": "content/chars/frog/sing.webp",
+ "color": "#c8ebb0",
+ "coloring": "content/ep/mu005/img/coloring.webp",
+ "lesson": "속상할 땐 '속상해' 하고 말해요",
+ "goals": [
+  "노래: 「마음 노래」 따라 부르기 — 화남·슬픔·기쁨",
+  "노래: 화날 땐 느리게 후~ · 슬플 땐 작게 토닥 · 기쁠 땐 빠르고 크게 짝짝짝",
+  "인지: 얼굴 보고 마음 알아보기 · 숫자 하나~넷",
+  "언어: 후렴 '마음을 말해 봐!' 따라 말하기",
+  "맛보기 영어: Happy! · Bye!",
+  "교훈: 속상할 땐 말로 하기"
+ ],
+ "dev": [
+  "사회성",
+  "언어",
+  "인지",
+  "대근육",
+  "소근육"
+ ],
+ "scenes": [
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bush",
+     "e": "content/ep/en002/img/bush.webp",
+     "x": 4,
+     "y": 52,
+     "s": 34,
+     "anim": "none"
+    },
+    {
+     "id": "mush",
+     "e": "content/ep/mu005/img/mushroom_big.webp",
+     "x": 30,
+     "y": 44,
+     "s": 36,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_sad.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 64,
+     "y": 46,
+     "s": 26,
+     "anim": "peek",
+     "hidden": true
+    },
+    {
+     "id": "log",
+     "e": "content/ep/mu005/img/hollow_log.webp",
+     "x": 56,
+     "y": 56,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/run.webp",
+     "x": 74,
+     "y": 6,
+     "s": 36,
+     "anim": "bob",
+     "flip": true
+    }
+   ],
+   "lines": [
+    {
+     "who": "mon",
+     "t": "서준아, 도와줘! 아기 곰이 숨어 버렸어!",
+     "sfx": "run"
+    },
+    {
+     "who": "mon",
+     "t": "어디 숨었을까? 똑똑 두드려 볼래?",
+     "sfx": "knock"
+    }
+   ],
+   "act": {
+    "type": "tapAll",
+    "targets": [
+     "bush",
+     "mush",
+     "log"
+    ],
+    "count": true,
+    "names": {
+     "bush": "덤불",
+     "mush": "버섯",
+     "log": "통나무"
+    },
+    "prompt": "덤불, 버섯, 통나무를 똑똑!",
+    "sfx": "knock",
+    "say": [
+     [
+      "찾았다! 아기 곰이야!",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "log",
+     "e": "content/ep/mu005/img/hollow_log.webp",
+     "x": 50,
+     "y": 58,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_sad.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 56,
+     "y": 40,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "pp",
+     "e": "pp_think",
+     "x": 4,
+     "y": 36,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/think.webp",
+     "x": 28,
+     "y": 50,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/happy.webp",
+     "x": 80,
+     "y": 10,
+     "s": 26,
+     "anim": "bob",
+     "flip": true
+    }
+   ],
+   "lines": [
+    {
+     "who": "pp",
+     "t": "아기 곰 얼굴 좀 봐."
+    },
+    {
+     "who": "bear",
+     "t": "흥! 몰라, 몰라!",
+     "mood": "sad"
+    },
+    {
+     "who": "frog",
+     "t": "서준아, 얼굴을 잘 봐 줄래?"
+    }
+   ],
+   "act": {
+    "type": "choose",
+    "prompt": "아기 곰 마음은 어떨까?",
+    "options": [
+     {
+      "e": "content/ep/mu005/img/bear_sad.webp"
+     },
+     {
+      "e": "content/ep/en002/img/bear_happy.webp"
+     }
+    ],
+    "answer": 0,
+    "wrong": [
+     [
+      "다시 볼까? 입이 쏙 내려갔어.",
+      "ko"
+     ]
+    ],
+    "say": [
+     [
+      "맞아, 시무룩한 얼굴이야.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_sad.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 62,
+     "y": 44,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 40,
+     "s": 38,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 34,
+     "y": 40,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "note1",
+     "e": "content/ep/mu001/img/note_blue.webp",
+     "x": 26,
+     "y": 6,
+     "s": 14,
+     "anim": "bob"
+    },
+    {
+     "id": "note2",
+     "e": "content/ep/mu001/img/note_pink.webp",
+     "x": 48,
+     "y": 12,
+     "s": 12,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "개굴개굴, 다 같이 노래해요!",
+     "sfx": "frog",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "부글부글 화날 땐 후~ 후~"
+    },
+    {
+     "who": "pp",
+     "t": "뒤로 한 걸음! 같이 천천히."
+    }
+   ],
+   "act": {
+    "type": "move",
+    "n": 3,
+    "cam": "breathe",
+    "prompt": "팔 올리며 하~ 내리며 후~",
+    "say": [
+     [
+      "후~ 마음이 말랑말랑해졌어.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_sad.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 46,
+     "y": 34,
+     "s": 40,
+     "anim": "none"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 4,
+     "y": 42,
+     "s": 36,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 78,
+     "y": 40,
+     "s": 30,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "note1",
+     "e": "content/ep/mu001/img/note_blue.webp",
+     "x": 30,
+     "y": 8,
+     "s": 12,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "마음을 말해 봐!"
+    },
+    {
+     "who": "bear",
+     "t": "나… 속상해. 풍선이 날아갔어.",
+     "mood": "sad"
+    },
+    {
+     "who": "frog",
+     "t": "말해 줘서 고마워!"
+    },
+    {
+     "who": "frog",
+     "t": "시무룩 슬플 땐 토닥토닥.",
+     "sfx": "pok"
+    }
+   ],
+   "act": {
+    "type": "tapN",
+    "target": "bear",
+    "n": 4,
+    "prompt": "서준아, 살살 토닥토닥 네 번!",
+    "sfx": "pok",
+    "say": [
+     [
+      "토닥토닥, 이제 조금 괜찮아.",
+      "ko"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "balloon",
+     "e": "content/ep/mu005/img/balloon_red.webp",
+     "x": 70,
+     "y": 2,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/ep/mu005/img/coco_reach.webp",
+     "x": 54,
+     "y": 26,
+     "s": 50,
+     "anim": "none"
+    },
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_sad.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 32,
+     "y": 50,
+     "s": 30,
+     "anim": "none"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/think.webp",
+     "x": 40,
+     "y": 4,
+     "s": 20,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 46,
+     "s": 32,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "마음을 말해 봐!"
+    },
+    {
+     "who": "bear",
+     "t": "풍선이 보고 싶어.",
+     "mood": "sad"
+    },
+    {
+     "who": "bee",
+     "t": "붕붕~ 저기 빨간 거 뭐야?",
+     "sfx": "buzz"
+    },
+    {
+     "who": "ele",
+     "t": "내 코로 쭉!",
+     "sfx": "swoosh"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_balloon.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 40,
+     "y": 18,
+     "s": 52,
+     "anim": "bob"
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/happy.webp",
+     "x": 70,
+     "y": 40,
+     "s": 34,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "pp",
+     "e": "pp_clap",
+     "x": 4,
+     "y": 40,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/happy.webp",
+     "x": 22,
+     "y": 4,
+     "s": 20,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "bear",
+     "t": "와! 고마워!",
+     "sfx": "yay",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "속상하다고 말해서 같이 찾았네!",
+     "mood": "happy"
+    }
+   ]
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_balloon.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 40,
+     "y": 20,
+     "s": 48,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/sing.webp",
+     "x": 2,
+     "y": 42,
+     "s": 34,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/jump.webp",
+     "x": 78,
+     "y": 6,
+     "s": 28,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/happy.webp",
+     "x": 74,
+     "y": 52,
+     "s": 28,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "note1",
+     "e": "content/ep/mu001/img/note_pink.webp",
+     "x": 24,
+     "y": 6,
+     "s": 12,
+     "anim": "bob"
+    }
+   ],
+   "lines": [
+    {
+     "who": "frog",
+     "t": "신나신나 기쁠 땐 짝짝짝!",
+     "sfx": "clap",
+     "mood": "happy"
+    },
+    {
+     "who": "mon",
+     "t": "하나, 둘, 셋! 같이 해 보자!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "기쁜 마음은 영어로…"
+    },
+    {
+     "who": "peng",
+     "t": "Happy!",
+     "lang": "en",
+     "mood": "happy"
+    }
+   ],
+   "act": {
+    "type": "face",
+    "face": "smile",
+    "e": "content/ep/en002/img/bear_happy.webp",
+    "prompt": "아기 곰처럼 활짝 웃어 볼까?",
+    "say": [
+     [
+      "찰칵! 활짝 기쁜 얼굴이야!",
+      "ko"
+     ],
+     [
+      "Happy!",
+      "en"
+     ]
+    ]
+   }
+  },
+  {
+   "bg": "content/bg/forest_day.webp",
+   "actors": [
+    {
+     "id": "bear",
+     "e": "content/ep/mu005/img/bear_balloon.webp",
+     "name": "아기 곰",
+     "voice_style": "작고 수줍은 아기 목소리, 천천히",
+     "x": 42,
+     "y": 22,
+     "s": 44,
+     "anim": "bob"
+    },
+    {
+     "id": "frog",
+     "e": "content/chars/frog/happy.webp",
+     "x": 2,
+     "y": 46,
+     "s": 30,
+     "anim": "bob"
+    },
+    {
+     "id": "pp",
+     "e": "pp_wave",
+     "x": 22,
+     "y": 30,
+     "s": 32,
+     "anim": "bob"
+    },
+    {
+     "id": "peng",
+     "e": "content/chars/peng/wave.webp",
+     "x": 80,
+     "y": 52,
+     "s": 24,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "ele",
+     "e": "content/chars/ele/wave.webp",
+     "x": 66,
+     "y": 50,
+     "s": 26,
+     "anim": "bob",
+     "flip": true
+    },
+    {
+     "id": "bee",
+     "e": "content/chars/bee/wave.webp",
+     "x": 30,
+     "y": 4,
+     "s": 18,
+     "anim": "bob"
+    },
+    {
+     "id": "mon",
+     "e": "content/chars/mon/wave.webp",
+     "x": 80,
+     "y": 8,
+     "s": 24,
+     "anim": "bob",
+     "flip": true
+    }
+   ],
+   "lines": [
+    {
+     "who": "bear",
+     "t": "속상할 땐 '속상해' 하고 말해요.",
+     "mood": "happy"
+    },
+    {
+     "who": "frog",
+     "t": "마음을…"
+    },
+    {
+     "who": "frog",
+     "t": "말해 봐!",
+     "mood": "happy"
+    },
+    {
+     "who": "pp",
+     "t": "오늘도 같이 해서 즐거웠어!",
+     "mood": "happy"
+    },
+    {
+     "who": "peng",
+     "t": "Bye!",
+     "lang": "en"
+    },
+    {
+     "who": "pp",
+     "t": "오늘은 여기까지! 안녕!"
+    }
+   ]
+  }
+ ],
+ "voice": {
+  "file": "content/ep/mu005/voice.mp3",
+  "clips": {
+   "ko|서준아, 도와줘! 아기 곰이 숨어 버렸어!": [
+    0.3,
+    4.926
+   ],
+   "ko|어디 숨었을까? 똑똑 두드려 볼래?": [
+    5.526,
+    4.738
+   ],
+   "ko|덤불, 버섯, 통나무를 똑똑!": [
+    10.564,
+    4.256
+   ],
+   "ko|찾았다! 아기 곰이야!": [
+    15.12,
+    2.978
+   ],
+   "ko|덤불!": [
+    18.399,
+    1.167
+   ],
+   "ko|버섯!": [
+    19.866,
+    1.042
+   ],
+   "ko|통나무!": [
+    21.208,
+    0.843
+   ],
+   "ko|아기 곰 얼굴 좀 봐.": [
+    22.351,
+    2.774
+   ],
+   "ko|흥! 몰라, 몰라!": [
+    25.425,
+    3.235
+   ],
+   "ko|서준아, 얼굴을 잘 봐 줄래?": [
+    28.959,
+    3.461
+   ],
+   "ko|아기 곰 마음은 어떨까?": [
+    32.72,
+    2.633
+   ],
+   "ko|맞아, 시무룩한 얼굴이야.": [
+    35.654,
+    3.495
+   ],
+   "ko|다시 볼까? 입이 쏙 내려갔어.": [
+    39.448,
+    5.111
+   ],
+   "ko|개굴개굴, 다 같이 노래해요!": [
+    44.86,
+    3.004
+   ],
+   "ko|부글부글 화날 땐 후~ 후~": [
+    48.163,
+    4.483
+   ],
+   "ko|뒤로 한 걸음! 같이 천천히.": [
+    52.946,
+    4.945
+   ],
+   "ko|팔 올리며 하~ 내리며 후~": [
+    58.191,
+    6.979
+   ],
+   "ko|후~ 마음이 말랑말랑해졌어.": [
+    65.47,
+    3.781
+   ],
+   "ko|마음을 말해 봐!": [
+    69.552,
+    2.833
+   ],
+   "ko|나… 속상해. 풍선이 날아갔어.": [
+    72.685,
+    4.832
+   ],
+   "ko|말해 줘서 고마워!": [
+    77.817,
+    2.966
+   ],
+   "ko|시무룩 슬플 땐 토닥토닥.": [
+    81.082,
+    3.765
+   ],
+   "ko|서준아, 살살 토닥토닥 네 번!": [
+    85.147,
+    4.704
+   ],
+   "ko|토닥토닥, 이제 조금 괜찮아.": [
+    90.151,
+    3.36
+   ],
+   "ko|풍선이 보고 싶어.": [
+    93.812,
+    3.038
+   ],
+   "ko|붕붕~ 저기 빨간 거 뭐야?": [
+    97.149,
+    3.745
+   ],
+   "ko|내 코로 쭉!": [
+    101.194,
+    3.157
+   ],
+   "ko|와! 고마워!": [
+    104.651,
+    2.386
+   ],
+   "ko|속상하다고 말해서 같이 찾았네!": [
+    107.337,
+    3.392
+   ],
+   "ko|신나신나 기쁠 땐 짝짝짝!": [
+    111.029,
+    3.082
+   ],
+   "ko|하나, 둘, 셋! 같이 해 보자!": [
+    114.412,
+    4.787
+   ],
+   "ko|기쁜 마음은 영어로…": [
+    119.499,
+    2.421
+   ],
+   "en|Happy!": [
+    122.22,
+    1.453
+   ],
+   "ko|아기 곰처럼 활짝 웃어 볼까?": [
+    123.973,
+    3.062
+   ],
+   "ko|찰칵! 활짝 기쁜 얼굴이야!": [
+    127.334,
+    3.859
+   ],
+   "ko|속상할 땐 '속상해' 하고 말해요.": [
+    131.493,
+    4.565
+   ],
+   "ko|마음을…": [
+    136.358,
+    0.985
+   ],
+   "ko|말해 봐!": [
+    137.643,
+    1.414
+   ],
+   "ko|오늘도 같이 해서 즐거웠어!": [
+    139.357,
+    3.41
+   ],
+   "en|Bye!": [
+    143.068,
+    0.939
+   ],
+   "ko|오늘은 여기까지! 안녕!": [
+    144.306,
+    3.584
+   ]
+  }
+ }
+}
