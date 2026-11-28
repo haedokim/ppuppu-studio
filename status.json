@@ -1,0 +1,406 @@
+{
+ "at": "2026-11-28T20:45:49",
+ "agents": [
+  {
+   "id": "director",
+   "name": "감독",
+   "role": "전체 조율",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "analyst",
+   "name": "analyst",
+   "role": "반응 요약",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "planner",
+   "name": "planner",
+   "role": "기획",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "writer",
+   "name": "writer",
+   "role": "대본",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "artist",
+   "name": "artist",
+   "role": "그림",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "art-director",
+   "name": "art-director",
+   "role": "그림 검토",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "voice",
+   "name": "voice",
+   "role": "목소리",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "qa",
+   "name": "qa",
+   "role": "검수",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "publisher",
+   "name": "publisher",
+   "role": "배포",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "designer",
+   "name": "designer",
+   "role": "화면 디자인",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "development",
+   "name": "development",
+   "role": "발달 자문",
+   "state": "idle",
+   "what": ""
+  },
+  {
+   "id": "dad",
+   "name": "해도 님",
+   "role": "승인",
+   "state": "waiting",
+   "what": "mu006 확인"
+  }
+ ],
+ "busy": false,
+ "running": [],
+ "last_activity": 1795866348,
+ "stall_minutes": 10,
+ "current": {
+  "id": "mu006",
+  "subject": "노래",
+  "title": "고래의 낮은 노래",
+  "step": "wait_final",
+  "step_i": 5,
+  "review": {
+   "comment": "리모트도 켜졌어?",
+   "at": "2026-11-24T22:04:40",
+   "about": "완성본",
+   "plan": "",
+   "who": "",
+   "state": "asked"
+  },
+  "steps": [
+   {
+    "k": "plan",
+    "t": "기획",
+    "who": "planner"
+   },
+   {
+    "k": "wait_plan",
+    "t": "승인 ①",
+    "who": "해도 님"
+   },
+   {
+    "k": "write",
+    "t": "대본",
+    "who": "writer"
+   },
+   {
+    "k": "make",
+    "t": "그림·목소리",
+    "who": "artist · voice"
+   },
+   {
+    "k": "qa",
+    "t": "검수",
+    "who": "qa"
+   },
+   {
+    "k": "wait_final",
+    "t": "승인 ②",
+    "who": "해도 님"
+   },
+   {
+    "k": "publish",
+    "t": "배포",
+    "who": "publisher"
+   },
+   {
+    "k": "done",
+    "t": "끝",
+    "who": ""
+   }
+  ],
+  "waiting": true,
+  "asked": "2026-11-24T23:04:45",
+  "answer": "pending",
+  "voice": [
+   41,
+   41
+  ],
+  "images": null,
+  "qa": "PASS",
+  "last_change": 1795529085,
+  "director": false,
+  "jobs": []
+ },
+ "episodes": [
+  {
+   "id": "mu006",
+   "subject": "노래",
+   "title": "고래의 낮은 노래",
+   "step": "wait_final",
+   "step_i": 5,
+   "review": {
+    "comment": "리모트도 켜졌어?",
+    "at": "2026-11-24T22:04:40",
+    "about": "완성본",
+    "plan": "",
+    "who": "",
+    "state": "asked"
+   },
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": true,
+   "asked": "2026-11-24T23:04:45",
+   "answer": "pending",
+   "voice": [
+    41,
+    41
+   ],
+   "images": null,
+   "qa": "PASS",
+   "last_change": 1795529085,
+   "director": false,
+   "jobs": []
+  },
+  {
+   "id": "ko007",
+   "subject": "한글",
+   "title": "끼익 쿵! 시소의 ㅅ",
+   "step": "wait_final",
+   "step_i": 5,
+   "review": {
+    "comment": "꺼졌지?",
+    "at": "2026-11-26T17:28:26",
+    "about": "완성본",
+    "plan": "",
+    "who": "",
+    "state": "asked"
+   },
+   "steps": [
+    {
+     "k": "plan",
+     "t": "기획",
+     "who": "planner"
+    },
+    {
+     "k": "wait_plan",
+     "t": "승인 ①",
+     "who": "해도 님"
+    },
+    {
+     "k": "write",
+     "t": "대본",
+     "who": "writer"
+    },
+    {
+     "k": "make",
+     "t": "그림·목소리",
+     "who": "artist · voice"
+    },
+    {
+     "k": "qa",
+     "t": "검수",
+     "who": "qa"
+    },
+    {
+     "k": "wait_final",
+     "t": "승인 ②",
+     "who": "해도 님"
+    },
+    {
+     "k": "publish",
+     "t": "배포",
+     "who": "publisher"
+    },
+    {
+     "k": "done",
+     "t": "끝",
+     "who": ""
+    }
+   ],
+   "waiting": true,
+   "asked": "2026-11-26T17:37:56",
+   "answer": "pending",
+   "voice": [
+    45,
+    45
+   ],
+   "images": null,
+   "qa": "PASS",
+   "last_change": 1795682282,
+   "director": false,
+   "jobs": []
+  }
+ ],
+ "lanes": {
+  "voice": {
+   "running": [],
+   "queued": []
+  },
+  "image": {
+   "running": [],
+   "queued": []
+  },
+  "cpu": {
+   "running": [],
+   "queued": []
+  },
+  "light": {
+   "running": [],
+   "queued": []
+  },
+  "recent": []
+ },
+ "alerts": [
+  "mu006 해도 님 답장을 기다려요 (완성본 승인)",
+  "ko007 해도 님 답장을 기다려요 (완성본 승인)"
+ ],
+ "tasks": [
+  {
+   "n": 43,
+   "title": "10월 발달 관찰(/dev-check)",
+   "state": "waiting",
+   "detail": "보고서·아빠 질문 보냄, 커리큘럼 바꿀지 해도 님 답 기다림",
+   "upd": "2026-11-01T19:23"
+  },
+  {
+   "n": 55,
+   "title": "이야기 잠금: 오늘 이야기만 보면 풀리게",
+   "state": "done",
+   "detail": "만들어 둠 — v33 배포 말씀 기다림",
+   "upd": "2026-11-20T22:49"
+  },
+  {
+   "n": 56,
+   "title": "이야기 목록: 본 것 흑백, 안 본 것 또렷하게",
+   "state": "done",
+   "detail": "만들어 둠 — v33 배포 말씀 기다림",
+   "upd": "2026-11-20T22:49"
+  },
+  {
+   "n": 57,
+   "title": "도형 놀이 구름 추가·그리는 시간 늘리기 (v34)",
+   "state": "done",
+   "detail": "",
+   "upd": "2026-11-20T22:49"
+  }
+ ],
+ "budget": {
+  "image": [
+   0,
+   40
+  ],
+  "tts": [
+   0,
+   200
+  ],
+  "tts_note": null
+ },
+ "next_run": "2026-11-29T18:40",
+ "recent": [
+  {
+   "id": "ko006",
+   "subject": "한글",
+   "title": "빵빵! 버스의 ㅂ",
+   "for": "2026-11-09"
+  },
+  {
+   "id": "mu005",
+   "subject": "노래",
+   "title": "토닥토닥 마음 노래",
+   "for": "2026-11-13"
+  },
+  {
+   "id": "mo006",
+   "subject": "운동",
+   "title": "거꾸로 가방 체조",
+   "for": "2026-11-09"
+  },
+  {
+   "id": "mu004",
+   "subject": "노래",
+   "title": "쓱싹쓱싹 별 잔치",
+   "for": "2026-11-06"
+  },
+  {
+   "id": "na004",
+   "subject": "자연",
+   "title": "쑥쑥 자라라, 해바라기",
+   "for": "2026-11-06"
+  },
+  {
+   "id": "mo005",
+   "subject": "운동",
+   "title": "데굴데굴 공 찾기",
+   "for": "2026-11-05"
+  }
+ ],
+ "app": "v34"
+}
